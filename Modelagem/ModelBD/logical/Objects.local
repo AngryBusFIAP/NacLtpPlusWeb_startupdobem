@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="3741CCCA-B5C1-34A0-78F1-971AD3583879" name="Cliente" seqName="seg_0"/>
+   <object objectType="Entity" objectID="CEEA592C-BCF1-F9D9-EF8A-26B71D69E17E" name="Empresa" seqName="seg_0"/>
+   <object objectType="Entity" objectID="54C39B77-37FD-B363-4C68-51C34E1158B0" name="Endereco" seqName="seg_0"/>
+   <object objectType="Entity" objectID="14DA4AD8-52B4-F4A5-58BE-6143636F2CBE" name="Itinerario" seqName="seg_0"/>
+   <object objectType="Entity" objectID="95307D5E-DC93-E12E-96C6-1D9FECCBF802" name="Pessoa" seqName="seg_0"/>
+   <object objectType="Entity" objectID="EDA74882-8E0D-9AD6-21E2-7589D2826990" name="Ranking" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9224AA50-6E49-77D6-54DB-6C98BCC08EA7" name="Reclamacao" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3E1BC68C-8F24-29E8-BA05-69D25B55E043" name="Regiao" seqName="seg_0"/>
+   <object objectType="Entity" objectID="434E983E-0C86-368E-3310-2F3628E4980C" name="Telefone" seqName="seg_0"/>
+   <object objectType="Relation" objectID="23E6BC60-45A5-9488-7672-6E7CC87E0349" name="Relation_4" seqName="seg_0"/>
+   <object objectType="Relation" objectID="386E74A2-3AC4-1FDD-7597-5644E46344F1" name="Relation_5" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

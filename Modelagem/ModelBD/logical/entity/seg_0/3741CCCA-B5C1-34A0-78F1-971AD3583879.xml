@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0"
+        id="3741CCCA-B5C1-34A0-78F1-971AD3583879" name="Cliente">
+    <createdBy>vinylimaz</createdBy>
+    <createdTime>2015-09-25 23:03:37 UTC</createdTime>
+    <generatorID>Gerado pelo usuário</generatorID>
+    <ownerDesignName>ModelBD</ownerDesignName>
+    <engineerTo>
+        <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+    </engineerTo>
+    <adequatelyNormalized>NO</adequatelyNormalized>
+    <expectedVolumes>0</expectedVolumes>
+    <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+    <growthPercent>0</growthPercent>
+    <growthType>Year</growthType>
+    <maxVolumes>9999999</maxVolumes>
+    <minVolumes>0</minVolumes>
+    <normalForm>Third</normalForm>
+    <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+        <Attribute name="cpf" id="768859A1-37F5-AD02-CF92-995E16CC67C5">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-25 23:05:26 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>11</dataTypePrecision>
+            <ownDataTypeParameters>,11,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="rg" id="9F46B281-54B9-8F2D-5452-A3A350753510">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-25 23:05:52 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>11</dataTypePrecision>
+            <ownDataTypeParameters>,11,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="sexo" id="AB913E7A-A583-E647-4728-5728FBF0C450">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-25 23:07:37 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT025</logicalDatatype>
+            <dataTypeSize>1 CHAR</dataTypeSize>
+            <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="idPessoa" id="4C287645-8D38-2798-290E-49C6980C2518">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 01:27:50 UTC</createdTime>
+            <generatorID>23E6BC60-45A5-9488-7672-6E7CC87E0349</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <nullsAllowed>true</nullsAllowed>
+            <referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>5</dataTypePrecision>
+            <ownDataTypeParameters>,5,</ownDataTypeParameters>
+        </Attribute>
+    </attributes>
+    <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+        <identifier id="03521585-6580-04B4-0628-A2F6F8D3254E" name="Cliente PK">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-25 23:09:25 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <pk>true</pk>
+        </identifier>
+    </identifiers>
+</Entity>
