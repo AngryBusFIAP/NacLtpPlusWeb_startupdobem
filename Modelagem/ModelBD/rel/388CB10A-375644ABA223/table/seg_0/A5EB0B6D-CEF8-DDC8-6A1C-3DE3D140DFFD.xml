@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5EB0B6D-CEF8-DDC8-6A1C-3DE3D140DFFD" name="T_NAC_WEBLTP_TELEFONE">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:45:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_telefone" id="E5D39465-AEFE-612E-5B29-3EA6AB7059D2">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:47:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_ddd" id="402DCA29-D331-8716-3CA6-36CDB132AC42">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:47:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_codPais" id="45C6FDDC-C7CF-8031-A902-5969CC985E86">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:47:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="982EF223-B9C4-F352-0AED-FB7756C4A085">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:47:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ramal" id="ABA50728-7CEF-9A7F-E460-F6BB60931352">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:47:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_pessoa" id="F0C0F15C-C01C-CDDA-CDEE-67EE080014C6">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:57:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22BBBF36-6523-6A86-FC46-956B5EDDF3D5" referredColumn="7895F73E-0C78-CB28-51A6-B15906CA5925"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8ED096E9-D728-4151-FFFE-C6DD08B99494" name="TABLE_3_PK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:47:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5D39465-AEFE-612E-5B29-3EA6AB7059D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB22E684-9BA8-1E86-50EF-7E80EFF13E41" name="T_NAC_WEBLTP_TELEFONE_T_NAC_WEBLTP_PESSOA_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:57:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0C0F15C-C01C-CDDA-CDEE-67EE080014C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

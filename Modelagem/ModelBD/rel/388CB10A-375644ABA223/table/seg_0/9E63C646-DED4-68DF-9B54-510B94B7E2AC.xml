@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E63C646-DED4-68DF-9B54-510B94B7E2AC" name="T_NAC_WEBLTP_EMPRESA_REGIAO">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:43:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_empresa" id="B5CBBF43-04EE-2B42-03E5-677CA0B002EB">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:43:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD91044-2C64-C0C5-93A4-22FEB73944A4" referredColumn="0058D316-E99E-68C4-274A-5F16B36BD518"/>
+</associations>
+</Column>
+<Column name="cd_regiao" id="E3D9CC2C-8A12-E912-8485-BD11F6F2C010">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:44:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58D9C366-FEE4-8A85-00E7-45202147C82A" referredColumn="D7EFBA42-3013-90B5-2597-2F2C7104DE3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B0B591B-1593-7DD6-D6DE-10EBD4844AF0" name="T_NAC_WEBLTP_EMPRESA_REGIAO_PK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:44:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3D9CC2C-8A12-E912-8485-BD11F6F2C010"/>
+<colUsage columnID="B5CBBF43-04EE-2B42-03E5-677CA0B002EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F23A8017-FF8C-D387-A662-612EC01725B2" name="T_NAC_WEBLTP_EMPRESA_REGIAO_T_NAC_WEBLTP_EMPRESA_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:43:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5CBBF43-04EE-2B42-03E5-677CA0B002EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85504E0F-D5D5-35A2-2D85-4603688A580E" name="T_NAC_WEBLTP_EMPRESA_REGIAO_T_NAC_WEBLTP_REGIAO_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:44:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3D9CC2C-8A12-E912-8485-BD11F6F2C010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

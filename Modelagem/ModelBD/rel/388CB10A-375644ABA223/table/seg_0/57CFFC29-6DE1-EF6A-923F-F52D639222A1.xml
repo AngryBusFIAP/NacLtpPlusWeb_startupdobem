@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57CFFC29-6DE1-EF6A-923F-F52D639222A1" name="T_NAC_WEBLTP_CLIENTE">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 03:59:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="705F9A46-F81F-B1B4-E78B-8D1D57DBEC13">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:04:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCEDE33F-E0A0-B76A-813E-D3DFDECC07C6" referredColumn="7895F73E-0C78-CB28-51A6-B15906CA5925"/>
+</associations>
+</Column>
+<Column name="nr_cpf" id="3C707BF2-2BB4-0669-F6B5-1ED73469C5B2">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:02:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_rg" id="C8534187-1310-E826-3563-0975145780B1">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:02:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sexo" id="F427F5D0-3750-F5AC-ABDD-0225D73DF11A">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:02:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B583302-72D9-06CB-F2BC-B773D63CC0C1" name="T_NAC_WEBLTP_CLIENTE_PK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:02:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="705F9A46-F81F-B1B4-E78B-8D1D57DBEC13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="169BEA7A-2CAA-D483-A2AB-00002CF23605" name="T_NAC_WEBLTP_CLIENTE_T_NAC_WEBLTP_PESSOA_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:04:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="705F9A46-F81F-B1B4-E78B-8D1D57DBEC13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

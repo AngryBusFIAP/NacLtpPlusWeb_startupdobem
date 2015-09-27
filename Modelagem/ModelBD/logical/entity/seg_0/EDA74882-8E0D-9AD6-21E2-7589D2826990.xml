@@ -44,9 +44,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
 </Attribute>
-<Attribute name="idItinerario" id="57F066A6-073E-CC84-1F5C-5BB304AC93D3">
+<Attribute name="idItinerario" id="E1DD1DFA-250D-02CB-5D65-B964010800C1">
 <createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 02:09:26 UTC</createdTime>
+<createdTime>2015-09-27 04:37:56 UTC</createdTime>
 <generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
@@ -69,11 +69,6 @@
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>9E2A19A6-159B-F7C6-A210-37F420B62870</attributeRef>
-<attributeRef>DA1642C8-DC9E-92E0-5E17-99DF9C4C2089</attributeRef>
-<attributeRef>57F066A6-073E-CC84-1F5C-5BB304AC93D3</attributeRef>
-</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

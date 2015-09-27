@@ -1,10 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1"
-                 id="388CB10A-0EE9-45AC-3E17-375644ABA223" mainViewID="EE60D1E6-6F25-97FB-0D2D-77FD85EA6329">
-    <createdBy>vinylimaz</createdBy>
-    <createdTime>2015-09-25 23:03:37 UTC</createdTime>
-    <generatorID>Gerado pelo usuário</generatorID>
-    <ownerDesignName>ModelBD</ownerDesignName>
-    <shouldBeOpen>false</shouldBeOpen>
-    <selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="388CB10A-0EE9-45AC-3E17-375644ABA223" mainViewID="EE60D1E6-6F25-97FB-0D2D-77FD85EA6329">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-25 23:03:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
 </relationalModel>

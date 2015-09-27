@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE671CF4-9F5C-EC45-8116-41D46A080209" name="T_NAC_WEBLTP_RECLAMACAO">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:14:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_reclamacao" id="D5B721F1-EC9F-A8B4-2F3F-A18E6663EFC4">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_dia" id="467EB6CC-85D6-94BE-27EE-9180ED65D817">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_horario" id="53534FEC-F38C-B344-DA76-9377219E97F6">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sentidoViagem" id="D0815FEB-B872-2C66-E585-13A3B113ABC8">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_notaAvaliativa" id="163FD71A-91A1-907A-07FF-56EC8E12B7E7">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_reclamacao" id="67DD4EFE-6C80-6F9B-8AA5-7A1255DF1C07">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_observacao" id="A144C563-4206-4570-706A-0B909E45F467">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cliente" id="F12FF7D8-8B4B-46FB-14D7-22A8136A2FC0">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BC33A33-DFB0-5A60-363D-B9A04636C80E" referredColumn="705F9A46-F81F-B1B4-E78B-8D1D57DBEC13"/>
+</associations>
+</Column>
+<Column name="cd_empresa" id="F5AE27EE-EB3D-00F5-F3C1-D8FF2CBF1762">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:25:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="047A395F-6251-C84C-C886-04F7129E39C6" referredColumn="0058D316-E99E-68C4-274A-5F16B36BD518"/>
+</associations>
+</Column>
+<Column name="cd_itinerario" id="27F8AD0E-D9DC-72E2-B63B-1759A3C73FF8">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:35:50 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07A9982C-4C65-A84B-98EF-15D5AF986B83" referredColumn="3A03003E-E1D2-65B8-C5A5-F08E0FB54884"/>
+</associations>
+</Column>
+<Column name="cd_regiao" id="4710B12E-E51E-2FDB-030E-BD37C21DDAB0">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:40:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAAD7B9D-1A90-C473-5DA6-04DA25EFB7D9" referredColumn="D7EFBA42-3013-90B5-2597-2F2C7104DE3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E150D6B6-2961-38A6-0BA2-973D868766FA" name="T_NAC_WEBLTP_RECLAMACAO_PK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5B721F1-EC9F-A8B4-2F3F-A18E6663EFC4"/>
+<colUsage columnID="27F8AD0E-D9DC-72E2-B63B-1759A3C73FF8"/>
+<colUsage columnID="4710B12E-E51E-2FDB-030E-BD37C21DDAB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC71EC0A-6BD5-23C3-CB86-98CFA8E4FF6E" name="T_NAC_WEBLTP_RECLAMACAO_T_NAC_WEBLTP_CLIENTE_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:17:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F12FF7D8-8B4B-46FB-14D7-22A8136A2FC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82D02070-1D6D-DC9C-0FB1-5B76F57DAF3E" name="T_NAC_WEBLTP_RECLAMACAO_T_NAC_WEBLTP_EMPRESA_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:25:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5AE27EE-EB3D-00F5-F3C1-D8FF2CBF1762"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4AB85D7-3C02-A9E4-FFD5-A0053189E061" name="T_NAC_WEBLTP_RECLAMACAO_T_NAC_WEBLTP_ITINERARIO_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:35:50 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27F8AD0E-D9DC-72E2-B63B-1759A3C73FF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E1222FE-A4FF-26A4-D92F-8015C6F211F2" name="T_NAC_WEBLTP_RECLAMACAO_T_NAC_WEBLTP_REGIAO_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:40:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4710B12E-E51E-2FDB-030E-BD37C21DDAB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

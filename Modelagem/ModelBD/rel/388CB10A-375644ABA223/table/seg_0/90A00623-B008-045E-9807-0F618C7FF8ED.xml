@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90A00623-B008-045E-9807-0F618C7FF8ED" name="T_NAC_WEBLTP_EMPRESA">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:08:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_empresa" id="0058D316-E99E-68C4-274A-5F16B36BD518">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:11:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CC33FE5-75C4-4BE7-B307-8BCA748E8800" referredColumn="7895F73E-0C78-CB28-51A6-B15906CA5925"/>
+</associations>
+</Column>
+<Column name="nr_cnpj" id="420A5E02-A6C7-A756-BBA2-87C8205E6D76">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:11:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_inscricaoEstadual" id="6AF9669C-14DF-BB8D-9BA7-FB612614C67E">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:11:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_contato" id="2B850EC8-3F57-5F86-19BD-409B234C0A10">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:11:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BF8F486-4E93-2103-3738-78096B56793F" name="T_NAC_WEBLTP_EMPRESA_PK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:10:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0058D316-E99E-68C4-274A-5F16B36BD518"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AD517E5-C7B6-31A6-5981-88BA49EB2693" name="T_NAC_WEBLTP_EMPRESA_T_NAC_WEBLTP_PESSOA_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 04:11:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0058D316-E99E-68C4-274A-5F16B36BD518"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
