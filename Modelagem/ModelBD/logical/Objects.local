@@ -9,6 +9,15 @@
    <object objectType="Entity" objectID="9224AA50-6E49-77D6-54DB-6C98BCC08EA7" name="Reclamacao" seqName="seg_0"/>
    <object objectType="Entity" objectID="3E1BC68C-8F24-29E8-BA05-69D25B55E043" name="Regiao" seqName="seg_0"/>
    <object objectType="Entity" objectID="434E983E-0C86-368E-3310-2F3628E4980C" name="Telefone" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A5754615-0CA2-1E28-BF0A-A027E9C4AF07" name="Relation_10" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0834FA14-2B46-1F18-14BD-44401FAA4EE8" name="Relation_11" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FACCF0B3-B2AF-E6C1-1673-0BABEA7B421A" name="Relation_12" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A42ED748-D5BD-BF3A-6768-B8FA2B53F5AE" name="Relation_3" seqName="seg_0"/>
    <object objectType="Relation" objectID="23E6BC60-45A5-9488-7672-6E7CC87E0349" name="Relation_4" seqName="seg_0"/>
    <object objectType="Relation" objectID="386E74A2-3AC4-1FDD-7597-5644E46344F1" name="Relation_5" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4619A863-0764-597B-805B-AEB44CF1B8F8" name="Relation_6" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0F93CD91-E469-E3AF-7DB0-7AC0660FE25D" name="Relation_7" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7C0C4DF5-C0ED-A2A1-E7E1-F94DA9AE80FD" name="Relation_8" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C6784B91-50DC-9C0D-B2BE-A4B12BA28CFA" name="Relation_9" seqName="seg_0"/>
+   <object objectType="Arc" objectID="F93CE1F2-0DDE-C1B1-4B5E-9559B065651E" name="Arc_1" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

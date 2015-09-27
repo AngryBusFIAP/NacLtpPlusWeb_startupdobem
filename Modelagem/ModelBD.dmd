@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModelBD" id="C15D560D-53B6-E6BE-DDE6-B5AFC8823A2F" version="3.5">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-25 23:02:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C15D560D-53B6-E6BE-DDE6-B5AFC8823A2F</designId>
+</OSDM_Design>

@@ -17,7 +17,7 @@
     <minVolumes>0</minVolumes>
     <normalForm>Third</normalForm>
     <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-        <Attribute name="id" id="0EBF3110-C361-36B0-BD49-86B67237873B">
+        <Attribute name="idTel" id="0EBF3110-C361-36B0-BD49-86B67237873B">
             <createdBy>vinylimaz</createdBy>
             <createdTime>2015-09-26 00:54:24 UTC</createdTime>
             <generatorID>Gerado pelo usuário</generatorID>
@@ -25,6 +25,21 @@
             <engineerTo>
                 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
             </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>5</dataTypePrecision>
+            <ownDataTypeParameters>,5,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="idPessoa" id="8EE4F2F5-4581-7C59-6066-6E01D7E60BD5">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:12:33 UTC</createdTime>
+            <generatorID>4619A863-0764-597B-805B-AEB44CF1B8F8</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
             <useDomainConstraints>false</useDomainConstraints>
             <use>1</use>
             <logicalDatatype>LOGDT019</logicalDatatype>
@@ -101,6 +116,7 @@
             <pk>true</pk>
             <usedAttributes>
                 <attributeRef>0EBF3110-C361-36B0-BD49-86B67237873B</attributeRef>
+                <attributeRef>8EE4F2F5-4581-7C59-6066-6E01D7E60BD5</attributeRef>
             </usedAttributes>
         </identifier>
     </identifiers>

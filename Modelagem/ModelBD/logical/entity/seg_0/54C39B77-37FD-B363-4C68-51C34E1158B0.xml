@@ -17,7 +17,7 @@
     <minVolumes>0</minVolumes>
     <normalForm>Third</normalForm>
     <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-        <Attribute name="id" id="E56313CA-79E9-88DA-FCF9-90A30FD84D0C">
+        <Attribute name="idEnd" id="E56313CA-79E9-88DA-FCF9-90A30FD84D0C">
             <createdBy>vinylimaz</createdBy>
             <createdTime>2015-09-26 00:50:39 UTC</createdTime>
             <generatorID>Gerado pelo usuário</generatorID>
@@ -31,6 +31,21 @@
             <dataTypePrecision>20</dataTypePrecision>
             <ownDataTypeParameters>,20,</ownDataTypeParameters>
         </Attribute>
+        <Attribute name="idPessoa" id="4B4D6C1F-4B4F-8260-342A-B8314DDA593D">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:12:24 UTC</createdTime>
+            <generatorID>A42ED748-D5BD-BF3A-6768-B8FA2B53F5AE</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>5</dataTypePrecision>
+            <ownDataTypeParameters>,5,</ownDataTypeParameters>
+        </Attribute>
         <Attribute name="logradouro" id="7005F8AB-2BD2-7807-2C22-138E09E201B0">
             <createdBy>vinylimaz</createdBy>
             <createdTime>2015-09-26 00:51:13 UTC</createdTime>
@@ -39,7 +54,6 @@
             <engineerTo>
                 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
             </engineerTo>
-            <nullsAllowed>true</nullsAllowed>
             <useDomainConstraints>false</useDomainConstraints>
             <use>1</use>
             <logicalDatatype>LOGDT024</logicalDatatype>
@@ -143,6 +157,7 @@
             <pk>true</pk>
             <usedAttributes>
                 <attributeRef>E56313CA-79E9-88DA-FCF9-90A30FD84D0C</attributeRef>
+                <attributeRef>4B4D6C1F-4B4F-8260-342A-B8314DDA593D</attributeRef>
             </usedAttributes>
         </identifier>
     </identifiers>

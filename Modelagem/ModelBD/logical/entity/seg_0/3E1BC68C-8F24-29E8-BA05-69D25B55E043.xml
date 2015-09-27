@@ -16,4 +16,66 @@
     <maxVolumes>9999999</maxVolumes>
     <minVolumes>0</minVolumes>
     <normalForm>Third</normalForm>
+    <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+        <Attribute name="idReg" id="032D603F-F6B2-8A5E-7A14-8EAF54426805">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:24:21 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>1</dataTypePrecision>
+            <ownDataTypeParameters>,1,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="nome" id="BFC1D93F-46A7-2B7B-BA44-05E1937A47C8">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:24:06 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT024</logicalDatatype>
+            <dataTypeSize>10 BYTE</dataTypeSize>
+            <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="zona" id="9972A265-83C0-0610-C736-2DE7D8240BE1">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 20:10:07 UTC</createdTime>
+            <comment>Z&lt;br/&gt; N&lt;br/&gt; S&lt;br/&gt; L&lt;br/&gt; O&lt;br/&gt; NO&lt;br/&gt; NL&lt;br/&gt; SO&lt;br/&gt;
+                SL&lt;br/&gt; </comment>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <deprecated>true</deprecated>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT025</logicalDatatype>
+            <dataTypeSize>2 CHAR</dataTypeSize>
+            <ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+        </Attribute>
+    </attributes>
+    <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+        <identifier id="8750C08F-E773-3C62-4CA3-8EB753189696" name="Regiao PK">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:24:33 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <pk>true</pk>
+            <usedAttributes>
+                <attributeRef>032D603F-F6B2-8A5E-7A14-8EAF54426805</attributeRef>
+            </usedAttributes>
+        </identifier>
+    </identifiers>
 </Entity>

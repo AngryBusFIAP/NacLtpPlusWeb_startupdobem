@@ -81,6 +81,33 @@
             <dataTypeSize>20 CHAR</dataTypeSize>
             <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
         </Attribute>
+        <Attribute name="senha" id="694C83B1-4B36-3563-5919-68A56DDBB100">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:34:41 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT024</logicalDatatype>
+            <dataTypeSize>30 BYTE</dataTypeSize>
+            <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="dtCadastro" id="90B07274-7DAD-5923-966E-F18D64D2DE78">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 21:12:34 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT007</logicalDatatype>
+            <ownDataTypeParameters>,,</ownDataTypeParameters>
+        </Attribute>
     </attributes>
     <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
         <identifier id="3B060CE8-6B55-FA59-F01D-AA5A67C3D58B" name="Pessoa PK">

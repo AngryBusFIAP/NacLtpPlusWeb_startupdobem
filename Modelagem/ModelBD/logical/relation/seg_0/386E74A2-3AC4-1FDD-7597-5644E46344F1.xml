@@ -11,8 +11,8 @@
     <sourcePk>2C313349-5F95-2825-EB49-31E328C52307</sourcePk>
     <targetPk>3B060CE8-6B55-FA59-F01D-AA5A67C3D58B</targetPk>
     <dominantRole>95307D5E-DC93-E12E-96C6-1D9FECCBF802</dominantRole>
-    <identifying>false</identifying>
-    <optionalSource>true</optionalSource>
+    <identifying>true</identifying>
+    <optionalSource>false</optionalSource>
     <optionalTarget>false</optionalTarget>
     <sourceCardinality>1</sourceCardinality>
     <sourceEntity>CEEA592C-BCF1-F9D9-EF8A-26B71D69E17E</sourceEntity>

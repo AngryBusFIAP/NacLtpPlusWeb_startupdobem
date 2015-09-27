@@ -1,19 +1,92 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0"
-        id="14DA4AD8-52B4-F4A5-58BE-6143636F2CBE" name="Itinerario">
-    <createdBy>vinylimaz</createdBy>
-    <createdTime>2015-09-25 23:03:46 UTC</createdTime>
-    <generatorID>Gerado pelo usuário</generatorID>
-    <ownerDesignName>ModelBD</ownerDesignName>
-    <engineerTo>
-        <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-    </engineerTo>
-    <adequatelyNormalized>NO</adequatelyNormalized>
-    <expectedVolumes>0</expectedVolumes>
-    <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
-    <growthPercent>0</growthPercent>
-    <growthType>Year</growthType>
-    <maxVolumes>9999999</maxVolumes>
-    <minVolumes>0</minVolumes>
-    <normalForm>Third</normalForm>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14DA4AD8-52B4-F4A5-58BE-6143636F2CBE" name="Itinerario">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-25 23:03:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idItinerario" id="16BA6AAE-79EE-E30F-5CF4-97CC995F0D26">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 19:29:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idEmpresa" id="9202EB34-E04F-9CEE-09E4-7477D22F3698">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 19:36:22 UTC</createdTime>
+<generatorID>FACCF0B3-B2AF-E6C1-1673-0BABEA7B421A</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="74960548-07C7-C500-E94D-D59DA53C13E1">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 19:29:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="CD13C6FA-CE5A-F3C5-8028-79A40C12F617">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 19:29:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E78FD8A-3039-2655-26C9-625435472E2C" name="Itinerario PK">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 19:29:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>16BA6AAE-79EE-E30F-5CF4-97CC995F0D26</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

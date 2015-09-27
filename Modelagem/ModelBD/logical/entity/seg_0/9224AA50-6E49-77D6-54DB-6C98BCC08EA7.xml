@@ -16,4 +16,181 @@
     <maxVolumes>9999999</maxVolumes>
     <minVolumes>0</minVolumes>
     <normalForm>Third</normalForm>
+    <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+        <Attribute name="idReclam" id="84B709A4-A4CE-DA16-5824-95234C98CC8E">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:22:07 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>10</dataTypePrecision>
+            <ownDataTypeParameters>,10,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="idCliente" id="4C405B5A-C10F-2D9A-1D1A-BA2A94F3BC6A">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:31:35 UTC</createdTime>
+            <generatorID>0F93CD91-E469-E3AF-7DB0-7AC0660FE25D</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <referedAttribute>4C287645-8D38-2798-290E-49C6980C2518</referedAttribute>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>5</dataTypePrecision>
+            <ownDataTypeParameters>,5,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="idEmpresa" id="7A836A15-DFF0-69D6-A34B-0E2DEA39B73C">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:31:43 UTC</createdTime>
+            <generatorID>7C0C4DF5-C0ED-A2A1-E7E1-F94DA9AE80FD</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>5</dataTypePrecision>
+            <ownDataTypeParameters>,5,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="idItinerario" id="1D8C3032-AA15-7069-173B-D3B38A4C6820">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:32:24 UTC</createdTime>
+            <generatorID>C6784B91-50DC-9C0D-B2BE-A4B12BA28CFA</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <referedAttribute>16BA6AAE-79EE-E30F-5CF4-97CC995F0D26</referedAttribute>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT024</logicalDatatype>
+            <dataTypeSize>10 CHAR</dataTypeSize>
+            <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="idReg" id="0E13E9BC-1736-0DE2-0AB8-91F994365100">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:32:42 UTC</createdTime>
+            <generatorID>A5754615-0CA2-1E28-BF0A-A027E9C4AF07</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <referedAttribute>032D603F-F6B2-8A5E-7A14-8EAF54426805</referedAttribute>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>1</dataTypePrecision>
+            <ownDataTypeParameters>,1,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="dia" id="BED9F45D-0D0F-505E-734D-7CEB3A434B88">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:18:02 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT007</logicalDatatype>
+            <ownDataTypeParameters>,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="horario" id="29C23746-073D-7308-66AF-CD18DC79408D">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:18:19 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT007</logicalDatatype>
+            <ownDataTypeParameters>,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="sentidoDaViagem" id="2F42ACC8-FBDB-BF19-B4CF-2F96004B140C">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:18:27 UTC</createdTime>
+            <comment>B -&gt; Bairro/Terminal sentido Bairro&lt;br/&gt;T -&gt; Centro/Terminal sentido Centro&lt;br/&gt;M
+                -&gt; Metro/CPTM&lt;br/&gt;</comment>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT025</logicalDatatype>
+            <dataTypeSize>1 CHAR</dataTypeSize>
+            <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="notaAvaliativa" id="CB93901F-3689-C6DF-F183-8E505214CCF1">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:20:51 UTC</createdTime>
+            <comment>Nota de 1 à 10&lt;br/&gt;Padrão: (0 - 9)</comment>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT019</logicalDatatype>
+            <dataTypePrecision>1</dataTypePrecision>
+            <ownDataTypeParameters>,1,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="reclamacao" id="20C77D99-976F-124E-419B-980413769F31">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:22:22 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT024</logicalDatatype>
+            <dataTypeSize>300 BYTE</dataTypeSize>
+            <ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+        </Attribute>
+        <Attribute name="observacao" id="CD9E3187-D783-2272-0CC8-C53FC301CB08">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 20:26:06 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <nullsAllowed>true</nullsAllowed>
+            <useDomainConstraints>false</useDomainConstraints>
+            <use>1</use>
+            <logicalDatatype>LOGDT024</logicalDatatype>
+            <dataTypeSize>200 BYTE</dataTypeSize>
+            <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+        </Attribute>
+    </attributes>
+    <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+        <identifier id="BC4FC983-69DA-7BF9-525E-9C39DAE7BCEE" name="Reclamacao PK">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-26 19:22:17 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+            <ownerDesignName>ModelBD</ownerDesignName>
+            <engineerTo>
+                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+            </engineerTo>
+            <pk>true</pk>
+            <usedAttributes>
+                <attributeRef>84B709A4-A4CE-DA16-5824-95234C98CC8E</attributeRef>
+            </usedAttributes>
+        </identifier>
+    </identifiers>
 </Entity>
