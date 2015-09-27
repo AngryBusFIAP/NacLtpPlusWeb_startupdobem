@@ -18,8 +18,9 @@ public class ReclamacaoDAO {
 
 
     public ReclamacaoDAO() throws Excecao {
+        c = new ConexaoFactory().getConnection();
         try {
-            c = new ConexaoFactory().getConnection();
+            c.close();
         } catch (Exception e) {
             throw new Excecao(e);
         }

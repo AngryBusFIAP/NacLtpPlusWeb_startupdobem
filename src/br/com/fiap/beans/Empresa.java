@@ -3,15 +3,15 @@ package br.com.fiap.beans;
 public class Empresa extends Pessoa {
 
     private Regiao regiaoAtendida;
-    private String cnpj;
-    private int inscEst;
-    private Itinerario[] itinerario;
+    private long cnpj;
+    private long inscEst;
+    private String contato;
 
-    public Empresa(Regiao regiaoAtendida, String cnpj, int inscEst, Itinerario[] itinerario) {
+    public Empresa(Regiao regiaoAtendida, long cnpj, long inscEst, String contato) {
         this.regiaoAtendida = regiaoAtendida;
         this.cnpj = cnpj;
         this.inscEst = inscEst;
-        this.itinerario = itinerario;
+        this.contato = contato;
     }
 
     public Empresa() {
@@ -25,28 +25,28 @@ public class Empresa extends Pessoa {
         this.regiaoAtendida = regiaoAtendida;
     }
 
-    public String getCnpj() {
+    public long getCnpj() {
         return cnpj;
     }
 
-    public void setCnpj(String cnpj) {
+    public void setCnpj(long cnpj) {
         this.cnpj = cnpj;
     }
 
-    public int getInscEst() {
+    public long getInscEst() {
         return inscEst;
     }
 
-    public void setInscEst(int inscEst) {
+    public void setInscEst(long inscEst) {
         this.inscEst = inscEst;
     }
 
-    public Itinerario[] getItinerario() {
-        return itinerario;
+    public String getContato() {
+        return contato;
     }
 
-    public void setItinerario(Itinerario[] itinerario) {
-        this.itinerario = itinerario;
+    public void setContato(String contato) {
+        this.contato = contato;
     }
 
     public void cadastrar() {

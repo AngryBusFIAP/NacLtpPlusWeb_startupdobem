@@ -1,27 +1,24 @@
 package br.com.fiap.beans;
 
-import java.util.Calendar;
-
 public class Pessoa {
 
     private int idPessoa;
     private String nome;
-    private Calendar dtNasc;
+    private String dtNasc;
     private String email;
     //TODO Verificar sobre associação de dependencia
-    private String userName;
-    private String senha;
+    private Login l;
+
 
     public Pessoa() {
     }
 
-    public Pessoa(int idPessoa, String nome, Calendar dtNasc, String email, String userName, String senha) {
+    public Pessoa(int idPessoa, String nome, String dtNasc, String email, Login l) {
         this.idPessoa = idPessoa;
         this.nome = nome;
         this.dtNasc = dtNasc;
         this.email = email;
-        this.userName = userName;
-        this.senha = senha;
+        this.l = l;
     }
 
     public int getIdPessoa() {
@@ -40,11 +37,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public Calendar getDtNasc() {
+    public String getDtNasc() {
         return dtNasc;
     }
 
-    public void setDtNasc(Calendar dtNasc) {
+    public void setDtNasc(String dtNasc) {
         this.dtNasc = dtNasc;
     }
 
@@ -56,20 +53,12 @@ public class Pessoa {
         this.email = email;
     }
 
-    public String getUserName() {
-        return userName;
+    public Login getL() {
+        return l;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setL(Login l) {
+        this.l = l;
     }
 
     public void cadastrar() {
