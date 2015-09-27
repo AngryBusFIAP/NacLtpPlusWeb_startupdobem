@@ -9,13 +9,21 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
- * Created by vinylimaz on
- * 27/09/15 ... 05:29.
+ * <i>Camada de CRUD</i>
+ * Created by
+ * @author vinylimaz
+ * on
+ * @date 27/09/15
+ * @time 05:29.
+ *
+ * @version 0.5
+ * @since 0.1
+ *
+ * @see br.com.fiap.beans.Reclamacao;
  */
 public class ReclamacaoDAO {
 
     private Connection c;
-
 
     public ReclamacaoDAO() throws Excecao {
         c = new ConexaoFactory().getConnection();
@@ -26,6 +34,15 @@ public class ReclamacaoDAO {
         }
     }
 
+    /**
+     * <i>Metodo para editar uma reclamação (somente o texto dela!)</i>
+     *
+     * @param id_rec (
+     * @param reclam
+     * @return String com o resultado da operação;
+     * @throws Excecao
+     * @author VinyLimaZ
+     */
     public String editarReclam(int id_rec, String reclam) throws Excecao {
         String sql = "UPDATE T_SCN_RECLAMACAO SET TX_RECLAMACAO = ? WHERE ID_RECLAMACAO = ?";
 
@@ -36,15 +53,15 @@ public class ReclamacaoDAO {
             statement.execute();
             return "Registro atualizado com sucesso!";
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new Excecao(e);
         } finally {
             try {
                 c.close();
             } catch (SQLException e) {
-                e.printStackTrace();
+                throw new Excecao(e);
             }
         }
-        return "Problema na alteração! Tente novamente.";
+
     }
 
     public String setNotaPosReclam(int id_rec, byte n) throws Excecao {
@@ -80,10 +97,11 @@ public class ReclamacaoDAO {
             statement.setInt(11, reclam.getEmpresa().getIdPessoa());
             statement.setString(12, reclam.getItinerario().getIdItinerario());
             statement.execute();
+
+            return "Reclamação cadastrada com sucesso!";
         } catch (SQLException e) {
             throw new Excecao(e);
         }
-        return null;
     }
 
 }

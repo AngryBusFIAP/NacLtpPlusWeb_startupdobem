@@ -28,9 +28,4 @@ public class Login {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-
-    public void loginSite(String user, String passwd) {
-
-    }
-
 }

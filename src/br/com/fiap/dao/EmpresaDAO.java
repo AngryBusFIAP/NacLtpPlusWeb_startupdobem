@@ -9,8 +9,15 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
- * Created by vinylimaz on
- * 27/09/15 ... 08:29.
+ * <i>Camada de CRUD</i>
+ * Created by
+ * @author vinylimaz
+ * on 27/09/15 ... 08:29.
+ *
+ * @version 0.5
+ * @since 0.1
+ *
+ * @see br.com.fiap.beans.Empresa;
  */
 public class EmpresaDAO {
 
@@ -25,6 +32,15 @@ public class EmpresaDAO {
         }
     }
 
+    /**
+     * <i>Metodo da camada do CRUD</i>
+     * Cadastro = Create
+     *
+     * @param empresa
+     * @return String com o resultado da operação;
+     * @throws Excecao
+     * @author VinyLimaZ
+     */
     public String cadEmpresa(Empresa empresa) throws Excecao {
 
         String sql = "INSERT INTO T_SCN_PESSOA VALUES (?,?,?,?,?,?,?,?)";
@@ -47,11 +63,10 @@ public class EmpresaDAO {
             statement.setLong(2, empresa.getInscEst());
             statement.setString(3, empresa.getContato());
             statement.execute();
-            System.out.println("Cadastro realizado com sucesso");
+            return "Cadastro realizado com sucesso";
         } catch (SQLException e) {
             throw new Excecao(e);
         }
-        return null;
     }
 
 
