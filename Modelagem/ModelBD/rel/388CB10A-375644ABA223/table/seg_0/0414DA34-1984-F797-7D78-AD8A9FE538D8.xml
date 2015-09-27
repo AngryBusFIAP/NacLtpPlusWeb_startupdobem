@@ -24,22 +24,7 @@
 <colAssociation fkAssociation="16BD6106-5631-27A1-0D59-F5178240DBD1" referredColumn="D5B721F1-EC9F-A8B4-2F3F-A18E6663EFC4"/>
 </associations>
 </Column>
-<Column name="cd_itinerario" id="50C677AB-0A78-345F-A041-BE564314E3BB">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 04:50:42 UTC</createdTime>
-<generatorID>Gerado pelo usuário</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="16BD6106-5631-27A1-0D59-F5178240DBD1" referredColumn="27F8AD0E-D9DC-72E2-B63B-1759A3C73FF8"/>
-</associations>
-</Column>
-<Column name="T_NAC_WEBLTP_RECLAMACAO_cd_regiao" id="BAA64CAD-9223-0DCA-7ABC-78E874727815">
+<Column name="cd_regiao" id="BAA64CAD-9223-0DCA-7ABC-78E874727815">
 <createdBy>Jardel</createdBy>
 <createdTime>2015-09-27 04:52:32 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
@@ -54,6 +39,21 @@
 <colAssociation fkAssociation="16BD6106-5631-27A1-0D59-F5178240DBD1" referredColumn="4710B12E-E51E-2FDB-030E-BD37C21DDAB0"/>
 </associations>
 </Column>
+<Column name="T_NAC_WEBLTP_RECLAMACAO_cd_itinerario" id="ABDCE324-872B-B165-A091-FD4EE0877887">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:43:34 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16BD6106-5631-27A1-0D59-F5178240DBD1" referredColumn="27F8AD0E-D9DC-72E2-B63B-1759A3C73FF8"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="84688C70-9DAF-7F6B-D83C-F88E38D6D87B" name="T_NAC_WEBLTP_RANKING_T_NAC_WEBLTP_RECLAMACAO_FK">
@@ -65,8 +65,8 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1E10FE4C-EF3F-B108-B12E-1C7312CEAF9E"/>
-<colUsage columnID="50C677AB-0A78-345F-A041-BE564314E3BB"/>
 <colUsage columnID="BAA64CAD-9223-0DCA-7ABC-78E874727815"/>
+<colUsage columnID="ABDCE324-872B-B165-A091-FD4EE0877887"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

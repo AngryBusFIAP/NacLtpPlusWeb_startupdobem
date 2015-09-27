@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA8DD957-F414-4188-AF43-6E2CDDCF1091" name="T_NAC_WEBLTP_RESPOSTA">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:32:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_resposta" id="D997489A-CBE9-E437-A36D-72AFF5C3BEB8">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:33:22 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_resposta" id="0BFF2AC1-5A9B-99FB-A622-1D9FEBC5D3BD">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:33:22 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cliente" id="37A8AA5A-A645-9C57-50CA-8D23FE089A7D">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:34:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F970A00-D241-A121-8A0B-7B5BB03C6478" referredColumn="705F9A46-F81F-B1B4-E78B-8D1D57DBEC13"/>
+</associations>
+</Column>
+<Column name="cd_empresa" id="C54CD94C-3F98-633E-FDBC-C03BA2F74506">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:35:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88E7D37A-9601-9365-8196-CB6D3AEE3FEA" referredColumn="0058D316-E99E-68C4-274A-5F16B36BD518"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60CD8979-EC94-6FCA-A48D-18935B7EB96B" name="T_NAC_WEBLTP_RESPOSTA_PK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:33:22 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D997489A-CBE9-E437-A36D-72AFF5C3BEB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="211A61D6-AE58-BC8E-5C04-7B2449F3214D" name="T_NAC_WEBLTP_RESPOSTA_T_NAC_WEBLTP_CLIENTE_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:34:37 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37A8AA5A-A645-9C57-50CA-8D23FE089A7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B4DD077-678B-921B-A756-237B1CCE4C2C" name="T_NAC_WEBLTP_RESPOSTA_T_NAC_WEBLTP_EMPRESA_FK">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 18:35:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C54CD94C-3F98-633E-FDBC-C03BA2F74506"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

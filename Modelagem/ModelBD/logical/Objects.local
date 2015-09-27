@@ -13,20 +13,32 @@
    <object objectType="Entity" objectID="3E1BC68C-8F24-29E8-BA05-69D25B55E043" name="Regiao" seqName="seg_0"/>
    <object objectType="Entity" objectID="12DB41BE-9859-A20D-F946-4FA1A2403539" name="Resposta" seqName="seg_0"/>
    <object objectType="Entity" objectID="434E983E-0C86-368E-3310-2F3628E4980C" name="Telefone" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A5754615-0CA2-1E28-BF0A-A027E9C4AF07" name="Relation_10" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B13FDA5B-E6EB-FD78-337F-40B4FC514A66" name="Relation_10v1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0834FA14-2B46-1F18-14BD-44401FAA4EE8" name="Relation_11" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3" name="Relation_12" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FACCF0B3-B2AF-E6C1-1673-0BABEA7B421A" name="Relation_12v1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5BC7D4C0-C979-D59D-4F17-E411CAD72556" name="Relation_14" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F2E696EB-C807-724C-AF9B-56249E13202B" name="Relation_15" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C2E867E7-F7D9-F437-FD45-1565BE192C08" name="Relation_18" seqName="seg_0"/>
+   <object objectType="Relation" objectID="92E2DEEF-D1EE-94A0-D708-52688C8061D7" name="Relation_21" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B5228BAB-AF68-79E9-F636-BD838E4BE5FE" name="Relation_22" seqName="seg_0"/>
    <object objectType="Relation" objectID="EED743C2-5CB2-7CA0-739A-D190A0529DF1" name="Relation_28" seqName="seg_0"/>
    <object objectType="Relation" objectID="E20DA4CE-3530-F2E2-AE59-F83D813781A9" name="Relation_29" seqName="seg_0"/>
-   <object objectType="Relation" objectID="EE87AFC2-E8E4-C0EB-74D4-C731BFC3BBC2" name="Relation_37" seqName="seg_0"/>
-   <object objectType="Relation" objectID="3F5C6766-EFB9-8A0B-DF84-3DDF9F1AAA2C" name="Relation_38" seqName="seg_0"/>
-   <object objectType="Relation" objectID="2AA43409-7ECD-0C2B-14DD-B1ACA9D3AAA9" name="Relation_39" seqName="seg_0"/>
-   <object objectType="Relation" objectID="BD6CBF11-3E7E-A256-A64E-A3AB63A4C75B" name="Relation_40" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B45B2013-CB8F-3698-B1A7-9D84D54E905E" name="Relation_41" seqName="seg_0"/>
-   <object objectType="Relation" objectID="2A3A67F1-C4E3-C9CE-E298-0E94AAF7BA07" name="Relation_42" seqName="seg_0"/>
-   <object objectType="Relation" objectID="11758BFA-B245-122A-F498-498D21A2C224" name="Relation_43" seqName="seg_0"/>
-   <object objectType="Relation" objectID="5A0AAC4C-7FC5-8446-72B0-C6500A7D4F75" name="Relation_44" seqName="seg_0"/>
-   <object objectType="Relation" objectID="813BA22C-4AD9-7F6B-6303-7BCD7A0505F7" name="Relation_45" seqName="seg_0"/>
-   <object objectType="Relation" objectID="D3EB2C70-7F63-D66A-E162-DFCA2805EFE4" name="Relation_46" seqName="seg_0"/>
-   <object objectType="Relation" objectID="71EE9B45-9B79-023F-F5A4-F9E763BC5BC7" name="Relation_48" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B4840636-1AE3-799E-4667-9795BFAE7996" name="Relation_49" seqName="seg_0"/>
-   <object objectType="Relation" objectID="A2DCC537-3179-B91A-7049-53113C5EA2F6" name="Relation_50" seqName="seg_0"/>
-   <object objectType="Relation" objectID="4376C76E-AAEF-4FF2-E668-279DF6646960" name="Relation_51" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A42ED748-D5BD-BF3A-6768-B8FA2B53F5AE" name="Relation_3" seqName="seg_0"/>
+   <object objectType="Relation" objectID="45297E55-AD88-19AE-8028-56EE8C012FA9" name="Relation_30" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C4CFE203-689B-420E-A921-663E93B87443" name="Relation_31" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A64A6CF1-1303-96AF-251A-64548BEAD5A7" name="Relation_32" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7AD15804-DA82-0A9F-E921-6FF6CFA152FD" name="Relation_33" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B1E6BD37-AC1A-2A51-BFD2-958CB65974E0" name="Relation_3v2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="23E6BC60-45A5-9488-7672-6E7CC87E0349" name="Relation_4" seqName="seg_0"/>
+   <object objectType="Relation" objectID="386E74A2-3AC4-1FDD-7597-5644E46344F1" name="Relation_5" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4619A863-0764-597B-805B-AEB44CF1B8F8" name="Relation_6" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8B0D3D63-213D-6895-2408-793D4F612074" name="Relation_6v2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0F93CD91-E469-E3AF-7DB0-7AC0660FE25D" name="Relation_7" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4BD80D29-7B90-B87F-713D-81D2D5CAA2E7" name="Relation_7v2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7C0C4DF5-C0ED-A2A1-E7E1-F94DA9AE80FD" name="Relation_8" seqName="seg_0"/>
+   <object objectType="Relation" objectID="73D643E4-A6AE-F1C6-83F0-FFB5C8F25187" name="Relation_9" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C6784B91-50DC-9C0D-B2BE-A4B12BA28CFA" name="Relation_9v1" seqName="seg_0"/>
+   <object objectType="Arc" objectID="F93CE1F2-0DDE-C1B1-4B5E-9559B065651E" name="Arc_1" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>
