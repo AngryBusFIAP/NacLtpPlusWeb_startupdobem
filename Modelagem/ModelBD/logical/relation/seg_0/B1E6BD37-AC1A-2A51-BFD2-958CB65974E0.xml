@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="B1E6BD37-AC1A-2A51-BFD2-958CB65974E0">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3v2" directorySegmentName="seg_0"
+          id="B1E6BD37-AC1A-2A51-BFD2-958CB65974E0">
 <createdBy>Jardel</createdBy>
 <createdTime>2015-09-27 01:51:11 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
@@ -8,7 +9,7 @@
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
 <sourcePk>8750C08F-E773-3C62-4CA3-8EB753189696</sourcePk>
-<identifying>true</identifying>
+    <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

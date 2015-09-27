@@ -28,6 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
+    <ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ddd" id="66A47D30-5461-7442-0F15-6285A351BACC">
 <createdBy>vinylimaz</createdBy>
@@ -41,6 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>11</dataTypePrecision>
+    <ownDataTypeParameters>,11,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="codPais" id="935DA9C1-6BBE-C8EB-FC76-6F7992EBCAC4">
 <createdBy>vinylimaz</createdBy>
@@ -54,6 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
+    <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="telefone" id="989D45EA-2749-C8BB-B939-AC55F482EE83">
 <createdBy>vinylimaz</createdBy>
@@ -67,6 +70,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
+    <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ramal" id="26FF153B-E9EB-C773-2542-3C2608F12B2A">
 <createdBy>vinylimaz</createdBy>
@@ -81,20 +85,36 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>15</dataTypePrecision>
+    <ownDataTypeParameters>,15,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idPessoa" id="16FADF24-5928-4C26-7F1D-CDC14445BC96">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:55:34 UTC</createdTime>
-<generatorID>B13FDA5B-E6EB-FD78-337F-40B4FC514A66</generatorID>
+    <Attribute name="tipo" id="5AFCF55B-D686-B3C8-535F-FD07092B8B36">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 10:23:41 UTC</createdTime>
+        <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
+        <useDomainConstraints>false</useDomainConstraints>
+        <use>1</use>
+        <logicalDatatype>LOGDT019</logicalDatatype>
+        <dataTypePrecision>1</dataTypePrecision>
+        <ownDataTypeParameters>,1,</ownDataTypeParameters>
+    </Attribute>
+    <Attribute name="idPessoa" id="A88E6A1C-C870-10C6-3A29-6CF323E18A60">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 11:52:30 UTC</createdTime>
+        <generatorID>BD6CBF11-3E7E-A256-A64E-A3AB63A4C75B</generatorID>
+        <ownerDesignName>ModelBD</ownerDesignName>
+        <engineerTo>
+            <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+        </engineerTo>
 <referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
+        <ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -109,6 +129,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>0EBF3110-C361-36B0-BD49-86B67237873B</attributeRef>
+    <attributeRef>A88E6A1C-C870-10C6-3A29-6CF323E18A60</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

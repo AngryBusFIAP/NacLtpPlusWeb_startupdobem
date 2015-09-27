@@ -28,6 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
+    <ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nome" id="44715677-725C-014E-EEF8-F7D6F23512AA">
 <createdBy>vinylimaz</createdBy>
@@ -41,6 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20 BYTE</dataTypeSize>
+    <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dtNasc" id="BBEC609D-8BA5-D68B-F654-5632CD0D9252">
 <createdBy>vinylimaz</createdBy>
@@ -51,6 +53,7 @@
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
 <use>0</use>
+    <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="email" id="67568A9B-25C6-C50E-BCEE-BCF0534E0BED">
 <createdBy>vinylimaz</createdBy>
@@ -61,6 +64,7 @@
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
 <use>0</use>
+    <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="userNm" id="861AE3C3-819F-6523-7997-7658D047F391">
 <createdBy>vinylimaz</createdBy>
@@ -74,6 +78,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20 CHAR</dataTypeSize>
+    <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="senha" id="694C83B1-4B36-3563-5919-68A56DDBB100">
 <createdBy>vinylimaz</createdBy>
@@ -87,6 +92,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30 BYTE</dataTypeSize>
+    <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dtCadastro" id="90B07274-7DAD-5923-966E-F18D64D2DE78">
 <createdBy>vinylimaz</createdBy>
@@ -99,6 +105,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+    <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+    <Attribute name="aceitacaoDosTermos" id="86A107AC-5BBF-96EC-D626-C3B35D4AF814">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 04:53:08 UTC</createdTime>
+        <generatorID>Gerado pelo usuário</generatorID>
+        <ownerDesignName>ModelBD</ownerDesignName>
+        <engineerTo>
+            <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+        </engineerTo>
+        <useDomainConstraints>false</useDomainConstraints>
+        <use>1</use>
+        <logicalDatatype>LOGDT006</logicalDatatype>
+        <dataTypeSize>1 CHAR</dataTypeSize>
+        <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

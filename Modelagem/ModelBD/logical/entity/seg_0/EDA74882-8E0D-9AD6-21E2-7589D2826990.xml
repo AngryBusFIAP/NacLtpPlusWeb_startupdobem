@@ -16,47 +16,35 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idReclam" id="9E2A19A6-159B-F7C6-A210-37F420B62870">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:58:15 UTC</createdTime>
-<generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
+    <Attribute name="idItinerario" id="1413EF2C-201A-17F8-8642-E1D25E7C0E8E">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 11:58:12 UTC</createdTime>
+        <generatorID>A2DCC537-3179-B91A-7049-53113C5EA2F6</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
-<referedAttribute>84B709A4-A4CE-DA16-5824-95234C98CC8E</referedAttribute>
+        <referedAttribute>16BA6AAE-79EE-E30F-5CF4-97CC995F0D26</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+        <logicalDatatype>LOGDT024</logicalDatatype>
+        <dataTypeSize>10 CHAR</dataTypeSize>
+        <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+    <Attribute name="idReclam" id="0702549E-4D8D-B546-FD7C-77FC7E7A0CC8">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 11:58:21 UTC</createdTime>
+        <generatorID>4376C76E-AAEF-4FF2-E668-279DF6646960</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+        <referedAttribute>84B709A4-A4CE-DA16-5824-95234C98CC8E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-</Attribute>
-<Attribute name="idReg" id="DA1642C8-DC9E-92E0-5E17-99DF9C4C2089">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:58:32 UTC</createdTime>
-<generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<engineerTo>
-<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-</engineerTo>
-<referedAttribute>A6096967-EFB2-F1C6-9AF3-3CBA3DC5879B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-</Attribute>
-<Attribute name="idItinerario" id="E1DD1DFA-250D-02CB-5D65-B964010800C1">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 04:37:56 UTC</createdTime>
-<generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<engineerTo>
-<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-</engineerTo>
-<referedAttribute>0EF4EB33-C932-9B4F-78C8-141D698ED29B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
+        <dataTypePrecision>10</dataTypePrecision>
+        <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -69,6 +57,10 @@
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
 <pk>true</pk>
+    <usedAttributes>
+        <attributeRef>1413EF2C-201A-17F8-8642-E1D25E7C0E8E</attributeRef>
+        <attributeRef>0702549E-4D8D-B546-FD7C-77FC7E7A0CC8</attributeRef>
+    </usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

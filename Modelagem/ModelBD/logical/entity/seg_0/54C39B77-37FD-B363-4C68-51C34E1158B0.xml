@@ -28,6 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>20</dataTypePrecision>
+    <ownDataTypeParameters>,20,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="logradouro" id="7005F8AB-2BD2-7807-2C22-138E09E201B0">
 <createdBy>vinylimaz</createdBy>
@@ -40,6 +41,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+    <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="num" id="4283C3B1-1206-50D8-C2FB-28B120B688C7">
 <createdBy>vinylimaz</createdBy>
@@ -53,6 +55,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
+    <ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="complemento" id="0A583FB1-3124-2887-AC17-CCE2279AAF76">
 <createdBy>vinylimaz</createdBy>
@@ -67,6 +70,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
+    <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cep" id="EE95E38C-A346-2E3A-8950-FD97B1BF9E27">
 <createdBy>vinylimaz</createdBy>
@@ -80,6 +84,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
+    <ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="bairro" id="94FF52A6-B599-23E3-7A81-0E784084510C">
 <createdBy>vinylimaz</createdBy>
@@ -93,6 +98,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
+    <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cidade" id="C79C35EE-8A8B-D50C-67FB-E8BBF2126A97">
 <createdBy>vinylimaz</createdBy>
@@ -106,6 +112,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
+    <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="estado" id="EADBADB2-5056-28F9-5C53-45AF1AEC37CC">
 <createdBy>vinylimaz</createdBy>
@@ -119,11 +126,12 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>2 CHAR</dataTypeSize>
+    <ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idPessoa" id="369F9CDB-F946-18D3-3F5C-216880DCE7A3">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:55:26 UTC</createdTime>
-<generatorID>73D643E4-A6AE-F1C6-83F0-FFB5C8F25187</generatorID>
+    <Attribute name="idPessoa" id="6960B7F9-1C58-1570-B85F-F2493E58E82B">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 11:52:02 UTC</createdTime>
+        <generatorID>EE87AFC2-E8E4-C0EB-74D4-C731BFC3BBC2</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
@@ -133,6 +141,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
+        <ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

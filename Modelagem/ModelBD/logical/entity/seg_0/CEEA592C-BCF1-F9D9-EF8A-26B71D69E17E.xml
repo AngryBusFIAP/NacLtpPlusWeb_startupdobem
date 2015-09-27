@@ -16,20 +16,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idEmpresa" id="D33FD029-BAA1-8664-358D-FA88EEFA5148">
-<createdBy>vinylimaz</createdBy>
-<createdTime>2015-09-26 01:27:57 UTC</createdTime>
-<generatorID>386E74A2-3AC4-1FDD-7597-5644E46344F1</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<engineerTo>
-<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-</engineerTo>
-<referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-</Attribute>
 <Attribute name="cnpj" id="9729DBE8-3257-7B05-D583-1B9F945693CB">
 <createdBy>vinylimaz</createdBy>
 <createdTime>2015-09-25 23:09:45 UTC</createdTime>
@@ -42,6 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>20</dataTypePrecision>
+    <ownDataTypeParameters>,20,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="inscEst" id="164C2DDF-9291-DB05-AA3E-6B2ABEDF8C94">
 <createdBy>vinylimaz</createdBy>
@@ -55,6 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>15</dataTypePrecision>
+    <ownDataTypeParameters>,15,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="contato" id="86121D77-2585-9FE4-9A25-7A29CBDB1931">
 <createdBy>vinylimaz</createdBy>
@@ -68,6 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
+    <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -80,9 +69,6 @@
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>D33FD029-BAA1-8664-358D-FA88EEFA5148</attributeRef>
-</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

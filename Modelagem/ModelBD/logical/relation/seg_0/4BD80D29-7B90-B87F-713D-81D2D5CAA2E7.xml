@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="4BD80D29-7B90-B87F-713D-81D2D5CAA2E7">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7v2" directorySegmentName="seg_0"
+          id="4BD80D29-7B90-B87F-713D-81D2D5CAA2E7">
 <createdBy>Jardel</createdBy>
 <createdTime>2015-09-27 01:54:13 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>

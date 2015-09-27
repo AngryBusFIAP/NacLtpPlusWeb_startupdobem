@@ -28,8 +28,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
+    <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="dia" id="BED9F45D-0D0F-505E-734D-7CEB3A434B88">
+    <Attribute name="diaOcorr" id="BED9F45D-0D0F-505E-734D-7CEB3A434B88">
 <createdBy>vinylimaz</createdBy>
 <createdTime>2015-09-26 19:18:02 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
@@ -40,8 +41,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+        <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario" id="29C23746-073D-7308-66AF-CD18DC79408D">
+    <Attribute name="horarioOcorr" id="29C23746-073D-7308-66AF-CD18DC79408D">
 <createdBy>vinylimaz</createdBy>
 <createdTime>2015-09-26 19:18:19 UTC</createdTime>
 <generatorID>Gerado pelo usuário</generatorID>
@@ -52,11 +54,13 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+        <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sentidoDaViagem" id="2F42ACC8-FBDB-BF19-B4CF-2F96004B140C">
 <createdBy>vinylimaz</createdBy>
 <createdTime>2015-09-26 19:18:27 UTC</createdTime>
-<comment>B -&gt; Bairro/Terminal sentido Bairro&lt;br/&gt;T -&gt; Centro/Terminal sentido Centro&lt;br/&gt;M&lt;br/&gt;                -&gt; Metro/CPTM&lt;br/&gt;</comment>
+    <comment>B -&gt; Bairro/Terminal sentido Bairro&lt;br/&gt;T -&gt; Centro/Terminal sentido Centro&lt;br/&gt;M -&gt;
+        Metro/CPTM&lt;br/&gt;C - Circular&lt;br/&gt;</comment>
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
@@ -66,11 +70,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1 CHAR</dataTypeSize>
+    <ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="notaAvaliativa" id="CB93901F-3689-C6DF-F183-8E505214CCF1">
+    <Attribute name="notaPreReclamacao" id="CB93901F-3689-C6DF-F183-8E505214CCF1">
 <createdBy>vinylimaz</createdBy>
 <createdTime>2015-09-26 19:20:51 UTC</createdTime>
-<comment>Nota de 1 à 10&lt;br/&gt;Padrão: (0 - 9)</comment>
+        <comment>1 - 5&lt;br/&gt;(0 - 4)&lt;br/&gt;&lt;br/&gt;1 - Péssimo&lt;br/&gt;2 - Ruim&lt;br/&gt;3 - Mais ou menos&lt;br/&gt;4
+            - Bom&lt;br/&gt;5 - Ótimo
+        </comment>
 <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
@@ -80,7 +87,25 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
+        <ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
+    <Attribute name="notaPosReclamacao" id="5D9B3E00-EE8A-CFAB-05BE-867B459B1F52">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 05:08:46 UTC</createdTime>
+        <comment>1 - 5&lt;br/&gt;(0 - 4)&lt;br/&gt;&lt;br/&gt;1 - Péssimo&lt;br/&gt;2 - Ruim&lt;br/&gt;3 - Mais ou menos&lt;br/&gt;4
+            - Bom&lt;br/&gt;5 - Ótimo
+        </comment>
+        <generatorID>Gerado pelo usuário</generatorID>
+        <ownerDesignName>ModelBD</ownerDesignName>
+        <engineerTo>
+            <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+        </engineerTo>
+        <useDomainConstraints>false</useDomainConstraints>
+        <use>1</use>
+        <logicalDatatype>LOGDT019</logicalDatatype>
+        <dataTypePrecision>1</dataTypePrecision>
+        <ownDataTypeParameters>,1,</ownDataTypeParameters>
+    </Attribute>
 <Attribute name="reclamacao" id="20C77D99-976F-124E-419B-980413769F31">
 <createdBy>vinylimaz</createdBy>
 <createdTime>2015-09-26 19:22:22 UTC</createdTime>
@@ -93,6 +118,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>300 BYTE</dataTypeSize>
+    <ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="observacao" id="CD9E3187-D783-2272-0CC8-C53FC301CB08">
 <createdBy>vinylimaz</createdBy>
@@ -107,53 +133,42 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>200 BYTE</dataTypeSize>
+    <ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idReg" id="A6096967-EFB2-F1C6-9AF3-3CBA3DC5879B">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:51:11 UTC</createdTime>
-<generatorID>B1E6BD37-AC1A-2A51-BFD2-958CB65974E0</generatorID>
+    <Attribute name="dataReclam" id="44051E75-B1FF-1756-957D-BB3F493FCCDD">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 05:22:39 UTC</createdTime>
+        <comment>Data corrente no momento do cadastro</comment>
+        <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
-<referedAttribute>032D603F-F6B2-8A5E-7A14-8EAF54426805</referedAttribute>
+        <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+        <logicalDatatype>LOGDT007</logicalDatatype>
+        <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idCliente" id="7B966751-A032-0A71-E361-36E8147BE8D1">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:53:24 UTC</createdTime>
-<generatorID>8B0D3D63-213D-6895-2408-793D4F612074</generatorID>
+    <Attribute name="idReg" id="55E7DD52-98A1-D970-1973-8D99735B55DD">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 11:56:49 UTC</createdTime>
+        <generatorID>71EE9B45-9B79-023F-F5A4-F9E763BC5BC7</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
-<referedAttribute>4C287645-8D38-2798-290E-49C6980C2518</referedAttribute>
+        <referedAttribute>032D603F-F6B2-8A5E-7A14-8EAF54426805</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
+        <dataTypePrecision>1</dataTypePrecision>
+        <ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idEmpresa" id="53BC67B4-7296-849B-410C-983BD5128975">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 01:54:13 UTC</createdTime>
-<generatorID>4BD80D29-7B90-B87F-713D-81D2D5CAA2E7</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<engineerTo>
-<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-</engineerTo>
-<referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-</Attribute>
-<Attribute name="idItinerario" id="0EF4EB33-C932-9B4F-78C8-141D698ED29B">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 02:09:26 UTC</createdTime>
-<generatorID>C2E867E7-F7D9-F437-FD45-1565BE192C08</generatorID>
+    <Attribute name="idItinerario" id="0EEB5851-54BB-AB0C-5962-45DA13966C0D">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 11:57:51 UTC</createdTime>
+        <generatorID>B4840636-1AE3-799E-4667-9795BFAE7996</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
@@ -163,6 +178,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 CHAR</dataTypeSize>
+        <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -177,8 +193,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>84B709A4-A4CE-DA16-5824-95234C98CC8E</attributeRef>
-<attributeRef>A6096967-EFB2-F1C6-9AF3-3CBA3DC5879B</attributeRef>
-<attributeRef>0EF4EB33-C932-9B4F-78C8-141D698ED29B</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

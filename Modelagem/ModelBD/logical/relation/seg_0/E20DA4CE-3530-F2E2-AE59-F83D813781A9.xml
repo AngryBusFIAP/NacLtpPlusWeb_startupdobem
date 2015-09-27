@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_29" directorySegmentName="seg_0"
+          id="E20DA4CE-3530-F2E2-AE59-F83D813781A9">
+    <createdBy>vinylimaz</createdBy>
+    <createdTime>2015-09-27 10:47:24 UTC</createdTime>
+    <generatorID>Gerado pelo usuário</generatorID>
+    <ownerDesignName>ModelBD</ownerDesignName>
+    <engineerTo>
+        <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+    </engineerTo>
+    <sourcePk>BC4FC983-69DA-7BF9-525E-9C39DAE7BCEE</sourcePk>
+    <identifying>true</identifying>
+    <optionalSource>true</optionalSource>
+    <optionalTarget>false</optionalTarget>
+    <sourceCardinality>1</sourceCardinality>
+    <sourceEntity>9224AA50-6E49-77D6-54DB-6C98BCC08EA7</sourceEntity>
+    <targetCardinalityString>*</targetCardinalityString>
+    <targetEntity>3BF3EEC9-798A-AAB3-69F7-FCF59816E1A9</targetEntity>
+    <transferable>true</transferable>
+    <deleteRule>NO ACTION</deleteRule>
+</Relation>

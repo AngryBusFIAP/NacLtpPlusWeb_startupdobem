@@ -16,33 +16,32 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idEmpresa" id="D542FBA7-2B7B-34F0-46B0-478CCDC085C9">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 02:06:13 UTC</createdTime>
-<generatorID>5BC7D4C0-C979-D59D-4F17-E411CAD72556</generatorID>
+    <Attribute name="idEmpresa" id="1DD09F09-F965-C18F-969D-548A09735BB9">
+        <createdBy>vinylimaz</createdBy>
+        <createdTime>2015-09-27 12:01:40 UTC</createdTime>
+        <generatorID>Gerado pelo usuário</generatorID>
 <ownerDesignName>ModelBD</ownerDesignName>
 <engineerTo>
 <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
 </engineerTo>
-<referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
+        <nullsAllowed>true</nullsAllowed>
+        <sourceType>Manual</sourceType>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-</Attribute>
-<Attribute name="idReg" id="45AB06FA-744D-0906-9237-563BAEBEB97E">
-<createdBy>Jardel</createdBy>
-<createdTime>2015-09-27 02:06:18 UTC</createdTime>
-<generatorID>F2E696EB-C807-724C-AF9B-56249E13202B</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<engineerTo>
-<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-</engineerTo>
-<referedAttribute>032D603F-F6B2-8A5E-7A14-8EAF54426805</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
+        <ownDataTypeParameters>,,</ownDataTypeParameters>
+        <source>Empresa</source>
 </Attribute>
 </attributes>
+    <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+        <identifier id="5C9F2077-CA2A-68C1-86AF-0F890D83B6D1" name="Empresa_Regiao PK">
+            <createdBy>vinylimaz</createdBy>
+            <createdTime>2015-09-27 11:52:40 UTC</createdTime>
+            <generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+            <pk>true</pk>
+        </identifier>
+    </identifiers>
 </Entity>

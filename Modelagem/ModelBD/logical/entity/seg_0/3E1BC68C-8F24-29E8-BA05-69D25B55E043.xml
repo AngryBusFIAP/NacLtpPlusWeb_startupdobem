@@ -28,6 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
+    <ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nome" id="BFC1D93F-46A7-2B7B-BA44-05E1937A47C8">
 <createdBy>vinylimaz</createdBy>
@@ -41,6 +42,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 BYTE</dataTypeSize>
+    <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="zona" id="9972A265-83C0-0610-C736-2DE7D8240BE1">
 <createdBy>vinylimaz</createdBy>
@@ -56,6 +58,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>2 CHAR</dataTypeSize>
+    <ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

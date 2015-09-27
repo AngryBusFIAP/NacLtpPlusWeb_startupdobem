@@ -1,32 +1,42 @@
 package br.com.fiap.except;
 
+import java.sql.SQLException;
+
 /**
  * Created by vinylimaz on
  * 26/09/15 ... 13:13.
  */
 public class Excecao extends Exception {
-	public Excecoes(String mensagem, Exception e) {
-		super(mensagem, e);
-		if (e.getClass().toString().equals
-				("class java.lang.NumberFormatException")){
-			System.out.println("Número inválido");
-		}else if (e.getClass().toString().equals
-				("class java.lang.ArithmeticException")){
-			System.out.println("Divisão por 0");
-		}else if (e.getClass().toString().equals
-				("class java.lang.NullPointerException")){
-			System.out.println("Valor inválido");
-		}else if (e.getClass().toString().equals
-				("class java.lang.FileNotFoundException")){
-			System.out.println("Arquivo não encontrado");
-		}else if (e.getClass().toString().equals
-				("class java.lang.ArrayIndexOutofBounds")){
-			System.out.println("Valor inválido");
-		}else if (e.getClass().toString().equals
-				("class java.lang.IllegalArgumentException")){
-			System.out.println("Valor inválido");
-		}
-		}this.print();
-		e.printStackTrace();
-	}
+
+    public Excecao(Exception e) {
+        if (e.getClass().toString().equals
+                ("class java.lang.NumberFormatException")) {
+            System.out.println("Numero invï¿½lido" + e.toString());
+        } else if (e.getClass().toString().equals
+                ("class java.lang.ArithmeticException")) {
+            System.out.println("Divisï¿½o por 0" + e.toString());
+        } else if (e.getClass().toString().equals
+                ("class java.lang.NullPointerException")) {
+            System.out.println("Valor invï¿½lido" + e.toString());
+        } else if (e.getClass().toString().equals
+                ("class java.lang.FileNotFoundException")) {
+            System.out.println("Arquivo nï¿½o encontrado" + e.toString());
+        } else if (e.getClass().toString().equals
+                ("class java.lang.ArrayIndexOutofBounds")) {
+            System.out.println("Valor invï¿½lido" + e.toString());
+        } else if (e.getClass().toString().equals
+                ("class java.lang.IllegalArgumentException")) {
+            System.out.println("Valor invï¿½lido" + e.toString());
+        } else {
+            System.out.println("Erro desconhecido " + e.toString());
+        }
+    }
+
+    public Excecao(SQLException e) {
+        System.out.println("Problema com o BD. " + e.toString());
+    }
+
+    public Excecao(ClassNotFoundException e) {
+        System.out.println("Driver JDBC nÃ£o encontrado! " + e.toString());
+    }
 }
