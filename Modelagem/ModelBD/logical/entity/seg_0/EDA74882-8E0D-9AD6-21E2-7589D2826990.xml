@@ -1,51 +1,79 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0"
-        id="EDA74882-8E0D-9AD6-21E2-7589D2826990" name="Ranking">
-    <createdBy>vinylimaz</createdBy>
-    <createdTime>2015-09-25 23:04:16 UTC</createdTime>
-    <generatorID>Gerado pelo usuário</generatorID>
-    <ownerDesignName>ModelBD</ownerDesignName>
-    <engineerTo>
-        <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-    </engineerTo>
-    <adequatelyNormalized>NO</adequatelyNormalized>
-    <expectedVolumes>0</expectedVolumes>
-    <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
-    <growthPercent>0</growthPercent>
-    <growthType>Year</growthType>
-    <maxVolumes>9999999</maxVolumes>
-    <minVolumes>0</minVolumes>
-    <normalForm>Third</normalForm>
-    <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-        <Attribute name="idReclam" id="0107BD9A-347E-805F-1904-58FC241B5C5A">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 19:33:20 UTC</createdTime>
-            <generatorID>0834FA14-2B46-1F18-14BD-44401FAA4EE8</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <referedAttribute>84B709A4-A4CE-DA16-5824-95234C98CC8E</referedAttribute>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT019</logicalDatatype>
-            <dataTypePrecision>10</dataTypePrecision>
-            <ownDataTypeParameters>,10,</ownDataTypeParameters>
-        </Attribute>
-    </attributes>
-    <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-        <identifier id="26B657C2-DBEB-FAF5-42DB-EA9DD4D7F4D0" name="Ranking PK">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 20:03:38 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <pk>true</pk>
-            <usedAttributes>
-                <attributeRef>0107BD9A-347E-805F-1904-58FC241B5C5A</attributeRef>
-            </usedAttributes>
-        </identifier>
-    </identifiers>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EDA74882-8E0D-9AD6-21E2-7589D2826990" name="Ranking">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-25 23:04:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idReclam" id="9E2A19A6-159B-F7C6-A210-37F420B62870">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 01:58:15 UTC</createdTime>
+<generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>84B709A4-A4CE-DA16-5824-95234C98CC8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute name="idReg" id="DA1642C8-DC9E-92E0-5E17-99DF9C4C2089">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 01:58:32 UTC</createdTime>
+<generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>A6096967-EFB2-F1C6-9AF3-3CBA3DC5879B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+</Attribute>
+<Attribute name="idItinerario" id="57F066A6-073E-CC84-1F5C-5BB304AC93D3">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 02:09:26 UTC</createdTime>
+<generatorID>E03D05FE-B529-AA3C-EE89-4B92A2ACF4D3</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>0EF4EB33-C932-9B4F-78C8-141D698ED29B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="26B657C2-DBEB-FAF5-42DB-EA9DD4D7F4D0" name="Ranking PK">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 20:03:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E2A19A6-159B-F7C6-A210-37F420B62870</attributeRef>
+<attributeRef>DA1642C8-DC9E-92E0-5E17-99DF9C4C2089</attributeRef>
+<attributeRef>57F066A6-073E-CC84-1F5C-5BB304AC93D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

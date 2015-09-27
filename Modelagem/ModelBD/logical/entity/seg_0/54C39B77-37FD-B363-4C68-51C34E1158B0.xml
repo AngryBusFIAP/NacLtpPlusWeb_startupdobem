@@ -1,164 +1,153 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0"
-        id="54C39B77-37FD-B363-4C68-51C34E1158B0" name="Endereco">
-    <createdBy>vinylimaz</createdBy>
-    <createdTime>2015-09-25 23:03:58 UTC</createdTime>
-    <generatorID>Gerado pelo usuário</generatorID>
-    <ownerDesignName>ModelBD</ownerDesignName>
-    <engineerTo>
-        <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-    </engineerTo>
-    <adequatelyNormalized>NO</adequatelyNormalized>
-    <expectedVolumes>0</expectedVolumes>
-    <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
-    <growthPercent>0</growthPercent>
-    <growthType>Year</growthType>
-    <maxVolumes>9999999</maxVolumes>
-    <minVolumes>0</minVolumes>
-    <normalForm>Third</normalForm>
-    <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-        <Attribute name="idEnd" id="E56313CA-79E9-88DA-FCF9-90A30FD84D0C">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:50:39 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT019</logicalDatatype>
-            <dataTypePrecision>20</dataTypePrecision>
-            <ownDataTypeParameters>,20,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="idPessoa" id="4B4D6C1F-4B4F-8260-342A-B8314DDA593D">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 19:12:24 UTC</createdTime>
-            <generatorID>A42ED748-D5BD-BF3A-6768-B8FA2B53F5AE</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT019</logicalDatatype>
-            <dataTypePrecision>5</dataTypePrecision>
-            <ownDataTypeParameters>,5,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="logradouro" id="7005F8AB-2BD2-7807-2C22-138E09E201B0">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:51:13 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT024</logicalDatatype>
-            <ownDataTypeParameters>,,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="num" id="4283C3B1-1206-50D8-C2FB-28B120B688C7">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:51:48 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT019</logicalDatatype>
-            <dataTypePrecision>5</dataTypePrecision>
-            <ownDataTypeParameters>,5,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="complemento" id="0A583FB1-3124-2887-AC17-CCE2279AAF76">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:51:58 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <nullsAllowed>true</nullsAllowed>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT024</logicalDatatype>
-            <dataTypeSize>10 BYTE</dataTypeSize>
-            <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="cep" id="EE95E38C-A346-2E3A-8950-FD97B1BF9E27">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:52:25 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT019</logicalDatatype>
-            <dataTypePrecision>8</dataTypePrecision>
-            <ownDataTypeParameters>,8,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="bairro" id="94FF52A6-B599-23E3-7A81-0E784084510C">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:53:06 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT024</logicalDatatype>
-            <dataTypeSize>10 BYTE</dataTypeSize>
-            <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="cidade" id="C79C35EE-8A8B-D50C-67FB-E8BBF2126A97">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:53:23 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT024</logicalDatatype>
-            <dataTypeSize>10 BYTE</dataTypeSize>
-            <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
-        </Attribute>
-        <Attribute name="estado" id="EADBADB2-5056-28F9-5C53-45AF1AEC37CC">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:54:04 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <useDomainConstraints>false</useDomainConstraints>
-            <use>1</use>
-            <logicalDatatype>LOGDT025</logicalDatatype>
-            <dataTypeSize>2 CHAR</dataTypeSize>
-            <ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
-        </Attribute>
-    </attributes>
-    <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-        <identifier id="B0888EAB-9640-79FE-3A2F-DA3C6AEFD6A3" name="Endereco PK">
-            <createdBy>vinylimaz</createdBy>
-            <createdTime>2015-09-26 00:51:10 UTC</createdTime>
-            <generatorID>Gerado pelo usuário</generatorID>
-            <ownerDesignName>ModelBD</ownerDesignName>
-            <engineerTo>
-                <item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-            </engineerTo>
-            <pk>true</pk>
-            <usedAttributes>
-                <attributeRef>E56313CA-79E9-88DA-FCF9-90A30FD84D0C</attributeRef>
-                <attributeRef>4B4D6C1F-4B4F-8260-342A-B8314DDA593D</attributeRef>
-            </usedAttributes>
-        </identifier>
-    </identifiers>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54C39B77-37FD-B363-4C68-51C34E1158B0" name="Endereco">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-25 23:03:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idEnd" id="E56313CA-79E9-88DA-FCF9-90A30FD84D0C">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:50:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+</Attribute>
+<Attribute name="logradouro" id="7005F8AB-2BD2-7807-2C22-138E09E201B0">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:51:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Attribute>
+<Attribute name="num" id="4283C3B1-1206-50D8-C2FB-28B120B688C7">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:51:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+</Attribute>
+<Attribute name="complemento" id="0A583FB1-3124-2887-AC17-CCE2279AAF76">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:51:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+</Attribute>
+<Attribute name="cep" id="EE95E38C-A346-2E3A-8950-FD97B1BF9E27">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:52:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+</Attribute>
+<Attribute name="bairro" id="94FF52A6-B599-23E3-7A81-0E784084510C">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:53:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+</Attribute>
+<Attribute name="cidade" id="C79C35EE-8A8B-D50C-67FB-E8BBF2126A97">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:53:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+</Attribute>
+<Attribute name="estado" id="EADBADB2-5056-28F9-5C53-45AF1AEC37CC">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:54:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="idPessoa" id="369F9CDB-F946-18D3-3F5C-216880DCE7A3">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 01:55:26 UTC</createdTime>
+<generatorID>73D643E4-A6AE-F1C6-83F0-FFB5C8F25187</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>2FBB6AB8-6575-8446-7EA3-86C487D1A795</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B0888EAB-9640-79FE-3A2F-DA3C6AEFD6A3" name="Endereco PK">
+<createdBy>vinylimaz</createdBy>
+<createdTime>2015-09-26 00:51:10 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E56313CA-79E9-88DA-FCF9-90A30FD84D0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -28,22 +28,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="idEmpresa" id="9202EB34-E04F-9CEE-09E4-7477D22F3698">
-<createdBy>vinylimaz</createdBy>
-<createdTime>2015-09-26 19:36:22 UTC</createdTime>
-<generatorID>FACCF0B3-B2AF-E6C1-1673-0BABEA7B421A</generatorID>
-<ownerDesignName>ModelBD</ownerDesignName>
-<engineerTo>
-<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
-</engineerTo>
-<referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="nome" id="74960548-07C7-C500-E94D-D59DA53C13E1">
 <createdBy>vinylimaz</createdBy>
@@ -57,7 +41,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="status" id="CD13C6FA-CE5A-F3C5-8028-79A40C12F617">
 <createdBy>vinylimaz</createdBy>
@@ -71,7 +54,34 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idEmpresa" id="AAFA8AEE-B725-23EF-8DC6-515F5A266E5C">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 02:19:41 UTC</createdTime>
+<generatorID>92E2DEEF-D1EE-94A0-D708-52688C8061D7</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+</Attribute>
+<Attribute name="idReg" id="9FE4240D-8CEB-3701-85D4-BD4D79CADC7B">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 02:38:33 UTC</createdTime>
+<generatorID>B5228BAB-AF68-79E9-F636-BD838E4BE5FE</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>032D603F-F6B2-8A5E-7A14-8EAF54426805</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

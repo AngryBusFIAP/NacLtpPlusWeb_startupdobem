@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="667E13D4-89DD-49A3-599D-8D75A030C0CF" name="Empresa_Regiao">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 02:05:54 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idEmpresa" id="D542FBA7-2B7B-34F0-46B0-478CCDC085C9">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 02:06:13 UTC</createdTime>
+<generatorID>5BC7D4C0-C979-D59D-4F17-E411CAD72556</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>D33FD029-BAA1-8664-358D-FA88EEFA5148</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+</Attribute>
+<Attribute name="idReg" id="45AB06FA-744D-0906-9237-563BAEBEB97E">
+<createdBy>Jardel</createdBy>
+<createdTime>2015-09-27 02:06:18 UTC</createdTime>
+<generatorID>F2E696EB-C807-724C-AF9B-56249E13202B</generatorID>
+<ownerDesignName>ModelBD</ownerDesignName>
+<engineerTo>
+<item key="388CB10A-0EE9-45AC-3E17-375644ABA223" value="true"/>
+</engineerTo>
+<referedAttribute>032D603F-F6B2-8A5E-7A14-8EAF54426805</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+</Attribute>
+</attributes>
+</Entity>

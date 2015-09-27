@@ -21,6 +21,7 @@ public class ConexaoFiap {
         String url = "jdbc:oracle:thin:/:@192.168.60.15:1521:ORCL";
         Connection c = DriverManager.getConnection("url");
         c.close();
+		return c;
     }
 }
 
