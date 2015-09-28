@@ -1,4 +1,4 @@
-package br.com.fiap.dao;
+package br.com.fiap.dao.naoImplementado;
 
 import br.com.fiap.beans.Empresa;
 import br.com.fiap.connect.ConexaoFactory;

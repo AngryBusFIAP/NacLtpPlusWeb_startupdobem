@@ -25,10 +25,20 @@ public class LoginBO {
      * @return
      * @throws Excecao
      */
-    public boolean loginSite(String user, String passwd) throws Excecao {
-        String passwdBD = new LoginDAO().loginSite(user.toUpperCase());
 
-        return passwdBD.equals(passwd);
+    /**
+     * Metodo unico a tratar a senha, sendo assim, para se alterar chama-se esse metodo, que retornando true
+     * (senha digitada é igual a senha do banco de dados) realiza a operação, ou false impedindo-a
+     *
+     * @param userName
+     * @param passwd
+     * @return boolean
+     * @throws Excecao
+     * @author VinyLimaZ
+     */
+    public boolean verifPasswd(String userName, String passwd) throws Excecao {
+        String bdPasswd = new LoginDAO().verifPasswd(userName.toUpperCase());
+        return bdPasswd.equals(passwd);
     }
 
 

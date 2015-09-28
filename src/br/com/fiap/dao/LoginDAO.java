@@ -34,16 +34,17 @@ public class LoginDAO {
     }
 
 
-    public String loginSite(String user) throws Excecao {
+    public String verifPasswd(String userName) throws Excecao {
 
         String sql = "SELECT TX_SENHA FROM T_SCN_PESSOA WHERE NM_USER = ?";
 
         try {
             PreparedStatement statement = c.prepareStatement(sql);
-            statement.setString(1, user);
+            statement.setString(1, userName);
             ResultSet result = statement.executeQuery();
             String passwdBD = (result.getString("TX_SENHA"));
-
+            //TODO BO que recebe essa senha e verifica a igualidade com a senha digitada!
+            //senha.equals(verificPasswd(userName)){...}
             return passwdBD;
 
         } catch (SQLException e) {
@@ -51,5 +52,9 @@ public class LoginDAO {
         }
     }
 
+    public boolean alterSenha(int idPessoa, String passwdNew) throws Excecao {
 
+
+        return false;
+    }
 }
