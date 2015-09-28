@@ -14,5 +14,9 @@
 </head>
 <body>
 
+<form method="post" action="/cadastro.pqp">
+    <input type="text">
+    <input type="submit" value="okok">
+</form>
 </body>
 </html>

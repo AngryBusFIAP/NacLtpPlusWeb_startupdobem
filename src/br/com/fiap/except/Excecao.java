@@ -11,22 +11,22 @@ public class Excecao extends Exception {
     public Excecao(Exception e) {
         if (e.getClass().toString().equals
                 ("class java.lang.NumberFormatException")) {
-            System.out.println("Numero inv�lido" + e.toString());
+            System.out.println("Numero inválido" + e.toString());
         } else if (e.getClass().toString().equals
                 ("class java.lang.ArithmeticException")) {
-            System.out.println("Divis�o por 0" + e.toString());
+            System.out.println("Divisão por 0" + e.toString());
         } else if (e.getClass().toString().equals
                 ("class java.lang.NullPointerException")) {
-            System.out.println("Valor inv�lido" + e.toString());
+            System.out.println("Valor inválido" + e.toString());
         } else if (e.getClass().toString().equals
                 ("class java.lang.FileNotFoundException")) {
-            System.out.println("Arquivo n�o encontrado" + e.toString());
+            System.out.println("Arquivo não encontrado" + e.toString());
         } else if (e.getClass().toString().equals
                 ("class java.lang.ArrayIndexOutofBounds")) {
-            System.out.println("Valor inv�lido" + e.toString());
+            System.out.println("Valor inválido" + e.toString());
         } else if (e.getClass().toString().equals
                 ("class java.lang.IllegalArgumentException")) {
-            System.out.println("Valor inv�lido" + e.toString());
+            System.out.println("Valor inválido" + e.toString());
         } else {
             System.out.println("Erro desconhecido " + e.toString());
         }

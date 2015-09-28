@@ -34,7 +34,7 @@ public class EmpresaDAO {
 
     /**
      * <i>Metodo da camada do CRUD</i>
-     * Cadastro = Create
+     * AngryBusServlet = Create
      *
      * @param empresa
      * @return String com o resultado da operação;
@@ -63,7 +63,7 @@ public class EmpresaDAO {
             statement.setLong(2, empresa.getInscEst());
             statement.setString(3, empresa.getContato());
             statement.execute();
-            return "Cadastro realizado com sucesso";
+            return "AngryBusServlet realizado com sucesso";
         } catch (SQLException e) {
             throw new Excecao(e);
         }

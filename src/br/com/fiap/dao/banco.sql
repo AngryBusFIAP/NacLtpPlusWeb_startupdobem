@@ -1,5 +1,3 @@
---
-
 CREATE TABLE T_SCN_PESSOA (
   ID_PESSOA       NUMERIC(5),
   NM_PESSOA       VARCHAR2(120) NOT NULL,
@@ -186,8 +184,8 @@ ALTER TABLE T_SCN_RECLAMACAO
 ADD CONSTRAINT CK_TX_SENTIDOVIAGEM CHECK (UPPER(tx_sentidoviagem) IN ('B', 'T', 'M', 'C'));
 
 ALTER TABLE T_SCN_REGIAO
-ADD CONSTRAINT ck_nm_regiao CHECK (UPPER(nm_regiao) in 
-('N', 'NO', 'NE', 'S', 'SE', 'SO', 'O', 'C', 'CO', 'L' ));
+ADD CONSTRAINT ck_nm_regiao CHECK (UPPER(nm_regiao) IN
+                                   ('N', 'NO', 'NE', 'S', 'SE', 'SO', 'O', 'C', 'CO', 'L'));
 
 ALTER TABLE T_SCN_PESSOA
 ADD CONSTRAINT ck_dt_nasc CHECK (dt_nasc < '01/01/1999');

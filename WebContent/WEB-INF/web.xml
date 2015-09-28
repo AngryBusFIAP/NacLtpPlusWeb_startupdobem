@@ -3,4 +3,14 @@
          xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <servlet-name>AngryBusServlet</servlet-name>
+        <servlet-class>br.com.fiap.controller.AngryBusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AngryBusServlet</servlet-name>
+        <url-pattern>/cadastro.pqp</url-pattern>
+        <url-pattern>/reclamacao.pqp</url-pattern>
+        <url-pattern>/editar.pqp</url-pattern>
+    </servlet-mapping>
 </web-app>
