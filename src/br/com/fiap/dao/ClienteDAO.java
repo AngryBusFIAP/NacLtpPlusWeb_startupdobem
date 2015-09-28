@@ -1,12 +1,12 @@
 package br.com.fiap.dao;
 
-import br.com.fiap.beans.Cliente;
-import br.com.fiap.connect.ConexaoFactory;
-import br.com.fiap.except.Excecao;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.connect.ConexaoFactory;
+import br.com.fiap.except.Excecao;
 
 /**
  * <i>Camada de CRUD</i>
@@ -50,8 +50,8 @@ public class ClienteDAO {
             statement.setString(2, cliente.getNome());
             statement.setString(3, cliente.getDtNasc());
             statement.setString(4, cliente.getEmail());
-            statement.setString(5, cliente.getL().getUsuario());
-            statement.setString(6, cliente.getL().getSenha());
+            statement.setString(5, cliente.getUser());
+            statement.setString(6, cliente.getSenha());
             statement.setDate(7, new java.sql.Date(new java.util.Date().getTime()));
             statement.setByte(8, (byte) 1);
             statement.execute();
@@ -68,4 +68,19 @@ public class ClienteDAO {
             throw new Excecao(e);
         }
     }
+    
+    public int deletarCliente(int cpf) throws Excecao{
+    	try{
+	    	PreparedStatement statement = c.prepareStatement("delete from T_SCN_CLIENTE where NR_CPF=?");
+	    	statement.setInt(0, cpf);
+	    	int saida = statement.executeUpdate();
+	    	statement.close();
+	    	return saida;
+    	}catch(Exception e){
+    		throw new Excecao(e);
+    	}
+    }
 }
+
+
+
