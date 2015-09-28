@@ -7,7 +7,6 @@ public class Empresa extends Pessoa {
     private String contato;
 
     public Empresa(int idPessoa, String nome, String dtNasc, String email, String user, String passwd, long cnpj, long inscEst, String contato) {
-        super(idPessoa, nome, dtNasc, email, user, passwd);
         this.cnpj = cnpj;
         this.inscEst = inscEst;
         this.contato = contato;

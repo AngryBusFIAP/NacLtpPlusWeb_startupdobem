@@ -9,7 +9,6 @@ public class Cliente extends Pessoa {
     private int idCliente;
 
     public Cliente(int idPessoa, String nome, String dtNasc, String email, String user, String passwd, long cpf, String rg, String sexo, int idCliente) {
-        super(idPessoa, nome, dtNasc, email, user, passwd);
         this.cpf = cpf;
         this.rg = rg;
         this.sexo = sexo;

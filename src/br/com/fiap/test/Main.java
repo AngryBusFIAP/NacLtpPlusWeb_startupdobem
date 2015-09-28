@@ -1,10 +1,13 @@
 package br.com.fiap.test;
 
+import java.sql.Connection;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Pessoa;
 import br.com.fiap.connect.ConexaoFactory;
 import br.com.fiap.dao.ReclamacaoDAO;
+import br.com.fiap.dao.naoImplementado.PessoaDAO;
 import br.com.fiap.except.Excecao;
-
-import java.sql.Connection;
 
 /**
  * Created by vinylimaz on
@@ -33,9 +36,11 @@ public class Main {
             }
         }
 
-        ReclamacaoDAO reclamDAO = new ReclamacaoDAO();
-
-        System.out.println(reclamDAO.editarReclam(00001, "TESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTE"));
+        Pessoa pe = new Pessoa(1, "jardel", "28-12-1993", "jardeldch@gmail.com", "jardel", "1123", "28-12-1993", (byte)1);
+        new PessoaDAO().cadPessoa(pe);
+//        ReclamacaoDAO reclamDAO = new ReclamacaoDAO();
+//
+//        System.out.println(reclamDAO.editarReclam(00001, "TESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTE"));
 
     }
 

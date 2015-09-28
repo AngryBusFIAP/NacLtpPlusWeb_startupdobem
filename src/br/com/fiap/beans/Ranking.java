@@ -4,16 +4,16 @@ public class Ranking {
 
     private Regiao regiao;
     private Empresa empresa;
-    private Reclamacao reclamação;
+    private Reclamacao reclamacao;
     private Itinerario itinerario;
 
     public Ranking() {
     }
 
-    public Ranking(Regiao regiao, Empresa empresa, Reclamacao reclamação, Itinerario itinerario) {
+    public Ranking(Regiao regiao, Empresa empresa, Reclamacao reclamacao, Itinerario itinerario) {
         this.regiao = regiao;
         this.empresa = empresa;
-        this.reclamação = reclamação;
+        this.reclamacao = reclamacao;
         this.itinerario = itinerario;
     }
 
@@ -33,12 +33,12 @@ public class Ranking {
         this.empresa = empresa;
     }
 
-    public Reclamacao getReclamação() {
-        return reclamação;
+    public Reclamacao getReclamacao() {
+        return reclamacao;
     }
 
-    public void setReclamação(Reclamacao reclamação) {
-        this.reclamação = reclamação;
+    public void setReclamacao(Reclamacao reclamacao) {
+        this.reclamacao = reclamacao;
     }
 
     public Itinerario getItinerario() {

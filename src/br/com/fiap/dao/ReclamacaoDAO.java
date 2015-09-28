@@ -98,7 +98,7 @@ public class ReclamacaoDAO {
             statement.setString(12, reclam.getItinerario().getIdItinerario());
             statement.execute();
 
-            return "Reclamação cadastrada com sucesso!";
+            return "Reclamacao cadastrada com sucesso!";
         } catch (SQLException e) {
             throw new Excecao(e);
         }
