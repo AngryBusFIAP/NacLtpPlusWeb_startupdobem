@@ -63,7 +63,7 @@ public class EmpresaDAO {
             statement.setLong(2, empresa.getInscEst());
             statement.setString(3, empresa.getContato());
             statement.execute();
-            return "AngryBusServlet realizado com sucesso";
+            return "Cadastro realizado com sucesso";
         } catch (SQLException e) {
             throw new Excecao(e);
         }

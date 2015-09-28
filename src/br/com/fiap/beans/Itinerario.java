@@ -48,12 +48,4 @@ public class Itinerario {
     public void setRegiao(Regiao regiao) {
         this.regiao = regiao;
     }
-
-    /**
-     * Metodo que recebe uma String e retorna como resposta o sinonimo entre numero do ônibus/nome do ônibus (idItinerario/nome)
-     **/
-    public String recupInfor(String s) {
-        return null;
-    }
-
 }

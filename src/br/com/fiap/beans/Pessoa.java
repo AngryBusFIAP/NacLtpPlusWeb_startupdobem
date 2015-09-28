@@ -9,16 +9,16 @@ public class Pessoa {
     //TODO Verificar sobre associação de dependencia
     private Login l;
 
-
     public Pessoa() {
     }
 
-    public Pessoa(int idPessoa, String nome, String dtNasc, String email, Login l) {
+    public Pessoa(int idPessoa, String nome, String dtNasc, String email, String user, String passwd) {
         this.idPessoa = idPessoa;
         this.nome = nome;
         this.dtNasc = dtNasc;
         this.email = email;
-        this.l = l;
+        l.setUsuario(user);
+        l.setSenha(passwd);
     }
 
     public int getIdPessoa() {
@@ -53,20 +53,23 @@ public class Pessoa {
         this.email = email;
     }
 
-    public Login getL() {
+    public Login getLogin() {
         return l;
     }
 
-    public void setL(Login l) {
-        this.l = l;
+    public String getUser() {
+        return l.getUsuario();
     }
 
-    public void cadastrar() {
-
+    public void setUser(String user) {
+        l.setUsuario(user);
     }
 
-    public void editarCadastro() {
-
+    public String getSenha() {
+        return l.getSenha();
     }
 
+    public void setSenha(String passwd) {
+        l.setSenha(passwd);
+    }
 }

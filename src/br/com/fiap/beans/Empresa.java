@@ -2,27 +2,18 @@ package br.com.fiap.beans;
 
 public class Empresa extends Pessoa {
 
-    private Regiao regiaoAtendida;
     private long cnpj;
     private long inscEst;
     private String contato;
 
-    public Empresa(Regiao regiaoAtendida, long cnpj, long inscEst, String contato) {
-        this.regiaoAtendida = regiaoAtendida;
+    public Empresa(int idPessoa, String nome, String dtNasc, String email, String user, String passwd, long cnpj, long inscEst, String contato) {
+        super(idPessoa, nome, dtNasc, email, user, passwd);
         this.cnpj = cnpj;
         this.inscEst = inscEst;
         this.contato = contato;
     }
 
     public Empresa() {
-    }
-
-    public Regiao getRegiaoAtendida() {
-        return regiaoAtendida;
-    }
-
-    public void setRegiaoAtendida(Regiao regiaoAtendida) {
-        this.regiaoAtendida = regiaoAtendida;
     }
 
     public long getCnpj() {
@@ -48,13 +39,4 @@ public class Empresa extends Pessoa {
     public void setContato(String contato) {
         this.contato = contato;
     }
-
-    public void cadastrar() {
-
-    }
-
-    public void editarCadastro() {
-
-    }
-
 }

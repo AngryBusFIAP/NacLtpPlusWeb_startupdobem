@@ -63,7 +63,7 @@ public class ClienteDAO {
             statement.setString(2, cliente.getRg());
             statement.setString(3, cliente.getSexo());
             statement.execute();
-            return "AngryBusServlet realizado com sucesso";
+            return "Cadastro realizado com sucesso";
         } catch (SQLException e) {
             throw new Excecao(e);
         }

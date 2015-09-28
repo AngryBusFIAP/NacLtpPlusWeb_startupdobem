@@ -8,8 +8,8 @@ public class Cliente extends Pessoa {
     private String sexo;
     private int idCliente;
 
-    public Cliente(int idPessoa, String nome, String dtNasc, String email, Login l, long cpf, String rg, String sexo, int idCliente) {
-        super(idPessoa, nome, dtNasc, email, l);
+    public Cliente(int idPessoa, String nome, String dtNasc, String email, String user, String passwd, long cpf, String rg, String sexo, int idCliente) {
+        super(idPessoa, nome, dtNasc, email, user, passwd);
         this.cpf = cpf;
         this.rg = rg;
         this.sexo = sexo;
@@ -50,17 +50,4 @@ public class Cliente extends Pessoa {
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
-
-    public void cadastrar() {
-
-    }
-
-    public void editarCadastro() {
-
-    }
-
-    public void encerrarCadastro() {
-
-    }
-
 }

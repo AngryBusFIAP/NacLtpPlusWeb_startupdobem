@@ -3,14 +3,14 @@ package br.com.fiap.beans;
 public class Login {
 
     private String usuario;
-    private String senha;
+    private String passwd;
 
     public Login() {
     }
 
-    public Login(String usuario, String senha) {
+    public Login(String usuario, String passwd) {
         this.usuario = usuario;
-        this.senha = senha;
+        this.passwd = passwd;
     }
 
     public String getUsuario() {
@@ -22,10 +22,10 @@ public class Login {
     }
 
     public String getSenha() {
-        return senha;
+        return passwd;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setSenha(String passwd) {
+        this.passwd = passwd;
     }
 }

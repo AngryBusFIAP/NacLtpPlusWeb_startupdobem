@@ -20,7 +20,6 @@ public class Reclamacao {
     private Empresa empresa;
     private Itinerario itinerario;
 
-
     public Reclamacao(int id, String dtOcorr, int hrOcorr, String sentidoViagem, byte notaPreReclam,
                       byte notaPosReclam, String dtReclam, String reclamacao, String observacao, Regiao regiao,
                       Cliente cliente, Empresa empresa, Itinerario itinerario) {
