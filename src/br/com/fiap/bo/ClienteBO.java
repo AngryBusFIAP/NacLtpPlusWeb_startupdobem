@@ -20,7 +20,15 @@ public class ClienteBO {
 		
 	}
 	
-	public int apagarCliente(int cpf) throws Excecao{
-		return new ClienteDAO().deletarCliente(cpf);
+	public int apagarCliente(Cliente c) throws Excecao{
+		if(c.getIdCliente() != c.getIdCliente()){
+			System.out.println("ID invalido");
+		}
+		return new ClienteDAO().deletarCliente(c.getIdCliente());
+	}
+	
+	public Cliente listarCliente(int c) throws Excecao{
+		
+		return new ClienteDAO().consultarCliente(c);
 	}
 }
