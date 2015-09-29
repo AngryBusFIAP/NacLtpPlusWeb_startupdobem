@@ -19,8 +19,7 @@ public class Pessoa {
         this.nome = nome;
         this.dtNasc = dtNasc;
         this.email = email;
-        l.setUsuario(user);
-        l.setSenha(passwd);
+        l = new Login(user, passwd);
         this.dtCadastro = dtCadastro;
         this.actTermos = actTermos;
     }
@@ -66,7 +65,12 @@ public class Pessoa {
     }
 
     public void setUser(String user) {
-        l.setUsuario(user);
+        if (l != null) {
+            l.setUsuario(user);
+        } else {
+            l = new Login();
+            l.setUsuario(user);
+        }
     }
 
     public String getSenha() {
@@ -74,7 +78,13 @@ public class Pessoa {
     }
 
     public void setSenha(String passwd) {
-        l.setSenha(passwd);
+        if (l != null) {
+            l.setSenha(passwd);
+        } else {
+            l = new Login();
+            l.setSenha(passwd);
+        }
+
     }
 
 	public String getDtCadastro() {

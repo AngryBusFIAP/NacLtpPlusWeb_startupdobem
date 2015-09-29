@@ -1,12 +1,12 @@
 package br.com.fiap.dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
 import br.com.fiap.beans.Cliente;
 import br.com.fiap.connect.ConexaoFactory;
 import br.com.fiap.except.Excecao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * <i>Camada de CRUD</i>
@@ -25,12 +25,6 @@ public class ClienteDAO {
 
     public ClienteDAO() throws Excecao {
         c = new ConexaoFactory().getConnection();
-
-        try {
-            c.close();
-        } catch (Exception e) {
-            throw new Excecao(e);
-        }
     }
 
     /**
@@ -56,13 +50,16 @@ public class ClienteDAO {
             statement.setByte(8, (byte) 1);
             statement.execute();
 
-            sql = "INSERT INTO T_SCN_CLIENTE VALUES (?,?,?)";
+            sql = "INSERT INTO T_SCN_CLIENTE VALUES (?, ?,?,?)";
 
             statement = c.prepareStatement(sql);
-            statement.setLong(1, cliente.getCpf());
-            statement.setString(2, cliente.getRg());
-            statement.setString(3, cliente.getSexo());
+            statement.setInt(1, cliente.getIdPessoa());
+            statement.setLong(2, cliente.getCpf());
+            statement.setString(3, cliente.getRg());
+            statement.setString(4, cliente.getSexo());
             statement.execute();
+            statement.close();
+            c.close();
             return "Cadastro realizado com sucesso";
         } catch (SQLException e) {
             throw new Excecao(e);
@@ -72,9 +69,9 @@ public class ClienteDAO {
     public int deletarCliente(int cpf) throws Excecao{
     	try{
 	    	PreparedStatement statement = c.prepareStatement("delete from T_SCN_CLIENTE where NR_CPF=?");
-	    	statement.setInt(0, cpf);
-	    	int saida = statement.executeUpdate();
-	    	statement.close();
+            statement.setInt(1, cpf);
+            int saida = statement.executeUpdate();
+            statement.close();
 	    	return saida;
     	}catch(Exception e){
     		throw new Excecao(e);
