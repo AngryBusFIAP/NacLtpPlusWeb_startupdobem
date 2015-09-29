@@ -1,7 +1,7 @@
 package br.com.fiap.dao;
 
 import br.com.fiap.beans.Cliente;
-import br.com.fiap.connect.ConexaoFactory;
+import br.com.fiap.connect.ConexaoFiap;
 import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
@@ -22,9 +22,9 @@ import java.sql.SQLException;
 public class ClienteDAO {
 	private Connection c;
 
-	public ClienteDAO() throws Excecao {
-		c = new ConexaoFactory().getConnection();
-	}
+    public ClienteDAO() throws Excecao {
+        c = new ConexaoFiap().getConnection();
+    }
 
 	/**
 	 * <i>Metodo para cadastro do cliente no banco de dados</i>
