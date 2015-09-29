@@ -35,7 +35,7 @@ public class ClienteDAO {
      * @throws Excecao
      * @author VinyLimaZ
      */
-    public String cadCliente(Cliente cliente) throws Excecao {
+    public boolean cadCliente(Cliente cliente) throws Excecao {
 
         String sql = "INSERT INTO T_SCN_PESSOA VALUES (?,?,?,?,?,?,?,?)";
         try {
@@ -60,19 +60,23 @@ public class ClienteDAO {
             statement.execute();
             statement.close();
             c.close();
-            return "Cadastro realizado com sucesso";
+            return true;
         } catch (SQLException e) {
             throw new Excecao(e);
         }
     }
-    
-    public int deletarCliente(int cpf) throws Excecao{
-    	try{
-	    	PreparedStatement statement = c.prepareStatement("delete from T_SCN_CLIENTE where NR_CPF=?");
-            statement.setInt(1, cpf);
+
+    public int deletarCliente(int idCliente) throws Excecao {
+        try{
+            PreparedStatement statement = c.prepareStatement("DELETE FROM T_SCN_CLIENTE WHERE ID_CLIENTE = ?");
+            statement.setInt(1, idCliente);
+            statement.executeUpdate();
+            statement = c.prepareStatement("DELETE FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
+            statement.setInt(1, idCliente);
             int saida = statement.executeUpdate();
             statement.close();
-	    	return saida;
+            c.close();
+            return saida;
     	}catch(Exception e){
     		throw new Excecao(e);
     	}

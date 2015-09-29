@@ -26,8 +26,8 @@ public class PessoaBO {
 	
 	public int atualizarNomePessoa(Pessoa pessoa)throws Excecao{
 		if(pessoa.getNome().length() < 3){
-			System.out.println("Falha na atualização: o nome inserido deve ter mais de 3 letras");
-		}else{
+            System.out.println("Falha na atualizacao: o nome inserido deve ter mais de 3 letras");
+        }else{
 			System.out.println("Nome atualizado com sucesso!");
 		}
 		return new PessoaDAO().atualizarNome(pessoa);

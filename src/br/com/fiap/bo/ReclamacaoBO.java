@@ -14,8 +14,8 @@ public class ReclamacaoBO {
 			System.out.println("Digite uma nota de 0 a 10");
 		}
 		if(rec.getDtOcorr() == null){
-			System.out.println("Selecione uma data válida");
-		}
+            System.out.println("Selecione uma data valida");
+        }
 		if(rec.getSentidoViagem() != "B" && rec.getSentidoViagem() != "T" && 
 				rec.getSentidoViagem() != "C" && rec.getSentidoViagem() != "M"){
 			System.out.println();

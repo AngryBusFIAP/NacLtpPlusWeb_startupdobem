@@ -25,12 +25,6 @@ public class LoginDAO {
 
     public LoginDAO() throws Excecao {
         c = new ConexaoFactory().getConnection();
-
-        try {
-            c.close();
-        } catch (Exception e) {
-            throw new Excecao(e);
-        }
     }
 
 
@@ -42,7 +36,11 @@ public class LoginDAO {
             PreparedStatement statement = c.prepareStatement(sql);
             statement.setString(1, userName);
             ResultSet result = statement.executeQuery();
+            result.next();
             String passwdBD = (result.getString("TX_SENHA"));
+            statement.close();
+            result.close();
+            c.close();
             //TODO BO que recebe essa senha e verifica a igualidade com a senha digitada!
             //senha.equals(verificPasswd(userName)){...}
             return passwdBD;
@@ -52,9 +50,21 @@ public class LoginDAO {
         }
     }
 
-    public boolean alterSenha(int idPessoa, String passwdNew) throws Excecao {
+    public boolean alterSenha(String userName, String passwdNew) throws Excecao {
+        //TODO Esse metodo no BO deve primeiramente chamar o BO.verifPasswd()!
 
+        String sql = "UPDATE T_SCN_PESSOA SET TX_SENHA = ? WHERE NM_USER = ?";
 
-        return false;
+        try {
+            PreparedStatement statement = c.prepareStatement(sql);
+            statement.setString(1, passwdNew);
+            statement.setString(2, userName);
+            statement.execute();
+            statement.close();
+            c.close();
+            return true;
+        } catch (SQLException e) {
+            throw new Excecao(e);
+        }
     }
 }

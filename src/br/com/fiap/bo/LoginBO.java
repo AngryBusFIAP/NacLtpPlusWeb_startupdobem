@@ -37,9 +37,27 @@ public class LoginBO {
      * @author VinyLimaZ
      */
     public boolean verifPasswd(String userName, String passwd) throws Excecao {
-        String bdPasswd = new LoginDAO().verifPasswd(userName.toUpperCase());
+        String bdPasswd = new LoginDAO().verifPasswd(userName);
         return bdPasswd.equals(passwd);
     }
 
+    /**
+     * Metodo para troca de senha.
+     * Verifica-se a senha com o metodo verifPasswd(), que retornando true, chama o LoginDAO.alterPasswd()
+     * para alterar a senha no bando de dados.
+     *
+     * @param userName
+     * @param passwd    Senha antiga
+     * @param newPasswd Senha nova
+     * @return boolean
+     * @throws Excecao
+     */
+    public boolean alterPasswd(String userName, String passwd, String newPasswd) throws Excecao {
+        if (verifPasswd(userName, passwd)) {
+            return new LoginDAO().alterSenha(userName, newPasswd);
+        } else {
+            return false;
+        }
+    }
 
 }
