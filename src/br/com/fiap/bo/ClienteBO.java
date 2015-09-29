@@ -19,16 +19,16 @@ public class ClienteBO {
 		new ClienteDAO().cadCliente(c);
 		
 	}
-	
-	public int apagarCliente(Cliente c) throws Excecao{
-		if(c.getIdCliente() != c.getIdCliente()){
-			System.out.println("ID invalido");
-		}
-		return new ClienteDAO().deletarCliente(c.getIdCliente());
-	}
-	
-	public Cliente listarCliente(int c) throws Excecao{
-		
-		return new ClienteDAO().consultarCliente(c);
-	}
+
+    public int apagarCliente(String userName, String passwd, int idPessoa) throws Excecao {
+        if (new LoginBO().verifPasswd(userName, passwd)) {
+            return new ClienteDAO().deletarCliente(idPessoa);
+        } else {
+            return 0;
+        }
+    }
+
+    public Cliente listarCliente(int idPessoa) throws Excecao {
+        return new ClienteDAO().consultarCliente(idPessoa);
+    }
 }

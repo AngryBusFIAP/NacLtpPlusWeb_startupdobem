@@ -1,14 +1,17 @@
+/*
 package br.com.fiap.bo;
 
 import br.com.fiap.beans.Pessoa;
 import br.com.fiap.dao.naoImplementado.PessoaDAO;
 import br.com.fiap.except.Excecao;
 
+*/
 /**
  * 
  * @author Jardel
  *
- */
+ *//*
+
 
 public class PessoaBO {
 	
@@ -40,3 +43,4 @@ public class PessoaBO {
 	
 
 }
+*/

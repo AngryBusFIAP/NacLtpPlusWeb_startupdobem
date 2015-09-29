@@ -2,6 +2,7 @@ package br.com.fiap.test;
 
 import br.com.fiap.beans.Cliente;
 import br.com.fiap.dao.ClienteDAO;
+import br.com.fiap.dao.ReclamacaoDAO;
 import br.com.fiap.except.Excecao;
 
 /**
@@ -13,7 +14,7 @@ public class TesteDAO {
     public static void main(String[] args) throws Excecao {
 
 
-//        ReclamacaoDAO reclamDAO = new ReclamacaoDAO();
+        ReclamacaoDAO reclamDAO = new ReclamacaoDAO();
 
 //        System.out.println(reclamDAO.editarReclam(00001, "TESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTE"));
     Cliente cliente = new Cliente();

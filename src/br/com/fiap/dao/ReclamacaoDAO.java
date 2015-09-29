@@ -6,7 +6,10 @@ import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <i>Camada de CRUD</i>
@@ -103,5 +106,89 @@ public class ReclamacaoDAO {
             throw new Excecao(e);
         }
     }
+
+    /**
+     * Metodo que retorna a lista com todas as reclamações do cliente na data selecionada.
+     *
+     * @param idPessoa Codigo que representa o cliente
+     * @param dtOcorr  Data da ocorrencia, todas as ocorrencias dessa data serão recuperadas
+     * @return List<Reclamacao>
+     * @throws Excecao
+     */
+    public List<Reclamacao> getReclamDtOcorrencia(int idPessoa, String dtOcorr) throws Excecao {
+        List<Reclamacao> listReclam = new ArrayList<Reclamacao>();
+        Reclamacao reclam;
+        String sql = "SELECT * FROM T_SCN_RECLAMACAO WHERE (ID_CLIENTE = ? AND DT_OCORRENCIA = ?)";
+        try {
+            PreparedStatement statement = c.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
+            statement.setInt(1, idPessoa);
+            statement.setString(2, dtOcorr);
+            while (resultSet.next()) {
+                reclam = new Reclamacao();
+                reclam.setId(resultSet.getInt("ID_RECLAMACAO"));
+                reclam.setDtOcorr(resultSet.getString("DT_OCORRENCIA"));
+                reclam.setHrOcorr(resultSet.getInt("HR_OCORRENCIA"));
+                reclam.setSentidoViagem(resultSet.getString("TX_SENTIDOVIAGEM"));
+                reclam.setNotaPreReclam(resultSet.getByte("NR_NOTAPRERECLAM"));
+                reclam.setNotaPosReclam(resultSet.getByte("NR_NOTAPOSRECLAM"));
+                reclam.setDtReclam(resultSet.getString("DT_RECLAMACAO"));
+                reclam.setReclamacao(resultSet.getString("TX_RECLAMACAO"));
+                reclam.setObservacao(resultSet.getString("TX_OBSERVACAO"));
+                listReclam.add(reclam);
+            }
+            c.close();
+            statement.close();
+            resultSet.close();
+            return listReclam;
+
+        } catch (SQLException e) {
+            throw new Excecao(e);
+        }
+    }
+
+    /**
+     * Metodo que retorna a lista com todas as reclamações do cliente na data selecionada.
+     *
+     * @param idPessoa Codigo que representa o cliente
+     * @param dtReclam Data da reclamação, todas as reclamações dessa data serão recuperadas
+     * @return List<Reclamacao>
+     * @throws Excecao
+     */
+    public List<Reclamacao> getReclamDtRealizada(int idPessoa, String dtReclam) throws Excecao {
+        List<Reclamacao> listReclam = new ArrayList<Reclamacao>();
+        Reclamacao reclam;
+        String sql = "SELECT * FROM T_SCN_RECLAMACAO WHERE (ID_CLIENTE = ? AND DT_RECLAMACAO = ?)";
+        try {
+            PreparedStatement statement = c.prepareStatement(sql);
+            statement.setInt(1, idPessoa);
+            statement.setString(2, dtReclam);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                reclam = new Reclamacao();
+                reclam.setId(resultSet.getInt("ID_RECLAMACAO"));
+                reclam.setDtOcorr(resultSet.getString("DT_OCORRENCIA"));
+                reclam.setHrOcorr(resultSet.getInt("HR_OCORRENCIA"));
+                reclam.setSentidoViagem(resultSet.getString("TX_SENTIDOVIAGEM"));
+                reclam.setNotaPreReclam(resultSet.getByte("NR_NOTAPRERECLAM"));
+                reclam.setNotaPosReclam(resultSet.getByte("NR_NOTAPOSRECLAM"));
+                reclam.setDtReclam(resultSet.getString("DT_RECLAMACAO"));
+                reclam.setReclamacao(resultSet.getString("TX_RECLAMACAO"));
+                reclam.setObservacao(resultSet.getString("TX_OBSERVACAO"));
+                listReclam.add(reclam);
+            }
+            c.close();
+            statement.close();
+            resultSet.close();
+            return listReclam;
+
+        } catch (SQLException e) {
+            throw new Excecao(e);
+        }
+    }
+
+
+
 
 }

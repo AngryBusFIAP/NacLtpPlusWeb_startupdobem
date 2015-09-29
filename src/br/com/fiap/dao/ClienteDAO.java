@@ -85,14 +85,14 @@ public class ClienteDAO {
 		}
 	}
 
-	public Cliente consultarCliente(int iCliente) throws Excecao {
+    public Cliente consultarCliente(int idPessoa) throws Excecao {
 
 		try {
 			Cliente cli = new Cliente();
 			PreparedStatement statement = c
 					.prepareStatement("SELECT * FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
-			statement.setInt(1, iCliente);
-			ResultSet resultado = statement.executeQuery();
+            statement.setInt(1, idPessoa);
+            ResultSet resultado = statement.executeQuery();
 			if (resultado.next()) {
 				cli.setIdPessoa(resultado.getInt("ID_PESSOA"));
 				cli.setNome(resultado.getString("NM_PESSOA"));
@@ -101,8 +101,6 @@ public class ClienteDAO {
 				cli.setUser(resultado.getString("NM_USER"));
 				cli.setSenha(resultado.getString("TX_SENHA"));
 				cli.setDtCadastro(resultado.getString("DT_CADASTRO"));
-				cli.setActTermos(resultado.getByte("NM_ACEITATERMOS"));
-
 			}
 			resultado.close();
 			statement.close();
