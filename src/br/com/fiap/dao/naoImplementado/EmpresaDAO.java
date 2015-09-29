@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import br.com.fiap.beans.Empresa;
-import br.com.fiap.connect.ConexaoFactory;
+import br.com.fiap.connect.ConexaoFiap;
 import br.com.fiap.except.Excecao;
 
 /**
@@ -18,7 +18,7 @@ public class EmpresaDAO {
     private Connection c;
 
     public EmpresaDAO() throws Excecao {
-        c = new ConexaoFactory().getConnection();
+        c = new ConexaoFiap().getConnection();
         try {
             c.close();
         } catch (Exception e) {
