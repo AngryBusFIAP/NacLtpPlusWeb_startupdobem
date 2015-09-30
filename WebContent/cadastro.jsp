@@ -151,6 +151,7 @@
                         </p>
                     </label>
                     </div>
+                    <input type="hidden" value="cadastro" name="veioDe">
                     <center><input type="submit" value="Enviar"></center>
                     <br>
                 </div>

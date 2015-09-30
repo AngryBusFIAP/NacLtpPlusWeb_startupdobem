@@ -93,6 +93,7 @@
 							<textarea name="tdesc" id="fdesc" cols="45" rows="11" >
 
 							</textarea><br></div><br>
+            <input type="hidden" name="veioDe" value="reclamacao">
             <input type="submit" value="Finalizar"> <input type="reset" value="Limpar">
 
     </div>

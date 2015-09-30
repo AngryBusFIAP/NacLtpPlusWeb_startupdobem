@@ -1,8 +1,6 @@
 package br.com.fiap.controller;
 
-import br.com.fiap.beans.Cliente;
-import br.com.fiap.beans.Endereco;
-import br.com.fiap.beans.Telefone;
+import br.com.fiap.beans.*;
 import br.com.fiap.bo.ClienteBO;
 import br.com.fiap.bo.ReclamacaoBO;
 import br.com.fiap.except.Excecao;
@@ -35,14 +33,24 @@ public class AngryBusServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //TODO algum modo de identificar de onde veio a requisição e direcionar para um metodo especifico
-//            try {
-//                insereCliente(request, response);
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//            } catch (Excecao e) {
-//                e.printStackTrace();
-//            }
-//        }
+
+        if (request.getParameter("veioDe").equals("reclamacao")) {
+            try {
+                inserirReclamacao(request, response);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (request.getParameter("veioDe").equals("cadastro")) {
+            try {
+                insereCliente(request, response);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (Excecao e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void inserirReclamacao(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException, Excecao {
