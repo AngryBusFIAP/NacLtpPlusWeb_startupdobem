@@ -12,7 +12,7 @@ public class EmpresaBO {
 			System.out.println("O cnpj esta incorreto");
 		}
 			
-		new EmpresaDAO().cadEmpresa(e); 
+		new EmpresaDAO().cadEmpresa(e).toUpperCase(); 
 	}
 
 	public int deletarEmpresa(int empresa) throws Excecao{

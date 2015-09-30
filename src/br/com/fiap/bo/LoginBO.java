@@ -53,8 +53,8 @@ public class LoginBO {
      * @throws Excecao
      */
     public boolean alterPasswd(String userName, String passwd, String newPasswd) throws Excecao {
-        if (verifPasswd(userName, passwd)) {
-            return new LoginDAO().alterSenha(userName, newPasswd);
+        if (verifPasswd(userName.toUpperCase(), passwd)) {
+            return new LoginDAO().alterSenha(userName.toUpperCase(), newPasswd);
         } else {
             return false;
         }
