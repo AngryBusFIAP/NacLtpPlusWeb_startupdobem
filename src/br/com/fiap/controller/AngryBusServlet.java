@@ -1,11 +1,20 @@
 package br.com.fiap.controller;
-import br.com.fiap.bo.*;
-import br.com.fiap.beans.*;
+import java.io.IOException;
+import java.sql.SQLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Endereco;
+import br.com.fiap.beans.Login;
+import br.com.fiap.beans.Pessoa;
+import br.com.fiap.beans.Telefone;
+import br.com.fiap.bo.LoginBO;
+import br.com.fiap.bo.ReclamacaoBO;
 
 /**
  * <i><i>
@@ -34,6 +43,9 @@ public class AngryBusServlet extends HttpServlet {
     	JOptionPane.showMessageDialog(null, "Cadastro incorreto");
     }
     
+    public void insereCliente(HttpServletRequest request, HttpServletResponse response)throws Exception, ServletException, SQLException{
+		
+    
     /* cadastro cliente */
     Cliente cli = new Cliente();
     Endereco endereco = new Endereco();
@@ -41,10 +53,15 @@ public class AngryBusServlet extends HttpServlet {
     Telefone tel = new Telefone();
     Pessoa pessoa = new Pessoa();
     
-    Pessoa.setNome = request.getRequestDispatcher(request.getParameter("nome")).forward(request, response);
-    login.setEmail = request.getRequestDispatcher(request.getParameter("email")).forward(request, response);
+    
+    
+    cli.setNome(request.getParameter("nome"));
+    cli.setRg(request.getParameter("rg"));
+    cli.setSexo(request.getParameter("sexo"));
+    login.setSenha(request.getParameter("password"));
+    
+    login.setEmail(request.getParameter("email"));
     login.setSenha = request.getRequestDispatcher(request.getParameter("password")).forward(request, response);
-    cli.setRg = request.getRequestDispatcher(request.getParameter("rg")).forward(request, response);
     cli.setSexo = request.getRequestDispatcher(request.getParameter("sexo").forward(request, response);
     cli.setCpf = request.getRequestDispatcher(request.getParameter("cpf").forward(request, response);
     endereco.setLogradouro = request.getRequestDispatcher(request.getParameter("endereco")).forward(request, response);

@@ -40,7 +40,7 @@ public class ReclamacaoBO {
 		}else{
 			System.out.println("Cadastrado com sucesso");
 		}
-		new ReclamacaoDAO().cadReclam(rec).toUpperCase();
+		new ReclamacaoDAO().cadReclam(rec);
 	}
 	
 	public List<Reclamacao> getReclamacao(int id, String data) throws Excecao{
