@@ -36,7 +36,7 @@ public class ClienteDAO {
 	 */
 	public boolean cadCliente(Cliente cliente) throws Excecao {
 
-		String sql = "INSERT INTO T_SCN_PESSOA VALUES (?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO T_SCN_PESSOA VALUES (SQ_SCN_PESSOA.NEXTVAL,?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement statement = c.prepareStatement(sql);
 			statement.setInt(1, cliente.getIdPessoa());
@@ -49,7 +49,7 @@ public class ClienteDAO {
             statement.setByte(8, (byte) 1);
 			statement.execute();
 
-			sql = "INSERT INTO T_SCN_CLIENTE VALUES (?, ?,?,?)";
+			sql = "INSERT INTO T_SCN_CLIENTE VALUES (SQ_SCN_CLIENTE.NEXTVAL, ?,?,?)";
 
 			statement = c.prepareStatement(sql);
 			statement.setInt(1, cliente.getIdPessoa());
