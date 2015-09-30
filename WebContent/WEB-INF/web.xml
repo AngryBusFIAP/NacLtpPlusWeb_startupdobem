@@ -10,7 +10,8 @@
     <servlet-mapping>
         <servlet-name>AngryBusServlet</servlet-name>
         <url-pattern>/cadastro.pqp</url-pattern>
-        <url-pattern>/reclamacao.pqp</url-pattern>
+        <url-pattern>/reclamar.pqp</url-pattern>
         <url-pattern>/editar.pqp</url-pattern>
+        <url-pattern>/login.pqp</url-pattern>
     </servlet-mapping>
 </web-app>

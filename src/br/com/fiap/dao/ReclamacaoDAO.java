@@ -157,7 +157,6 @@ public class ReclamacaoDAO {
             statement.close();
             resultSet.close();
             return listReclam;
-
         } catch (SQLException e) {
             throw new Excecao(e);
         }
@@ -205,8 +204,8 @@ public class ReclamacaoDAO {
     }
 
     /**
-     * Metodo para deletar a reclama��o do banco de dados usando o idReclam
-     * @param idReclam - Identificador da Reclama��o
+     * Metodo para deletar a reclamação do banco de dados usando o idReclam
+     * @param idReclam - Codigo de identificação da Reclamação
      * @return boolean - true caso consiga deletar, false caso falhe
      * @throws Excecao
      */

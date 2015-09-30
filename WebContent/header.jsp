@@ -2,11 +2,12 @@
   <header>
       <div>
         <img alt="#" class="logo" src="img/logo.png"/>
-        <div id="slogan"><em>O terminal solu��o para seus problemas de transporte publico</em></div>
+
+          <div id="slogan"><em>O terminal solução para seus problemas de transporte publico</em></div>
         
       </div>
       <div id="boxlogin">
-      	<form method="post" action="login.jsp">
+          <form method="post" action="login.pqp">
       		<label>Usuario:</label>
 	        <input class="formlabel" type="text" name="email"/><br><br>
 	        <label>Senha:</label>

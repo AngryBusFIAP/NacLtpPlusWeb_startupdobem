@@ -4,14 +4,13 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="css/cssDefault.css" type="text/css" rel="stylesheet">
 	<title>Reclame</title>
 </head>
 <body>
 	<div class="divbody">
 	<%@ include file="header.jsp" %>
 	<div class="containerform">
-		<form method="post" action="reclamar.jsp">
+        <form method="post" action="reclamar.pqp">
 			<legend><u><h2 class="titulos" style="width: 988px;">Reclame aqui</h2></u></legend><br>
 			<div>
 				Linha:

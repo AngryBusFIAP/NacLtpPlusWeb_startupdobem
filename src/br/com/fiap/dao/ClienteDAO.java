@@ -40,7 +40,6 @@ public class ClienteDAO {
      * @see br.com.fiap.beans.Cliente;
      */
 
-    //TODO Adicionar as instruções para preencher as tabelas T_SCN_TELEFONE e T_SCN_ENDERECO
     public boolean cadCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
 
 		String sql = "INSERT INTO T_SCN_PESSOA VALUES (SQ_SCN_PESSOA.NEXTVAL,?,?,?,?,?,?,?)";
@@ -79,13 +78,11 @@ public class ClienteDAO {
                     resp = statement.execute();
 
                     if (resp) {
-                        sql = "INSERT INTO T_SCN_TELEFONE VALUES (SQ_SCN_PESSOA.CURRVAL, ?, ?, ?, ?, SQ_SCN_PESSOA.CURRVAL)";
+                        sql = "INSERT INTO T_SCN_TELEFONE VALUES (SQ_SCN_PESSOA.CURRVAL, ?, ?, SQ_SCN_PESSOA.CURRVAL)";
                         //Preenchimento da tabela T_SCN_TELEFONE
                         statement = c.prepareStatement(sql);
-                        statement.setByte(1, tel.getCodPais());
-                        statement.setByte(2, tel.getDdd());
-                        statement.setInt(3, tel.getNumero());
-                        statement.setInt(4, tel.getRamal());
+                        statement.setByte(1, tel.getDdd());
+                        statement.setInt(2, tel.getNumero());
                         resp = statement.execute();
                     }
                 }

@@ -1,10 +1,12 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <title>Home - AngryBus - O terminal solução para seu problema no transporte publico!</title>
+    <link href="css/cssDefault.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
-  <link href="css/cssDefault.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 

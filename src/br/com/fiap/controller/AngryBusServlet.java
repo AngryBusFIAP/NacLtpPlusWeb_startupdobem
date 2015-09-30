@@ -1,4 +1,5 @@
 package br.com.fiap.controller;
+
 import br.com.fiap.beans.Cliente;
 import br.com.fiap.beans.Endereco;
 import br.com.fiap.beans.Telefone;
@@ -30,14 +31,16 @@ public class AngryBusServlet extends HttpServlet {
 
     }
 
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        try {
-            insereCliente(request, response);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (Excecao e) {
-            e.printStackTrace();
+
+        //TODO algum modo de identificar de onde veio a requisição e direcionar para um metodo especifico
+//            try {
+//                insereCliente(request, response);
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            } catch (Excecao e) {
+//                e.printStackTrace();
+//            }
         }
     }
 
@@ -61,7 +64,7 @@ public class AngryBusServlet extends HttpServlet {
             cliente.setRg(request.getParameter("rg"));
             cliente.setSexo(request.getParameter("sexo"));
             cliente.setCpf(Long.parseLong(request.getParameter("cpf")));
-            cliente.setDtNasc(request.getParameter("data"));
+            cliente.setDtNasc(request.getParameter("dtNasc"));
             cliente.setUser(request.getParameter("user"));
             cliente.setSenha(request.getParameter("senha"));
             cliente.setEmail(request.getParameter("email"));
@@ -69,21 +72,17 @@ public class AngryBusServlet extends HttpServlet {
             cliente.setActTermos(Byte.parseByte(request.getParameter("actTermos")));
 //      Preenchimento do objeto Endereço
             endereco.setLogradouro(request.getParameter("log"));
-            endereco.setNum(Short.parseShort(request.getParameter("numero")));
+            endereco.setNum(Short.parseShort(request.getParameter("numLog")));
             endereco.setCidade(request.getParameter("cidade"));
             endereco.setCep(Integer.parseInt(request.getParameter("cep")));
 //      Preenchimento do objeto Telefone
-            tel.setCodPais(Byte.parseByte(request.getParameter("codPais")));
             tel.setDdd(Byte.parseByte(request.getParameter("ddd")));
             tel.setNumero(Integer.parseInt(request.getParameter("telefone")));
-            tel.setRamal(Integer.parseInt(request.getParameter("ramal")));
             tel.setTipo(Integer.parseInt(request.getParameter("tipo")));
         } catch (Exception e) {
             throw new Excecao(e);
         }
-
         ClienteBO cliBO = new ClienteBO();
-
         //TODO Fazer o metodo BO retornar uma String, agregar a uma variavel e dispacha-la como o atributo "msg"
         String resp = cliBO.inserirCliente(cliente, endereco, tel);
         try {
@@ -94,7 +93,6 @@ public class AngryBusServlet extends HttpServlet {
         } catch (ServletException e) {
             throw new Excecao(e);
         }
-
 
         /*ClienteDAO cDAO = new ClienteDAO();
         cDAO.cadCliente(cliente);
