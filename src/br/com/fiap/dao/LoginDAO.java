@@ -47,8 +47,6 @@ public class LoginDAO {
             statement.close();
             result.close();
             c.close();
-            //TODO BO que recebe essa senha e verifica a igualidade com a senha digitada!
-            //senha.equals(verificPasswd(userName)){...}
             return passwdBD;
 
         } catch (SQLException e) {
@@ -57,18 +55,16 @@ public class LoginDAO {
     }
 
     public boolean alterSenha(String userName, String passwdNew) throws Excecao {
-        //TODO Esse metodo no BO deve primeiramente chamar o BO.verifPasswd()!
-
         String sql = "UPDATE T_SCN_PESSOA SET TX_SENHA = ? WHERE NM_USER = ?";
 
         try {
             PreparedStatement statement = c.prepareStatement(sql);
             statement.setString(1, passwdNew);
             statement.setString(2, userName);
-            statement.execute();
+            boolean resp = statement.execute();
             statement.close();
             c.close();
-            return true;
+            return resp;
         } catch (SQLException e) {
             throw new Excecao(e);
         }
