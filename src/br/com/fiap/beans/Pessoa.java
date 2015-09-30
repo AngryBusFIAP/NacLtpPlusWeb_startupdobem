@@ -14,14 +14,11 @@ public class Pessoa {
     public Pessoa() {
     }
 
-    public Pessoa(int idPessoa, String nome, String dtNasc, String email, String user, String passwd, String dtCadastro, byte actTermos) {
-        this.idPessoa = idPessoa;
+    public Pessoa(String nome, String dtNasc, String email, String user, String passwd) {
         this.nome = nome;
         this.dtNasc = dtNasc;
         this.email = email;
         l = new Login(user, passwd);
-        this.dtCadastro = dtCadastro;
-        this.actTermos = actTermos;
     }
 
     public int getIdPessoa() {

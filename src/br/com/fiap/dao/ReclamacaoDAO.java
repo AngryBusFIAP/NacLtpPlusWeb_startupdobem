@@ -82,6 +82,13 @@ public class ReclamacaoDAO {
         }
     }
 
+    /**
+     * <i>Metodo para cadastro de reclamação no banco de dados [OracleSQL]</i>
+     *
+     * @param reclam Objeto do tipo Reclamacao devidamente preenchido.
+     * @return boolean
+     * @throws Excecao
+     */
     public boolean cadReclam(Reclamacao reclam) throws Excecao {
 
         String sql = "INSERT INTO T_SCN_RECLAMACAO VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

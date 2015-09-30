@@ -8,16 +8,16 @@ public class Telefone {
     private int numero;
     private int ramal;
     private int tipo;
-    private Pessoa pessoa;
+    private int idPessoa;
 
-    public Telefone(int idTel, byte codPais, byte ddd, int numero, int ramal, int tipo, Pessoa pessoa) {
+    public Telefone(int idTel, byte codPais, byte ddd, int numero, int ramal, int tipo, int idPessoa) {
         this.idTel = idTel;
         this.codPais = codPais;
         this.ddd = ddd;
         this.numero = numero;
         this.ramal = ramal;
         this.tipo = tipo;
-        this.pessoa = pessoa;
+        this.idPessoa = idPessoa;
     }
 
     public Telefone() {
@@ -71,11 +71,11 @@ public class Telefone {
         this.tipo = tipo;
     }
 
-    public Pessoa getPessoa() {
-        return pessoa;
+    public int getIdPessoa() {
+        return idPessoa;
     }
 
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
+    public void setIdPessoa(int idPessoa) {
+        this.idPessoa = idPessoa;
     }
 }

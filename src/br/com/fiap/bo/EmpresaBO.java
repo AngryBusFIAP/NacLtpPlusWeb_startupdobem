@@ -1,3 +1,4 @@
+/*
 package br.com.fiap.bo;
 
 import br.com.fiap.beans.Empresa;
@@ -26,3 +27,4 @@ public class EmpresaBO {
 	
 	
 }
+*/

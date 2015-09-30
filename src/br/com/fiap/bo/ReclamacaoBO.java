@@ -1,10 +1,10 @@
 package br.com.fiap.bo;
 
-import java.util.List;
-
 import br.com.fiap.beans.Reclamacao;
 import br.com.fiap.dao.ReclamacaoDAO;
 import br.com.fiap.except.Excecao;
+
+import java.util.List;
 
 /**
  * 
@@ -18,8 +18,8 @@ import br.com.fiap.except.Excecao;
 public class ReclamacaoBO {
 	
 	/**
-	 * Metodo para insercao da Reclamação, ele faz validações de tamanho de nota, data.
-	 * Verifica também, se no campo registro  
+	 * Metodo para insercao da Reclamaï¿½ï¿½o, ele faz validaï¿½ï¿½es de tamanho de nota, data.
+	 * Verifica tambï¿½m, se no campo registro  
 	 * @param rec
 	 * @throws Excecao
 	 */
@@ -36,12 +36,12 @@ public class ReclamacaoBO {
         }
 		if(rec.getSentidoViagem().toUpperCase() != "B" && rec.getSentidoViagem().toUpperCase() != "T" && 
 				rec.getSentidoViagem().toUpperCase() != "C" && rec.getSentidoViagem().toUpperCase() != "M"){
-			System.out.println("Caracter inválido");
-		}else{
+            System.out.println("Caracter invÃ¡lido");
+        }else{
 			System.out.println("Cadastrado com sucesso");
 		}
-		new ReclamacaoDAO().cadReclam(rec).toUpperCase();
-	}
+        new ReclamacaoDAO().cadReclam(rec);
+    }
 	
 	public List<Reclamacao> getReclamacao(int id, String data) throws Excecao{
 		

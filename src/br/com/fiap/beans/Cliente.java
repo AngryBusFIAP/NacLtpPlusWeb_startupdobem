@@ -8,14 +8,15 @@ public class Cliente extends Pessoa {
     private String sexo;
     private int idCliente;
 
-    public Cliente(int idPessoa, String nome, String dtNasc, String email, String user, String passwd, long cpf, String rg, String sexo, int idCliente) {
+    public Cliente(String nome, String dtNasc, String email, String user, String passwd, long cpf, String rg, String sexo) {
+        super(nome, dtNasc, email, user, passwd);
         this.cpf = cpf;
         this.rg = rg;
         this.sexo = sexo;
-        this.idCliente = idCliente;
     }
 
     public Cliente() {
+        super();
     }
 
     public long getCpf() {

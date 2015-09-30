@@ -1,6 +1,8 @@
 package br.com.fiap.bo;
 
 import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Endereco;
+import br.com.fiap.beans.Telefone;
 import br.com.fiap.dao.ClienteDAO;
 import br.com.fiap.except.Excecao;
 
@@ -13,36 +15,36 @@ import br.com.fiap.except.Excecao;
 public class ClienteBO {
 	
 	/**
-	 * Metodo para insercao do Cliente, ele faz validações de tamanho de nome, senha, cpf e rg.
-	 * @param c
-	 * @throws Excecao
+	 * Metodo para insercao do Cliente, ele faz validaï¿½ï¿½es de tamanho de nome, senha, cpf e rg.
+     * @param cliente
+     * @throws Excecao
 	 */
-	
-	public void inserirCliente(Cliente c) throws Excecao{
-		if(c.getNome().toUpperCase().length() <= 3){
-			System.out.println("O nome deve ter mais que 3 letras");
+    //TODO JARDEL Adicionar verificaÃ§Ãµes para as classes EndereÃ§o e Telefone q sÃ£o necessarias ao cadastro
+    public void inserirCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
+        if (cliente.getNome().toUpperCase().length() <= 3) {
+            System.out.println("O nome deve ter mais que 3 letras");
 		}
-		
-		if(c.getSenha().length() <= 4){
-			System.out.println("A senha deve ter mais que 4 letras");
-		}
-		
-		String cpf = String.valueOf(c.getCpf()); 
-		if(cpf.length() < 10){
+
+        if (cliente.getSenha().length() < 6) {
+            System.out.println("A senha deve conter no minimo 6 caracteres");
+        }
+
+        String cpf = String.valueOf(cliente.getCpf());
+        if(cpf.length() < 10){
 			System.out.println("CPF Invalido");
 		}
-		
-		if(c.getRg().length() < 9){
-			System.out.println("RG invalido");
+
+        if (cliente.getRg().length() < 9) {
+            System.out.println("RG invalido");
 		}
-		
-		new ClienteDAO().cadCliente(c);
-		
-	}
+        //Assinatura correta!
+        new ClienteDAO().cadCliente(cliente, end, tel);
+
+    }
 
 	/**
-	 * Método para apagar o objeto Cliente, ele faz a verificacao com o método verfiPassw na classe LoginBO 
-	 * se a senha for válida, é deletado o objeto do banco de dados
+	 * Mï¿½todo para apagar o objeto Cliente, ele faz a verificacao com o mï¿½todo verfiPassw na classe LoginBO 
+	 * se a senha for vï¿½lida, ï¿½ deletado o objeto do banco de dados
 	 * @param userName
 	 * @param passwd
 	 * @param idPessoa
@@ -59,7 +61,7 @@ public class ClienteBO {
     }
     
     /**
-     * Metódo para listar o objeto Cliente
+     * Metï¿½do para listar o objeto Cliente
      * @param idPessoa
      * @return
      * @throws Excecao

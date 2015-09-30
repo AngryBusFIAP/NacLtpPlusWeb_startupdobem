@@ -1,6 +1,8 @@
 package br.com.fiap.dao;
 
 import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Endereco;
+import br.com.fiap.beans.Telefone;
 import br.com.fiap.connect.ConexaoFiap;
 import br.com.fiap.except.Excecao;
 
@@ -34,28 +36,28 @@ public class ClienteDAO {
      * @throws Excecao
      * @author VinyLimaZ
      */
-    public boolean cadCliente(Cliente cliente) throws Excecao {
+
+    //TODO Adicionar as instruções para preencher as tabelas T_SCN_TELEFONE e T_SCN_ENDERECO
+    public boolean cadCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
 
 		String sql = "INSERT INTO T_SCN_PESSOA VALUES (SQ_SCN_PESSOA.NEXTVAL,?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement statement = c.prepareStatement(sql);
-			statement.setInt(1, cliente.getIdPessoa());
-			statement.setString(2, cliente.getNome());
-			statement.setString(3, cliente.getDtNasc());
-			statement.setString(4, cliente.getEmail());
-			statement.setString(5, cliente.getUser());
-			statement.setString(6, cliente.getSenha());
-            statement.setDate(7, new java.sql.Date(new java.util.Date().getTime()));
-            statement.setByte(8, (byte) 1);
-			statement.execute();
+            statement.setString(1, cliente.getNome());
+            statement.setString(2, cliente.getDtNasc());
+            statement.setString(3, cliente.getEmail());
+            statement.setString(4, cliente.getUser());
+            statement.setString(5, cliente.getSenha());
+            statement.setDate(6, new java.sql.Date(new java.util.Date().getTime()));
+            statement.setByte(7, (byte) 1);
+            statement.execute();
 
-			sql = "INSERT INTO T_SCN_CLIENTE VALUES (SQ_SCN_CLIENTE.NEXTVAL, ?,?,?)";
+            sql = "INSERT INTO T_SCN_CLIENTE VALUES (SQ_SCN_PESSOA.CURRVAL, ?,?,?)";
 
 			statement = c.prepareStatement(sql);
-			statement.setInt(1, cliente.getIdPessoa());
-			statement.setLong(2, cliente.getCpf());
-			statement.setString(3, cliente.getRg());
-			statement.setString(4, cliente.getSexo());
+            statement.setLong(1, cliente.getCpf());
+            statement.setString(2, cliente.getRg());
+            statement.setString(3, cliente.getSexo());
             boolean resp = statement.execute();
             statement.close();
             c.close();
