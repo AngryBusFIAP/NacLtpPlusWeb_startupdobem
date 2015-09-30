@@ -5,8 +5,22 @@ import br.com.fiap.beans.Empresa;
 import br.com.fiap.dao.EmpresaDAO;
 import br.com.fiap.except.Excecao;
 
+/**
+ * Classe das regras de negócio da Empresa
+ * @version 0.5
+ * @see br.com.fiap.beans.Empresa;
+ * @see br.com.fiap.dao.EmpresaDAO;
+ * @see br.com.fiap.except.Excecao;
+ */
 public class EmpresaBO {
-	
+	/**
+	 * @deprecated arrumar
+	 * 	Método utilizado para verificação do CNPJ da Empresa antes de cadastrar
+	 * @param E - Empresa
+	 * @throws Excecao
+	 * @return void
+	 * @see br.com.fiap.dao.EmpresaDAO
+	 */
 	public void inserirEmpresa(Empresa e) throws Excecao{
 		String cnpj = String.valueOf(e.getCnpj());
 		if((cnpj.length()) < 14){
@@ -16,10 +30,25 @@ public class EmpresaBO {
 		new EmpresaDAO().cadEmpresa(e).toUpperCase(); 
 	}
 
-	public int deletarEmpresa(int empresa) throws Excecao{
+	/**
+	 * Método para deletar a empresa do banco de dados
+	 * 
+	 * @param idEmpresa - Identificador da Empresa
+	 * @return Vazio
+	 * @throws Excecao
+	 * @see br.com.fiap.dao.EmpresaDAO
+	 */
+	public int deletarEmpresa(int idEmpresa) throws Excecao{
 		return new EmpresaDAO().apagarEmpresa(empresa);
 	}
 	
+	/**
+	 * Método usado para pesquisar a empresa pelo número do CNPJ
+	 * @param nrCnpj - número do CNPJ
+	 * @return Empresa
+	 * @throws Excecao
+	 * @see br.com.fiap.dao.EmpresaDAO
+	 */
 	public Empresa pesquisarEmpresa(int nrCnpj) throws Excecao{
 		return new EmpresaDAO().pesquisarEmpresa(nrCnpj);
 	}

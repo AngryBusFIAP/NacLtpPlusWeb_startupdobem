@@ -38,11 +38,11 @@ public class ReclamacaoDAO {
     }
 
     /**
-     * <i>Metodo para editar uma reclamação (somente o texto dela!)</i>
+     * <i>Metodo para editar o texto de uma reclama��o j� alterada</i>
      *
-     * @param id_rec (
-     * @param reclam
-     * @return String com o resultado da operação;
+     * @param id_rec - Identificador da Reclama��o
+     * @param reclam - Descri��o da reclama��o;
+     * @return String com o resultado da opera��o;
      * @throws Excecao
      * @author VinyLimaZ
      */
@@ -66,6 +66,13 @@ public class ReclamacaoDAO {
 
     }
 
+    /**
+     * M�todo para dar uma nota p�s reclama��o
+     * @param id_rec   - Identificador da reclama��o
+     * @param n        - Nota
+     * @return boolean - True caso consiga cadastrar a nota, false caso falhe
+     * @throws Excecao
+     */
     public boolean setNotaPosReclam(int id_rec, byte n) throws Excecao {
         String sql = "UPDATE T_SCN_RECLAMACAO SET NR_NOTAPOSRECLAM = ? WHERE ID_RECLAMACAO = ?";
 
@@ -197,6 +204,12 @@ public class ReclamacaoDAO {
         }
     }
 
+    /**
+     * M�todo para deletar a reclama��o do banco de dados usando o idReclam
+     * @param idReclam - Identificador da Reclama��o
+     * @return boolean - true caso consiga deletar, false caso falhe
+     * @throws Excecao
+     */
     public boolean deleteReclam(int idReclam) throws Excecao {
         String sql = "DELETE FROM T_SCN_RECLAMACAO WHERE ID_RECLAMACAO = ?";
         try {

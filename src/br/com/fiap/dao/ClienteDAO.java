@@ -17,7 +17,7 @@ import java.sql.SQLException;
  * @author vinylimaz
  * @version 0.5
  * @since 0.1
- *
+ * @see br.com.fiap.connect.ConexaoFiap;
  * @see br.com.fiap.beans.Cliente;
  */
 
@@ -29,12 +29,15 @@ public class ClienteDAO {
     }
 
     /**
-     * <i>Metodo para cadastro do cliente no banco de dados</i>
+     * <i>Metodo para cadastro do Cliente no banco de dados</i>
      *
-     * @param cliente Objeto do tipo Cliente que serÃ¡ usado para inserir os dados na tabela T_SCN_PESSOA & T_SCN_CLIENTE
-     * @return String com o resultado da operaÃ§Ã£o;
+     * @param Cliente - Objeto do tipo Cliente que 
+     *                  será usado para inserir os dados na 
+     *                  tabela T_SCN_PESSOA & T_SCN_CLIENTE
+     * @return String com o resultado da operação;
      * @throws Excecao
      * @author VinyLimaZ
+     * @see br.com.fiap.beans.Cliente;
      */
 
     //TODO Adicionar as instruÃ§Ãµes para preencher as tabelas T_SCN_TELEFONE e T_SCN_ENDERECO
@@ -67,6 +70,14 @@ public class ClienteDAO {
 		}
 	}
 
+    /**
+     * <i>Método para deletar o Cliente do banco de dados pelo idCliente</i>
+     * @param idCliente - Identificador do Cliente
+     * @return valor com o número de linhas afetadas
+     * 		   0/Erro = Falha
+     * 		   1 = Deletado com sucesso
+     * @throws Excecao
+     */
 	public int deletarCliente(int idCliente) throws Excecao {
 		try {
             PreparedStatement statement = c.prepareStatement("DELETE FROM T_SCN_CLIENTE WHERE ID_CLIENTE = ?");
@@ -84,6 +95,13 @@ public class ClienteDAO {
 		}
 	}
 
+	/**
+	 * <i>Método para consultar os clientes
+	 *     no banco de dados através de seu identificador</i>
+	 * @param idPessoa - Identificador da Pessoa
+	 * @return Cliente - Objeto Cliente
+	 * @throws Excecao
+	 */
     public Cliente consultarCliente(int idPessoa) throws Excecao {
 
 		try {
@@ -117,6 +135,13 @@ public class ClienteDAO {
 		}
 	}
 
+    /**
+     * <i>Atualizar o cadastro do Cliente no banco de dados através do Objeto</i> 
+     * @param Cliente  - Objeto Cliente
+     * @return boolean - true/false dependendo se a alteração foi feita ou não 
+     * @throws Excecao
+     * @see br.com.fiap.beans.Cliente;
+     */
     public boolean updateCliente(Cliente cliente) throws Excecao {
         boolean resp = false;
         String sql = "UPDATE T_SCN_PESSOA SET NM_PESSOA = ?,  DT_NASC = ?,  TX_EMAIL = ? WHERE ID_PESSOA = ?";

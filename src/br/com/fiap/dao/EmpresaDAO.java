@@ -1,3 +1,7 @@
+/**
+ * @deprecated
+ */
+
 //package br.com.fiap.dao;
 //
 //import br.com.fiap.beans.Empresa;
