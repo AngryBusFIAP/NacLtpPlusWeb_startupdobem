@@ -7,13 +7,25 @@
   	<link href="css/cssDefault.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-
 	<div class="divbody">
-  <%@ include file="header.jsp" %>
-<h2>${msg}</h2>
+  <header>
+    <div>
+      <img class="logo" src="img/logo.png" alt="#"/>
+      <div id="slogan"><em>O terminal solução para seus problemas de transporte publico</em></div>
+    </div>
+  </header>
+  <nav>
+    <div>
+      <ul class="menu">
+        <li><a href="index.jsp">Home</a></li>
+        <li><a href="reclame.jsp">Reclame</a></li>
+        <li><a href="cadastro.jsp">Cadastre-se</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="containerform">
-    <form action="cadastroServlet" method="post">
+    <form method="post" action="cadastrar.jsp">
       <div class="inpesq">
         <br>
         <h1 id="QS">Dados Pessoais</h1>
@@ -90,9 +102,8 @@
             <br>
           </div>
         </div>
-        </form>
       </div>
-
+    </form>
     
     <br>
     

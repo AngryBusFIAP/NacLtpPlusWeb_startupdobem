@@ -9,7 +9,21 @@
 </head>
 <body>
 	<div class="divbody">
-	<%@ include file="header.jsp" %>
+	<header>
+	    <div>
+	      <img class="logo" src="img/logo.png" alt="#"/>
+	      <div id="slogan"><em>O terminal solução para seus problemas de transporte publico</em></div>
+	    </div>
+	  </header>
+	  <nav>
+	    <div>
+	      <ul class="menu">
+	        <li><a href="index.jsp">Home</a></li>
+	        <li><a href="reclame.jsp">Reclame</a></li>
+	        <li><a href="cadastro.jsp">Cadastre-se</a></li>
+	      </ul>
+	    </div>
+	  </nav>
 	<div class="containerform">
 		<form method="post" action="reclamar.jsp">
 			<legend><u><h2 class="titulos" style="width: 988px;">Reclame aqui</h2></u></legend><br>

@@ -1,9 +1,6 @@
 package br.com.fiap.test;
 
-import java.sql.Connection;
-
 import br.com.fiap.beans.Cliente;
-import br.com.fiap.connect.ConexaoFactory;
 import br.com.fiap.dao.ClienteDAO;
 import br.com.fiap.dao.ReclamacaoDAO;
 import br.com.fiap.except.Excecao;
@@ -15,23 +12,7 @@ import br.com.fiap.except.Excecao;
 public class TesteDAO {
 
     public static void main(String[] args) throws Excecao {
-    	Connection c = null;
 
-        try {
-            c = new ConexaoFactory().getConnection();
-            if (c != null) {
-                System.out.println("Conexao aberta");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Erro de conexão!");
-        } finally {
-            try {
-                c.close();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-        }
 
         ReclamacaoDAO reclamDAO = new ReclamacaoDAO();
 
