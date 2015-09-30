@@ -1,9 +1,14 @@
 package br.com.fiap.test;
 
-import br.com.fiap.connect.ConexaoFiap;
-import br.com.fiap.except.Excecao;
-
 import java.sql.Connection;
+
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Pessoa;
+import br.com.fiap.connect.ConexaoFactory;
+import br.com.fiap.connect.ConexaoFiap;
+import br.com.fiap.dao.ReclamacaoDAO;
+import br.com.fiap.dao.naoImplementado.PessoaDAO;
+import br.com.fiap.except.Excecao;
 
 /**
  * Created by vinylimaz on
@@ -17,7 +22,7 @@ public class Main {
         Connection c = null;
 
         try {
-            c = new ConexaoFiap().getConnection();
+            c = new ConexaoFactory().getConnection();
             if (c != null) {
                 System.out.println("Conexao aberta");
             }
@@ -32,8 +37,8 @@ public class Main {
             }
         }
 
-        /*Pessoa pe = new Pessoa(1, "jardel", "28-12-1993", "jardeldch@gmail.com", "jardel", "1123", "28-12-1993", (byte)1);
-        new PessoaDAO().cadPessoa(pe);*/
+        Pessoa pe = new Pessoa(1, "jardel", "28-12-1993", "jardeldch@gmail.com", "jardel", "1123", "28-12-1993", (byte)1);
+        new PessoaDAO().cadPessoa(pe);
 //        ReclamacaoDAO reclamDAO = new ReclamacaoDAO();
 //
 //        System.out.println(reclamDAO.editarReclam(00001, "TESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTETESTE TESTE"));
