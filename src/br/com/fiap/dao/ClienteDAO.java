@@ -45,9 +45,8 @@ public class ClienteDAO {
 			statement.setString(4, cliente.getEmail());
 			statement.setString(5, cliente.getUser());
 			statement.setString(6, cliente.getSenha());
-			statement.setDate(7,
-					new java.sql.Date(new java.util.Date().getTime()));
-			statement.setByte(8, (byte) 1);
+            statement.setDate(7, new java.sql.Date(new java.util.Date().getTime()));
+            statement.setByte(8, (byte) 1);
 			statement.execute();
 
 			sql = "INSERT INTO T_SCN_CLIENTE VALUES (?, ?,?,?)";
@@ -57,30 +56,28 @@ public class ClienteDAO {
 			statement.setLong(2, cliente.getCpf());
 			statement.setString(3, cliente.getRg());
 			statement.setString(4, cliente.getSexo());
-			statement.execute();
-			statement.close();
-			c.close();
-			return true;
-		} catch (SQLException e) {
+            boolean resp = statement.execute();
+            statement.close();
+            c.close();
+            return resp;
+        } catch (SQLException e) {
 			throw new Excecao(e);
 		}
 	}
 
 	public int deletarCliente(int idCliente) throws Excecao {
 		try {
-			PreparedStatement statement = c
-					.prepareStatement("DELETE FROM T_SCN_CLIENTE WHERE ID_CLIENTE = ?");
-			statement.setInt(1, idCliente);
+            PreparedStatement statement = c.prepareStatement("DELETE FROM T_SCN_CLIENTE WHERE ID_CLIENTE = ?");
+            statement.setInt(1, idCliente);
 			statement.executeUpdate();
 
-			statement = c
-					.prepareStatement("DELETE FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
-			statement.setInt(1, idCliente);
-			int saida = statement.executeUpdate();
-			statement.close();
+            statement = c.prepareStatement("DELETE FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
+            statement.setInt(1, idCliente);
+            int resp = statement.executeUpdate();
+            statement.close();
 			c.close();
-			return saida;
-		} catch (Exception e) {
+            return resp;
+        } catch (Exception e) {
 			throw new Excecao(e);
 		}
 	}
@@ -89,21 +86,29 @@ public class ClienteDAO {
 
 		try {
 			Cliente cli = new Cliente();
-			PreparedStatement statement = c
-					.prepareStatement("SELECT * FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
+            String sql = "SELECT * FROM T_SCN_PESSOA WHERE ID_PESSOA = ?";
+            PreparedStatement statement = c.prepareStatement(sql);
             statement.setInt(1, idPessoa);
-            ResultSet resultado = statement.executeQuery();
-			if (resultado.next()) {
-				cli.setIdPessoa(resultado.getInt("ID_PESSOA"));
-				cli.setNome(resultado.getString("NM_PESSOA"));
-				cli.setDtNasc(resultado.getString("DT_NASC"));
-				cli.setEmail(resultado.getString("TX_EMAIL"));
-				cli.setUser(resultado.getString("NM_USER"));
-				cli.setSenha(resultado.getString("TX_SENHA"));
-				cli.setDtCadastro(resultado.getString("DT_CADASTRO"));
-			}
-			resultado.close();
-			statement.close();
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                cli.setIdPessoa(resultSet.getInt("ID_PESSOA"));
+                cli.setNome(resultSet.getString("NM_PESSOA"));
+                cli.setDtNasc(resultSet.getString("DT_NASC"));
+                cli.setEmail(resultSet.getString("TX_EMAIL"));
+                cli.setUser(resultSet.getString("NM_USER"));
+                cli.setSenha(resultSet.getString("TX_SENHA"));
+                cli.setDtCadastro(resultSet.getString("DT_CADASTRO"));
+                sql = "SELECT * FROM T_SCN_CLIENTE WHERE ID_CLIENTE = ?";
+                statement = c.prepareStatement(sql);
+                statement.setInt(1, idPessoa);
+                resultSet = statement.executeQuery();
+                cli.setIdCliente(idPessoa);
+                cli.setCpf(resultSet.getLong("NR_CPF"));
+                cli.setRg(resultSet.getString("NR_RG"));
+                cli.setSexo(resultSet.getString("TX_SEXO"));
+            }
+            resultSet.close();
+            statement.close();
 			return cli;
 		} catch (SQLException e) {
 			throw new Excecao(e);
