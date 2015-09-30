@@ -3,13 +3,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Reclame</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="css/cssDefault.css" type="text/css" rel="stylesheet">
+	<title>Reclame</title>
 </head>
 <body>
+	<div class="divbody">
+	<header>
+	    <div>
+	      <img class="logo" src="img/logo.png" alt="#"/>
+	      <div id="slogan"><em>O terminal solução para seus problemas de transporte publico</em></div>
+	    </div>
+	  </header>
+	  <nav>
+	    <div>
+	      <ul class="menu">
+	        <li><a href="index.jsp">Home</a></li>
+	        <li><a href="reclame.jsp">Reclame</a></li>
+	        <li><a href="cadastro.jsp">Cadastre-se</a></li>
+	      </ul>
+	    </div>
+	  </nav>
 	<div class="containerform">
 		<form method="post" action="reclamar.jsp">
-			<legend><u><h2 class="titulos" style="width: 300px;">Reclame aqui</h2></u></legend><br>
+			<legend><u><h2 class="titulos" style="width: 988px;">Reclame aqui</h2></u></legend><br>
 			<div>
 				Linha:
 				<select name="tlinha" value="flinha"> 
@@ -40,7 +57,7 @@
 					</optgroup>
 				</select>
 
-				<br>
+				<br><br>
 
 				<p><div>Codigo da Linha: <input type="text" name="fcodlin" id="tcodlin" placeholder="xx-xxxx" size="5"> </div><br></p>
 
@@ -61,15 +78,26 @@
 						</div>
 						<br>
 						<p><div>Detalhes do ocorrido:<br>
-							<textarea name="tdesc" id="fdesc" cols="40" rows="5" >
+							<textarea name="tdesc" id="fdesc" cols="45" rows="11" >
 
 							</textarea><br></div><br>
-							<p><input type="submit" value="Finalizar"> <input type="reset" value="Limpar">
+							<input type="submit" value="Finalizar"> <input type="reset" value="Limpar">
 
 							</div>
 						</div>
 					</div>
 				</form>
+				<br>
+				<footer id="rodape">
+				    <div class="mapasite">
+				      <ul class="menurodape">
+				        <li><a href="index.jsp">Home</a></li>
+				        <li><a href="reclame.jsp">Reclame</a></li>
+				        <li><a href="cadastro.jsp">Cadastre-se</a></li>
+				      </ul>
+				    </div>
+				  </footer>
 			</div>
+		</div>
 </body>
 </html>

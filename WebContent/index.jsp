@@ -4,9 +4,7 @@
 <head>
   <title>Home - AngryBus - O terminal solução para seu problema no transporte publico!</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <link href="css/style2.css" type="text/css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Signika:700,400,600|Courgette' rel='stylesheet' type='text/css'>
+  <link href="css/cssDefault.css" type="text/css" rel="stylesheet">
 </head>
 <body>
   <div class="divbody">
@@ -30,11 +28,9 @@
     <nav>
       <div>
         <ul class="menu">
-          <li><a href="index.html">Home</a>
-            <li><a href="reclamar.html">Reclame</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
-            <li><a href="about.html">Quem Somos</a></li>
-            <li><a href="faq.html">Como Funciona</a></li>
+          	<li><a href="index.jsp">Home</a></li>
+            <li><a href="reclame.jsp">Reclame</a></li>
+            <li><a href="cadastro.jsp">Cadastre-se</a></li>
           </ul>                    
         </div>
       </nav>
@@ -151,11 +147,9 @@
 
         <div class="mapasite">
          <ul class="menurodape">
-          <li><a href="index.html">Home</a>
-            <li><a href="reclamar.html">Reclame</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
-            <li><a href="about.html">Quem Somos</a></li>
-            <li><a href="faq.html">Como Funciona</a></li>
+          	<li><a href="index.jsp">Home</a></li>
+            <li><a href="reclame.jsp">Reclame</a></li>
+            <li><a href="cadastro.jsp">Cadastre-se</a></li>
           </ul>
         </div>
       </footer>
