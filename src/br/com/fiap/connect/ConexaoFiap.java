@@ -9,8 +9,13 @@ import java.sql.SQLException;
 
 
 /**
+ * Classe para conexao com o banco de dados
  * Created by vinylimaz on
  * 26/09/15 ... 13:17.
+ * @return Connection - Conexao com o banco de dados
+ * @throws Excecao
+ * 
+ * @see br.com.fiap.dao.*;
  */
 
 public class ConexaoFiap {

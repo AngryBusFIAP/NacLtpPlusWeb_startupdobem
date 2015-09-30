@@ -7,7 +7,7 @@ import br.com.fiap.except.Excecao;
 import java.util.List;
 
 /**
- *
+ *	Classe das regras de negócio da Reclamação
  * 	@author Jardel
  *	@version 0.5
  *	@see br.com.fiap.beans.Reclamacao;

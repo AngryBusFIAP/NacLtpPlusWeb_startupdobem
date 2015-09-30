@@ -8,7 +8,7 @@ import br.com.fiap.except.Excecao;
 
 
 /**
- * Classe das regras de neg�cio do objeto Cliente
+ * Classe das regras de negocio do objeto Cliente
  * @author Jardel
  * @version 0.5
  * @see br.com.fiap.beans.Cliente;
@@ -17,16 +17,16 @@ import br.com.fiap.except.Excecao;
 public class ClienteBO {
 
 	/**
-	 * Metodo para inser��o/valida��o do Cliente,
-	 *  ele faz valida��es de tamanho de nome,
-	 *   senha, cpf e rg e ap�s isso envia para o DAO.
+	 * Metodo para insercao/validacao do Cliente,
+	 *  ele faz validacoes de tamanho de nome,
+	 *   senha, cpf e rg e aposs isso envia para o DAO.
 	 * @param cliente - Cliente
 	 * @return void
 	 * @throws Excecao
 	 * @see br.com.fiap.dao.ClienteDAO
 	 */
 
-    //TODO JARDEL Adicionar verificações para as classes Endereço e Telefone q são necessarias ao cadastro
+    //TODO JARDEL Adicionar verificacoes para as classes Endereco e Telefone q sao necessarias ao cadastro
     public String inserirCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
         String resp;
         if (cliente.getNome().toUpperCase().length() <= 3) {
@@ -91,10 +91,10 @@ public class ClienteBO {
     }
 
 	/**
-     * Método para apagar o objeto Cliente,
-     * ele faz a verificacao com o método verfiPassw na classe LoginBO
-     * se a senha for válida, é então deletado o objeto do banco de dados
-     * @param userName - Nome de Usuário do Cliente
+     * Metodo para apagar o objeto Cliente,
+     * ele faz a verificacao com o metodo verfiPassw na classe LoginBO
+     * se a senha for valida, � entao deletado o objeto do banco de dados
+     * @param userName - Nome de Usuario do Cliente
      * @param passwd   - Senha do Cliente
 	 * @param idPessoa - Identificador da Pessoa
      * @return int     - quantas linhas foram afetadas no banco se >= 1 == sucesso, se < 1 == falha
@@ -112,7 +112,7 @@ public class ClienteBO {
     }
 
     /**
-     * Met�do para listar os Clientes cadastrados
+     * Metodo para listar os Clientes cadastrados
      * @param idPessoa - Identificador da Pessoa
      * @return Cliente
      * @throws Excecao
@@ -130,7 +130,7 @@ public class ClienteBO {
             new ClienteDAO().updateCliente(cliente);
         resp = "Cadastro atualizado com sucesso";
     }  else {
-            resp = "Cadastro não realizado! Verificar informações";
+            resp = "Cadastro nao realizado! Verificar informacoes";
         }
         return resp;
     }

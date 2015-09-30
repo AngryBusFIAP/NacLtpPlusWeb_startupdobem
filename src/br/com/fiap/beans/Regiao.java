@@ -1,5 +1,7 @@
 package br.com.fiap.beans;
-
+/**
+ *Classe beans do objeto Regiao
+ */
 public class Regiao {
 
     private String nome;

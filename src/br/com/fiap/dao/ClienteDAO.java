@@ -123,7 +123,8 @@ public class ClienteDAO {
 	}
 
 	/**
-     * <i>Metodo para consultar os clientes no banco de dados atraves de seu identificador</i>
+     * <i>Metodo para consultar os clientes no banco de dados 
+     * atraves de seu identificador</i>
      * @param idPessoa - Identificador da Pessoa
 	 * @return Cliente - Objeto Cliente
 	 * @throws Excecao

@@ -3,11 +3,16 @@ package br.com.fiap.except;
 import java.sql.SQLException;
 
 /**
+ * Camada para tratamento de Excecoes
  * Created by vinylimaz on
  * 26/09/15 ... 13:13.
  */
 public class Excecao extends Exception {
 
+	/**
+	 * Método que pega todos os possíveis erros e os trata 
+	 * @param e Exception - Recebe a classe excecao para realizar os tratamentos
+	 */
     public Excecao(Exception e) {
         if (e.getClass().toString().equals
                 ("class java.lang.NumberFormatException")) {

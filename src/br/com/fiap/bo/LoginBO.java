@@ -17,7 +17,7 @@ import br.com.fiap.except.Excecao;
 public class LoginBO {
     /**
      * Metodo unico a tratar a senha, sendo assim, para se alterar chama-se esse metodo, que retornando true
-     * (senha digitada Ã© igual a senha do banco de dados) realiza a operação, ou false impedindo-a
+     * (senha digitada é igual a senha do banco de dados) realiza a operação, ou false impedindo-a
      *
      * @param userName - Nome do usuário
      * @param passwd - Senha do usuário

@@ -1,5 +1,11 @@
 package br.com.fiap.beans;
-
+/**
+ *Classe beans do Objeto Endereco
+ *Endereco está relacionado com o Objeto Pessoa
+ *
+ *@see br.com.fiap.beans.Pessoa;
+ *@see br.com.fiap.bo.PessoaBO;
+ */
 public class Endereco {
 
     private String logradouro;

@@ -1,5 +1,11 @@
 package br.com.fiap.beans;
-
+/**
+ *Classe beans do Objeto Itinerário
+ *Itinerario está relacionada com o objeto Regiao
+ *
+ *@see br.com.fiap.beans.Regiao;
+ *@see br.com.fiap.bo.ItinerarioBO;
+ */
 public class Itinerario {
 
     private String nome;
