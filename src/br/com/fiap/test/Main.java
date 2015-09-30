@@ -4,7 +4,6 @@ import java.sql.Connection;
 
 import br.com.fiap.beans.Cliente;
 import br.com.fiap.beans.Pessoa;
-import br.com.fiap.connect.ConexaoFactory;
 import br.com.fiap.connect.ConexaoFiap;
 import br.com.fiap.dao.ReclamacaoDAO;
 import br.com.fiap.dao.naoImplementado.PessoaDAO;
@@ -22,7 +21,7 @@ public class Main {
         Connection c = null;
 
         try {
-            c = new ConexaoFactory().getConnection();
+            c = new ConexaoFiap().getConnection();
             if (c != null) {
                 System.out.println("Conexao aberta");
             }
