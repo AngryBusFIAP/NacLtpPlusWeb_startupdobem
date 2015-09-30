@@ -47,7 +47,7 @@ public class ReclamacaoBO {
     }
 
     /**
-     * M�todo para listar as reclama��es pela data/ID
+     * Método para listar as reclama��es pela data/ID
      *
      * @param id   - Identificador da Reclama��o
      * @param data - Data da reclama��o

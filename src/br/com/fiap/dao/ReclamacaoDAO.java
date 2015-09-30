@@ -67,7 +67,7 @@ public class ReclamacaoDAO {
     }
 
     /**
-     * M�todo para dar uma nota p�s reclama��o
+     * Metodo para dar uma nota p�s reclama��o
      * @param id_rec   - Identificador da reclama��o
      * @param n        - Nota
      * @return boolean - True caso consiga cadastrar a nota, false caso falhe
@@ -205,7 +205,7 @@ public class ReclamacaoDAO {
     }
 
     /**
-     * M�todo para deletar a reclama��o do banco de dados usando o idReclam
+     * Metodo para deletar a reclama��o do banco de dados usando o idReclam
      * @param idReclam - Identificador da Reclama��o
      * @return boolean - true caso consiga deletar, false caso falhe
      * @throws Excecao

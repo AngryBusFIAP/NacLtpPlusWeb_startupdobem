@@ -27,26 +27,31 @@ public class ClienteBO {
 	 */
 
     //TODO JARDEL Adicionar verificações para as classes Endereço e Telefone q são necessarias ao cadastro
-    public void inserirCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
+    public String inserirCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
+        String resp;
         if (cliente.getNome().toUpperCase().length() <= 3) {
-            System.out.println("O nome deve ter mais que 3 letras");
-		}
+            return resp = "O nome deve ter mais que 3 letras";
+        }
 
         if (cliente.getSenha().length() < 6) {
-            System.out.println("A senha deve conter no minimo 6 caracteres");
+            return resp = "A senha deve conter no minimo 6 caracteres";
         }
 
         String cpf = String.valueOf(cliente.getCpf());
         if(cpf.length() < 10){
-			System.out.println("CPF Invalido");
-		}
+            return resp = "CPF Invalido";
+        }
 
         if (cliente.getRg().length() < 9) {
-            System.out.println("RG invalido");
-		}
+            return resp = "RG invalido";
+        }
         //Assinatura correta!
-        new ClienteDAO().cadCliente(cliente, end, tel);
-
+        if (new ClienteDAO().cadCliente(cliente, end, tel)) {
+            resp = "Cadastro realizado com sucesso";
+        } else {
+            resp = "Cadastro não realizado! Verificar as informações";
+        }
+        return resp;
     }
 
 	/**

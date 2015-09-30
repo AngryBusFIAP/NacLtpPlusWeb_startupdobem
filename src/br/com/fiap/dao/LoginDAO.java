@@ -36,9 +36,9 @@ public class LoginDAO {
     }
 
     /**
-     * Método para verificar a senha do usuário através do banco de dados
-     * @param userName - Nome do Usuário
-     * @return String com a senha do usuário
+     * Metodo para verificar a senha do usuï¿½rio atravï¿½s do banco de dados
+     * @param userName - Nome do Usuï¿½rio
+     * @return String com a senha do usuï¿½rio
      * @throws Excecao
      */
 
@@ -63,9 +63,9 @@ public class LoginDAO {
     }
 
     /**
-     * Método para alterar a senha
-     * @param userName - Nome de usuário
-     * @param passwdNew - Nova senha do usuário
+     * Metodo para alterar a senha
+     * @param userName - Nome de usuï¿½rio
+     * @param passwdNew - Nova senha do usuï¿½rio
      * @return boolean = true caso consiga alterar, false caso falha
      * @throws Excecao
      */

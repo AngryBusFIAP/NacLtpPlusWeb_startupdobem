@@ -31,10 +31,10 @@ public class ClienteDAO {
     /**
      * <i>Metodo para cadastro do Cliente no banco de dados</i>
      *
-     * @param Cliente - Objeto do tipo Cliente que 
-     *                  será usado para inserir os dados na 
+     * @param cliente - Objeto do tipo Cliente que
+     *                  serï¿½ usado para inserir os dados na 
      *                  tabela T_SCN_PESSOA & T_SCN_CLIENTE
-     * @return String com o resultado da operação;
+     * @return String com o resultado da operaï¿½ï¿½o;
      * @throws Excecao
      * @author VinyLimaZ
      * @see br.com.fiap.beans.Cliente;
@@ -45,7 +45,8 @@ public class ClienteDAO {
 
 		String sql = "INSERT INTO T_SCN_PESSOA VALUES (SQ_SCN_PESSOA.NEXTVAL,?,?,?,?,?,?,?)";
 		try {
-			PreparedStatement statement = c.prepareStatement(sql);
+            //Preenchimento da Tabela T_SCN_PESSOA
+            PreparedStatement statement = c.prepareStatement(sql);
             statement.setString(1, cliente.getNome());
             statement.setString(2, cliente.getDtNasc());
             statement.setString(3, cliente.getEmail());
@@ -53,15 +54,42 @@ public class ClienteDAO {
             statement.setString(5, cliente.getSenha());
             statement.setDate(6, new java.sql.Date(new java.util.Date().getTime()));
             statement.setByte(7, (byte) 1);
-            statement.execute();
-
-            sql = "INSERT INTO T_SCN_CLIENTE VALUES (SQ_SCN_PESSOA.CURRVAL, ?,?,?)";
-
-			statement = c.prepareStatement(sql);
-            statement.setLong(1, cliente.getCpf());
-            statement.setString(2, cliente.getRg());
-            statement.setString(3, cliente.getSexo());
             boolean resp = statement.execute();
+
+            if (resp) {
+                sql = "INSERT INTO T_SCN_CLIENTE VALUES (SQ_SCN_PESSOA.CURRVAL, ?,?,?)";
+                //Preenchimento da tabela T_SCN_CLIENTE
+                statement = c.prepareStatement(sql);
+                statement.setLong(1, cliente.getCpf());
+                statement.setString(2, cliente.getRg());
+                statement.setString(3, cliente.getSexo());
+                resp = statement.execute();
+
+                if (resp) {
+                    sql = "INSERT INTO T_SCN_ENDERECO VALUES (SQ_SCN_PESSOA.CURRVAL, ?, ?, ?, ?, ?, ?, ?, SQ_SCN_PESSOA.CURRVAL)";
+                    //Preenchimento da tabela T_SCN_ENDERECO
+                    statement = c.prepareStatement(sql);
+                    statement.setString(1, end.getLogradouro());
+                    statement.setShort(2, end.getNum());
+                    statement.setString(3, end.getComplemento());
+                    statement.setInt(4, end.getCep());
+                    statement.setString(5, end.getBairro());
+                    statement.setString(6, end.getCidade());
+                    statement.setString(7, end.getEstado());
+                    resp = statement.execute();
+
+                    if (resp) {
+                        sql = "INSERT INTO T_SCN_TELEFONE VALUES (SQ_SCN_PESSOA.CURRVAL, ?, ?, ?, ?, SQ_SCN_PESSOA.CURRVAL)";
+                        //Preenchimento da tabela T_SCN_TELEFONE
+                        statement = c.prepareStatement(sql);
+                        statement.setByte(1, tel.getCodPais());
+                        statement.setByte(2, tel.getDdd());
+                        statement.setInt(3, tel.getNumero());
+                        statement.setInt(4, tel.getRamal());
+                        resp = statement.execute();
+                    }
+                }
+            }
             statement.close();
             c.close();
             return resp;
@@ -71,9 +99,9 @@ public class ClienteDAO {
 	}
 
     /**
-     * <i>Método para deletar o Cliente do banco de dados pelo idCliente</i>
+     * <i>Metodo para deletar o Cliente do banco de dados pelo idCliente</i>
      * @param idCliente - Identificador do Cliente
-     * @return valor com o número de linhas afetadas
+     * @return valor com o nï¿½mero de linhas afetadas
      * 		   0/Erro = Falha
      * 		   1 = Deletado com sucesso
      * @throws Excecao
@@ -82,11 +110,13 @@ public class ClienteDAO {
 		try {
             PreparedStatement statement = c.prepareStatement("DELETE FROM T_SCN_CLIENTE WHERE ID_CLIENTE = ?");
             statement.setInt(1, idCliente);
-			statement.executeUpdate();
-
-            statement = c.prepareStatement("DELETE FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
-            statement.setInt(1, idCliente);
             int resp = statement.executeUpdate();
+
+            if (resp > 0) {
+                statement = c.prepareStatement("DELETE FROM T_SCN_PESSOA WHERE ID_PESSOA = ?");
+                statement.setInt(1, idCliente);
+                resp = statement.executeUpdate();
+            }
             statement.close();
 			c.close();
             return resp;
@@ -96,9 +126,8 @@ public class ClienteDAO {
 	}
 
 	/**
-	 * <i>Método para consultar os clientes
-	 *     no banco de dados através de seu identificador</i>
-	 * @param idPessoa - Identificador da Pessoa
+     * <i>Metodo para consultar os clientes no banco de dados atraves de seu identificador</i>
+     * @param idPessoa - Identificador da Pessoa
 	 * @return Cliente - Objeto Cliente
 	 * @throws Excecao
 	 */
@@ -136,15 +165,15 @@ public class ClienteDAO {
 	}
 
     /**
-     * <i>Atualizar o cadastro do Cliente no banco de dados através do Objeto</i> 
-     * @param Cliente  - Objeto Cliente
-     * @return boolean - true/false dependendo se a alteração foi feita ou não 
+     * <i>Atualizar o cadastro do Cliente no banco de dados atravï¿½s do Objeto</i> 
+     * @param cliente  - Objeto Cliente
+     * @return boolean - true/false dependendo se a alteraÃ§Ã£o foi feita ou nÃ£o
      * @throws Excecao
      * @see br.com.fiap.beans.Cliente;
      */
     public boolean updateCliente(Cliente cliente) throws Excecao {
         boolean resp = false;
-        String sql = "UPDATE T_SCN_PESSOA SET NM_PESSOA = ?,  DT_NASC = ?,  TX_EMAIL = ? WHERE ID_PESSOA = ?";
+        String sql = "UPDATE T_SCN_PESSOA SET NM_PESSOA = ?, DT_NASC = ?, TX_EMAIL = ? WHERE ID_PESSOA = ?";
         try {
             PreparedStatement statement = c.prepareStatement(sql);
             statement.setString(1, cliente.getNome());
@@ -152,11 +181,12 @@ public class ClienteDAO {
             statement.setString(3, cliente.getEmail());
             statement.setInt(4, cliente.getIdCliente());
             if (statement.execute()) {
-                sql = "UPDATE T_SCN_CLIENTE SET NR_CPF = ?, NR_RG = ?, TX_SEXO = ?";
+                sql = "UPDATE T_SCN_CLIENTE SET NR_CPF = ?, NR_RG = ?, TX_SEXO = ? WHERE ID_CLIENTE = ?";
                 statement = c.prepareStatement(sql);
                 statement.setLong(1, cliente.getCpf());
                 statement.setString(2, cliente.getRg());
                 statement.setString(3, cliente.getSexo());
+                statement.setInt(4, cliente.getIdCliente());
                 resp = statement.execute();
             }
             c.close();
