@@ -1,5 +1,10 @@
 package br.com.fiap.beans;
-
+/**
+ *Classe beans dos dados de Login do Objeto Cliente
+ *
+ *@see br.com.fiap.beans.Cliente;
+ *@see br.com.fiap.dao.LoginBO;
+ */
 public class Login {
 
     private String usuario;

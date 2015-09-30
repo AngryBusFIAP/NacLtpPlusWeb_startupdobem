@@ -1,5 +1,9 @@
 package br.com.fiap.beans;
-
+/**
+ *Classe beans do objeto Telefone
+ *
+ *@see br.com.fiap.bo.PessoaBO;
+ */
 public class Telefone {
 
     private int idTel;

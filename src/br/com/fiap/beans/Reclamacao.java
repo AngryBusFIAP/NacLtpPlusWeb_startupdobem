@@ -1,9 +1,17 @@
 package br.com.fiap.beans;
 
 /**
- * Created by vinylimaz on
- * 27/09/15 ... 06:31.
+ * Classe beans do objeto Reclamacao
+ * Reclamacao está relacionada com Cliente,
+ * Empresa, Itinerario e Regiao
+ * 
+ * @see br.com.fiap.beans.Regiao;
+ * @see br.com.fiap.beans.Itinerario;
+ * @see br.com.fiap.beans.Empresa;
+ * @see br.com.fiap.beans.Cliente;
+ * @see br.com.fiap.bo.ReclamacaoBO;
  */
+
 public class Reclamacao {
 
     private int id;

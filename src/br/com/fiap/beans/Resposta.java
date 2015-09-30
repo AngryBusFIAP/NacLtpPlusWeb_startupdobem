@@ -1,14 +1,13 @@
 package br.com.fiap.beans;
 
 /**
- * <i></i>
- * Created by
- *
+ * Classe beans do objeto Resposta
+ * Resposta está relacionada a Pessoa
  * @author vinylimaz
  *         on
  *         28/09/15 ... 00:40.
  * @version 0.5
- * @see ;
+ * @see br.com.fiap.beans.Pessoa;
  * @since 0.1
  */
 public class Resposta {

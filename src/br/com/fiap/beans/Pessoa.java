@@ -1,5 +1,9 @@
 package br.com.fiap.beans;
-
+/**
+ *Superclasse beans do objeto Pessoa
+ *
+ *@see br.com.fiap.bo.PessoaBO;
+ */
 public class Pessoa {
 
     private int idPessoa;

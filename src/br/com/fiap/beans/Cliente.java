@@ -1,5 +1,11 @@
 package br.com.fiap.beans;
-
+/**
+ * Classe beans do Objeto Cliente
+ * Cliente herda de pessoa
+ * 
+ * @see br.com.fiap.beans.Pessoa;
+ * @see br.com.fiap.bo.ClienteBO;
+ */
 
 public class Cliente extends Pessoa {
 

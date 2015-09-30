@@ -19,7 +19,7 @@ public class EmpresaBO {
 
 /**
 	 * @deprecated arrumar
-	 * 	Método utilizado para verifica��o do CNPJ da Empresa antes de cadastrar
+	 * 	Método utilizado para verificacao do CNPJ da Empresa antes de cadastrar
 	 * @param e - Empresa
 	 * @throws Excecao
 	 * @return void

@@ -1,5 +1,17 @@
 package br.com.fiap.beans;
-
+/**
+ *Classe beans do objeto Ranking
+ *Classe Ranking está relacionada com o:
+ *Objeto Empresa,
+ *Objeto Reclamacao,
+ *Objeto Itinerario e o 
+ *Objeto Regiao
+ *
+ *@see br.com.fiap.beans.Regiao;
+ *@see br.com.fiap.beans.Reclamacao;
+ *@see br.com.fiap.beans.Itinerario;
+ *@see br.com.fiap.beans.Empresa;
+ */
 public class Ranking {
 
     private Regiao regiao;

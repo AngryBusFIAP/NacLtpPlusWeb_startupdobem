@@ -7,7 +7,8 @@ import br.com.fiap.except.Excecao;
 
 */
 /**
- * 
+ * Classe das regras de negócio da Pessoa
+ * @deprecated
  * @author Jardel
  *
  *//*
