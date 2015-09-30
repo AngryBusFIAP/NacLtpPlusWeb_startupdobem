@@ -7,6 +7,7 @@
   	<link href="css/cssDefault.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+
 	<div class="divbody">
   <header>
     <div>
@@ -24,8 +25,10 @@
     </div>
   </nav>
 
+<h2>${msg}</h2>
+
   <div class="containerform">
-    <form method="post" action="cadastrar.jsp">
+    <form action="cadastroServlet" method="post">
       <div class="inpesq">
         <br>
         <h1 id="QS">Dados Pessoais</h1>
@@ -102,8 +105,9 @@
             <br>
           </div>
         </div>
+        </form>
       </div>
-    </form>
+
     
     <br>
     
