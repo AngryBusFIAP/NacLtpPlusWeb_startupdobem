@@ -25,8 +25,7 @@ public class ClienteBO {
 	 * @throws Excecao
 	 * @see br.com.fiap.dao.ClienteDAO
 	 */
-    
-    //TODO Arrumar a variavel c q é mto cansada
+
     //TODO JARDEL Adicionar verificações para as classes Endereço e Telefone q são necessarias ao cadastro
     public void inserirCliente(Cliente cliente, Endereco end, Telefone tel) throws Excecao {
         if (cliente.getNome().toUpperCase().length() <= 3) {
@@ -41,9 +40,9 @@ public class ClienteBO {
         if(cpf.length() < 10){
 			System.out.println("CPF Invalido");
 		}
-		
-		if(c.getRg().length() < 9){
-			System.out.println("RG invalido");
+
+        if (cliente.getRg().length() < 9) {
+            System.out.println("RG invalido");
 		}
         //Assinatura correta!
         new ClienteDAO().cadCliente(cliente, end, tel);
@@ -51,18 +50,16 @@ public class ClienteBO {
     }
 
 	/**
-	 * M�todo para apagar o objeto Cliente,
-	 * ele faz a verificacao com o m�todo verfiPassw na classe LoginBO 
-	 * se a senha for v�lida, � ent�o deletado o objeto do banco de dados
-	 * @param userName - Nome de Usu�rio do Cliente
-	 * @param passwd   - Senha do Cliente
+     * Método para apagar o objeto Cliente,
+     * ele faz a verificacao com o método verfiPassw na classe LoginBO
+     * se a senha for válida, é então deletado o objeto do banco de dados
+     * @param userName - Nome de Usuário do Cliente
+     * @param passwd   - Senha do Cliente
 	 * @param idPessoa - Identificador da Pessoa
-	 * @return int     - quantas linhas foram afetadas no banco,
-	 *                    se 1, foi deletado com sucesso, 
-	 *                    se 0/Erro ocorreu uma falha
-	 * @throws Excecao
-	 * @see br.com.fiap.bo.LoginBo
-	 * @see br.com.fiap.dao.ClienteDAO
+     * @return int     - quantas linhas foram afetadas no banco se >= 1 == sucesso, se < 1 == falha
+     * @throws Excecao
+     * @see br.com.fiap.bo.LoginBO
+     * @see br.com.fiap.dao.ClienteDAO
 	 */
 	
     public int apagarCliente(String userName, String passwd, int idPessoa) throws Excecao {

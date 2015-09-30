@@ -1,6 +1,8 @@
 package br.com.fiap.test;
 
 import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Endereco;
+import br.com.fiap.beans.Telefone;
 import br.com.fiap.dao.ClienteDAO;
 import br.com.fiap.dao.ReclamacaoDAO;
 import br.com.fiap.except.Excecao;
@@ -32,10 +34,14 @@ public class TesteDAO {
         cliente.setUser("VinyLim");
         cliente.setEmail("viny@vy.com");
         ClienteDAO cDAO = new ClienteDAO();
-        System.out.println(cDAO.cadCliente(cliente));
- 			
 
-   //     LoginBO lBO = new LoginBO();
+        Endereco end = new Endereco();
+        Telefone tel = new Telefone();
+
+        System.out.println(cDAO.cadCliente(cliente, end, tel));
+
+
+        //     LoginBO lBO = new LoginBO();
 
 /*      Teste de verificação de senha digitada positivo!
         System.out.println(lBO.verifPasswd("VinyLimaZ", "vini123"));

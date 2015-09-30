@@ -6,7 +6,6 @@ public class Pessoa {
     private String nome;
     private String dtNasc;
     private String email;
-    //TODO Verificar sobre associação de dependencia
     private Login l;
     private String dtCadastro;
     private byte actTermos;
