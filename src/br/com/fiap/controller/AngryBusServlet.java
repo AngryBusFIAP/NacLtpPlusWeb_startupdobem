@@ -1,7 +1,6 @@
 package br.com.fiap.controller;
-import java.io.IOException;
-import java.sql.SQLException;
-
+import br.com.fiap.bo.*;
+import br.com.fiap.beans.*;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +15,9 @@ import br.com.fiap.beans.Telefone;
 import br.com.fiap.bo.ClienteBO;
 import br.com.fiap.bo.ReclamacaoBO;
 import br.com.fiap.dao.ClienteDAO;
+
+import java.io.IOException;
+
 
 /**
  * <i><i>
@@ -51,16 +53,13 @@ public class AngryBusServlet extends HttpServlet {
     	JOptionPane.showMessageDialog(null, "Cadastro incorreto");
     } */
     
-    public void insereCliente(HttpServletRequest request, HttpServletResponse response)throws Exception, ServletException, SQLException{
-		
-    
     /* cadastro cliente */
     Cliente cli = new Cliente();
     Endereco endereco = new Endereco();
     Login login = new Login();
     Telefone tel = new Telefone();
     Pessoa pessoa = new Pessoa();
-    
+
     
   
     cli.setNome(request.getParameter("nome"));
@@ -85,6 +84,17 @@ public class AngryBusServlet extends HttpServlet {
     
     request.setAttribute("msg", "SUCESSO, CADASTRO DE CLIENTE REALIZADO COM SUCESSO");
     request.getRequestDispatcher("cadastro.jsp").forward(request, response);
+
+    Pessoa.setNome = request.getRequestDispatcher(request.getParameter("nome")).forward(request, response);
+    login.setEmail = request.getRequestDispatcher(request.getParameter("email")).forward(request, response);
+    login.setSenha = request.getRequestDispatcher(request.getParameter("password")).forward(request, response);
+    cli.setRg = request.getRequestDispatcher(request.getParameter("rg")).forward(request, response);
+    cli.setSexo = request.getRequestDispatcher(request.getParameter("sexo").forward(request, response);
+    cli.setCpf = request.getRequestDispatcher(request.getParameter("cpf").forward(request, response);
+    endereco.setLogradouro = request.getRequestDispatcher(request.getParameter("endereco")).forward(request, response);
+    endereco.setNum = request.getRequestDispatcher(request.getParameter("cep")).forward(request, response);
+    endereco.setComplemento = request.getRequestDispatcher(request.getParameter("complemento")).forward(request, response);
+
     
     if(ClienteBo.inserirCliente == true){
     	JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");
