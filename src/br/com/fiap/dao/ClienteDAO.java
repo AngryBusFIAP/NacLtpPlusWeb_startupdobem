@@ -11,8 +11,7 @@ import java.sql.SQLException;
 
 /**
  * <i>Camada de CRUD da tabela Cliente</i>
- *
- * Created on 27/09/15 ... 05:29.
+ Created on 27/09/15 ... 05:29.
  * @author vinylimaz
  * @version 0.5
  * @since 0.1
@@ -37,7 +36,7 @@ public class ClienteDAO {
      */
     public boolean cadCliente(Cliente cliente) throws Excecao {
 
-		String sql = "INSERT INTO T_SCN_PESSOA VALUES (?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO T_SCN_PESSOA VALUES (SQ_SCN_PESSOA.NEXTVAL,?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement statement = c.prepareStatement(sql);
 			statement.setInt(1, cliente.getIdPessoa());
@@ -50,7 +49,7 @@ public class ClienteDAO {
             statement.setByte(8, (byte) 1);
 			statement.execute();
 
-			sql = "INSERT INTO T_SCN_CLIENTE VALUES (?, ?,?,?)";
+			sql = "INSERT INTO T_SCN_CLIENTE VALUES (SQ_SCN_CLIENTE.NEXTVAL, ?,?,?)";
 
 			statement = c.prepareStatement(sql);
 			statement.setInt(1, cliente.getIdPessoa());
@@ -113,8 +112,8 @@ public class ClienteDAO {
 			return cli;
 		} catch (SQLException e) {
 			throw new Excecao(e);
-        }
-    }
+		}
+	}
 
     public boolean updateCliente(Cliente cliente) throws Excecao {
         boolean resp = false;
