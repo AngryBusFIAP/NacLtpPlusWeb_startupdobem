@@ -1,9 +1,8 @@
 package br.com.fiap.controller;
 
-import br.com.fiap.beans.Cliente;
-import br.com.fiap.beans.Endereco;
-import br.com.fiap.beans.Telefone;
+import br.com.fiap.beans.*;
 import br.com.fiap.bo.ClienteBO;
+import br.com.fiap.bo.ReclamacaoBO;
 import br.com.fiap.except.Excecao;
 
 import javax.servlet.ServletException;
@@ -41,7 +40,29 @@ public class AngryBusServlet extends HttpServlet {
 //            } catch (Excecao e) {
 //                e.printStackTrace();
 //            }
+//        }
+    }
+
+    public void inseriReclamacao(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException, Excecao {
+
+        try {
+            Reclamacao reclam = new Reclamacao();
+
+            reclam.setObservacao(request.getParameter(""));
+            reclam.setReclamacao(request.getParameter("tdesc"));
+            reclam.setNotaPreReclam(Byte.parseByte(request.getParameter("tnoma")));
+            reclam.setHrOcorr(Integer.parseInt(request.getParameter("thora")));
+            reclam.setDtOcorr(request.getParameter("tdata"));
+            Itinerario it = new Itinerario();
+            it.setNome(request.getParameter("fcodlin"));
+            reclam.setItinerario(it);
+            reclam.setSentidoViagem(request.getParameter("sentidoViagem"));
+            ReclamacaoBO reclamBO = new ReclamacaoBO();
+            reclamBO.cadastrarReclamacao(reclam);
+        } catch (Exception e) {
+            throw new Excecao(e);
         }
+
     }
 
     public void insereCliente(HttpServletRequest request, HttpServletResponse response) throws Excecao, IOException, SQLException {

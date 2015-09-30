@@ -104,7 +104,7 @@ CREATE TABLE T_SCN_RECLAMACAO (
   B -> Bairro/Terminal sentido Bairro
   T -> Centro/Terminal sentido Centro
   M -> Metro/CPTM
-  C - Circular
+  C -> Circular
    */
   TX_SENTIDOVIAGEM CHAR(1)        NOT NULL,
   NR_NOTAPRERECLAM NUMERIC(1)     NOT NULL,
