@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro</title>
-  <link href="css/style.css" type="text/css" rel="stylesheet">
+  	<meta charset="UTF-8">
+  	<title>Cadastro</title>
+  	<link href="css/cssDefault.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+	<div class="divbody">
   <header>
     <div>
       <img class="logo" src="img/logo.png" alt="#"/>
@@ -16,11 +17,9 @@
   <nav>
     <div>
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="reclamar.html">Reclame</a></li>
-        <li><a href="cadastro.html">Cadastre-se</a></li>
-        <li><a href="about.html">Quem Somos</a></li>
-        <li><a href="faq.html">Como Funciona</a></li>
+        <li><a href="index.jsp">Home</a></li>
+        <li><a href="reclame.jsp">Reclame</a></li>
+        <li><a href="cadastro.jsp">Cadastre-se</a></li>
       </ul>
     </div>
   </nav>
@@ -52,6 +51,8 @@
           <label><span>CEP:</span>
             <input type="numeric" name="cep" value="" id="cep" value="cep" placeholder="00000" required/>
           </label>
+          
+          <br>
 
           <div class="inpdir">
             <label>
@@ -77,7 +78,7 @@
             <br><br>
             <br>
           </div>
-          <br>  <br>
+          <br>
           <div class="container-conta">
             <h1 id="QS">Dados da Conta</h1>
             <br>
@@ -97,28 +98,25 @@
                 <input type="password" placeholder="*******" minlength="6" maxlength="20" required/>
               </label>
             </div>
+            <input type="submit" value="Enviar">
+            <br>
           </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="aligncenter">                     
-          <input type="submit" value="Enviar"></a>
         </div>
       </div>
     </form>
-  </div>
-
-  <footer id="rodape">
+    
+    <br>
+    
+    <footer id="rodape">
     <div class="mapasite">
       <ul class="menurodape">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="reclamar.html">Reclame</a></li>
-        <li><a href="cadastro.html">Cadastre-se</a></li>
-        <li><a href="about.html">Quem Somos</a></li>
-        <li><a href="faq.html">Como Funciona</a></li>
+        <li><a href="index.jsp">Home</a></li>
+        <li><a href="reclame.jsp">Reclame</a></li>
+        <li><a href="cadastro.jsp">Cadastre-se</a></li>
       </ul>
     </div>
   </footer>
+  </div>
+  </div>
 </body>
 </html>
