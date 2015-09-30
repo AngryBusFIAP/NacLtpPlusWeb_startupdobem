@@ -11,6 +11,7 @@ import java.sql.SQLException;
 /**
  * <i>Projeto ${END}</i>
  * <p>
+ * <i>Camada de acesso aos dados de Login</i>
  * Created by
  *
  * @author vinylimaz
@@ -18,6 +19,7 @@ import java.sql.SQLException;
  *         27/09/15 ... 14:28.
  * @version 0.5
  * @see br.com.fiap.beans.Login;
+ * @see br.com.fiap.connect.ConexaoFiap;
  * @since 0.1
  */
 public class LoginDAO {
@@ -33,6 +35,12 @@ public class LoginDAO {
         }
     }
 
+    /**
+     * Método para verificar a senha do usuário através do banco de dados
+     * @param userName - Nome do Usuário
+     * @return String com a senha do usuário
+     * @throws Excecao
+     */
 
     public String verifPasswd(String userName) throws Excecao {
 
@@ -54,6 +62,13 @@ public class LoginDAO {
         }
     }
 
+    /**
+     * Método para alterar a senha
+     * @param userName - Nome de usuário
+     * @param passwdNew - Nova senha do usuário
+     * @return boolean = true caso consiga alterar, false caso falha
+     * @throws Excecao
+     */
     public boolean alterSenha(String userName, String passwdNew) throws Excecao {
         String sql = "UPDATE T_SCN_PESSOA SET TX_SENHA = ? WHERE NM_USER = ?";
 
