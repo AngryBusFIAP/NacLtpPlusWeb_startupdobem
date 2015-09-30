@@ -1,7 +1,7 @@
 package br.com.fiap.bo;
 
 import br.com.fiap.beans.Empresa;
-import br.com.fiap.dao.naoImplementado.EmpresaDAO;
+import br.com.fiap.dao.EmpresaDAO;
 import br.com.fiap.except.Excecao;
 
 public class EmpresaBO {

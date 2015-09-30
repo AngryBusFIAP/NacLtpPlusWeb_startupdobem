@@ -83,11 +83,11 @@
             <br>
             <div class="ddconta">
 
-              Usuario:<br><input type="email" name="user" id="email" placeholder="exemplo123@321.com.br" minlength="2" maxlength="25" required/> 
+              E-mail:<br><input type="email" name="email" id="email" placeholder="exemplo123@321.com.br" minlength="2" maxlength="25" required/> 
 
               <br><br>
               <label><span>Senha:</span><br>
-                <input type="password" placeholder="*******" minlength="6" maxlength="20" required name="senha"/>
+                <input type="password" placeholder="*******" minlength="6" maxlength="20" required/>
               </label>
               <br><br>
 
