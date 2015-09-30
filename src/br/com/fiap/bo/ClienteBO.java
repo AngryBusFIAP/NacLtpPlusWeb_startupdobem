@@ -15,7 +15,7 @@ import br.com.fiap.except.Excecao;
  * @see br.com.fiap.dao.ClienteDAO;
  */
 public class ClienteBO {
-	
+
 	/**
 	 * Metodo para inser��o/valida��o do Cliente,
 	 *  ele faz valida��es de tamanho de nome,
@@ -33,6 +33,14 @@ public class ClienteBO {
             return resp = "O nome deve ter mais que 3 letras";
         }
 
+        if(cliente.getUser().toUpperCase().length() <=4){
+            return resp ="O usuario deve ter mais que 4 letras";
+        }
+
+        if(cliente.getSexo().toUpperCase() != "M" && cliente.getSexo().toUpperCase() != "F"){
+            return resp = "O sexo dever ser M ou F";
+        }
+
         if (cliente.getSenha().length() < 6) {
             return resp = "A senha deve conter no minimo 6 caracteres";
         }
@@ -44,6 +52,34 @@ public class ClienteBO {
 
         if (cliente.getRg().length() < 9) {
             return resp = "RG invalido";
+        }
+
+        if(tel.getDdd() <= 2){
+            return resp = "DD invalido";
+        }
+
+        if(tel.getNumero() <= 7){
+            return resp = "Número inválido";
+        }
+
+        if(end.getLogradouro().toUpperCase().length() <= 5){
+            return resp = "A rua deve ter no minimo 5 caracteres";
+        }
+
+        if(end.getNum() >= 8){
+            return resp = "Número invalido";
+        }
+
+        if(end.getBairro().toUpperCase().length() < 3){
+            return resp  = "Bairro inválido";
+        }
+
+        if(end.getCep() <= 8 || end.getCep() >= 9){
+            return resp = "Cep inválido";
+        }
+
+        if(end.getCidade().toUpperCase().length() <= 3){
+            return resp = "Cidade inválida";
         }
         //Assinatura correta!
         if (new ClienteDAO().cadCliente(cliente, end, tel)) {
@@ -66,7 +102,7 @@ public class ClienteBO {
      * @see br.com.fiap.bo.LoginBO
      * @see br.com.fiap.dao.ClienteDAO
 	 */
-	
+
     public int apagarCliente(String userName, String passwd, int idPessoa) throws Excecao {
         if (new LoginBO().verifPasswd(userName.toUpperCase(), passwd)) {
             return new ClienteDAO().deletarCliente(idPessoa);
@@ -74,7 +110,7 @@ public class ClienteBO {
             return 0;
         }
     }
-    
+
     /**
      * Met�do para listar os Clientes cadastrados
      * @param idPessoa - Identificador da Pessoa
@@ -83,7 +119,19 @@ public class ClienteBO {
      * @See br.com.fiap.dao.ClienteDAO
      */
 
+
     public Cliente listarCliente(int idPessoa) throws Excecao {
         return new ClienteDAO().consultarCliente(idPessoa);
+    }
+
+    public String atualizarCliente(String userName, String passwd, Cliente cliente) throws Excecao {
+        String resp;
+        if (new LoginBO().verifPasswd(userName.toUpperCase(), passwd)){
+            new ClienteDAO().updateCliente(cliente);
+        resp = "Cadastro atualizado com sucesso";
+    }  else {
+            resp = "Cadastro não realizado! Verificar informações";
+        }
+        return resp;
     }
 }

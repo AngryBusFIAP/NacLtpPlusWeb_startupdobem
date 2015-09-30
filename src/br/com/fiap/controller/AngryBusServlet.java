@@ -1,6 +1,8 @@
 package br.com.fiap.controller;
 
-import br.com.fiap.beans.*;
+import br.com.fiap.beans.Cliente;
+import br.com.fiap.beans.Endereco;
+import br.com.fiap.beans.Telefone;
 import br.com.fiap.bo.ClienteBO;
 import br.com.fiap.bo.ReclamacaoBO;
 import br.com.fiap.except.Excecao;
@@ -43,7 +45,7 @@ public class AngryBusServlet extends HttpServlet {
 //        }
     }
 
-    public void inseriReclamacao(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException, Excecao {
+    public void inserirReclamacao(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException, Excecao {
 
         try {
             Reclamacao reclam = new Reclamacao();
@@ -62,7 +64,6 @@ public class AngryBusServlet extends HttpServlet {
         } catch (Exception e) {
             throw new Excecao(e);
         }
-
     }
 
     public void insereCliente(HttpServletRequest request, HttpServletResponse response) throws Excecao, IOException, SQLException {
