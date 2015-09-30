@@ -126,6 +126,30 @@ public class ClienteBO {
 
     public String atualizarCliente(String userName, String passwd, Cliente cliente) throws Excecao {
         String resp;
+        if (cliente.getNome().toUpperCase().length() <= 3) {
+            return resp = "O nome deve ter mais que 3 letras";
+        }
+
+        if(cliente.getUser().toUpperCase().length() <=4){
+            return resp ="O usuario deve ter mais que 4 letras";
+        }
+
+        if(cliente.getSexo().toUpperCase() != "M" && cliente.getSexo().toUpperCase() != "F"){
+            return resp = "O sexo dever ser M ou F";
+        }
+
+        if (cliente.getSenha().length() < 6) {
+            return resp = "A senha deve conter no minimo 6 caracteres";
+        }
+
+        String cpf = String.valueOf(cliente.getCpf());
+        if(cpf.length() < 10){
+            return resp = "CPF Invalido";
+        }
+
+        if (cliente.getRg().length() < 9) {
+            return resp = "RG invalido";
+        }
         if (new LoginBO().verifPasswd(userName.toUpperCase(), passwd)){
             new ClienteDAO().updateCliente(cliente);
         resp = "Cadastro atualizado com sucesso";

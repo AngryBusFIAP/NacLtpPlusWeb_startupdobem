@@ -27,23 +27,39 @@ public class ReclamacaoBO {
      * @see br.com.fiap.dao.ReclamacaoDAO
      */
 
-    public void cadastrarReclamacao(Reclamacao rec) throws Excecao {
+    public String cadastrarReclamacao(Reclamacao rec) throws Excecao {
+        String resp;
+
+        if (rec.getObservacao().toUpperCase().length() < 10) {
+            return resp = "Digite uma observacao mais longa";
+        }
+
+        if (rec.getReclamacao().toUpperCase().length() < 30) {
+            return resp = "A reclamacao deve ter no minimo 30 caracteres";
+        }
+
         if (rec.getNotaPreReclam() > 9) {
-            System.out.println("Digite uma nota de 0 a 9");
+            return resp = "Digite uma nota de 0 a 9";
         }
         if (rec.getNotaPosReclam() > 10) {
-            System.out.println("Digite uma nota de 0 a 10");
+            return resp = "Digite uma nota de 0 a 10";
         }
         if (rec.getDtOcorr() == null) {
-            System.out.println("Selecione uma data valida");
+            return resp = "Selecione uma data valida";
         }
         if (rec.getSentidoViagem().toUpperCase() != "B" && rec.getSentidoViagem().toUpperCase() != "T" &&
-                rec.getSentidoViagem().toUpperCase() != "C" && rec.getSentidoViagem().toUpperCase() != "M"){
-            System.out.println("Caracter inválido");
+                rec.getSentidoViagem().toUpperCase() != "C" && rec.getSentidoViagem().toUpperCase() != "M") {
+            resp = "Caracter inválido";
         } else {
-            System.out.println("Cadastrado com sucesso");
+            resp = "Cadastrado com sucesso";
         }
-        new ReclamacaoDAO().cadReclam(rec);
+        if (new ReclamacaoDAO().cadReclam(rec)) {
+            resp = "Reclamacao cadastrada";
+        } else {
+            resp = "Reclamacao não cadastrada";
+        }
+
+        return resp;
     }
 
     /**
@@ -60,5 +76,14 @@ public class ReclamacaoBO {
         new ReclamacaoDAO().editarReclam(id, data);
 
         return getReclamacao(id, data);
+    }
+
+
+    public boolean deletarReclamacao(String userName, String passwd, int idReclamacao) throws Excecao {
+        if (new LoginBO().verifPasswd(userName.toUpperCase(), passwd)) {
+            return new ReclamacaoDAO().deleteReclam(idReclamacao);
+        } else {
+            return false;
+        }
     }
 }
