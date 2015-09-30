@@ -18,10 +18,12 @@ import br.com.fiap.except.Excecao;
 public class ReclamacaoBO {
 	
 	/**
-	 * Metodo para insercao da Reclamação, ele faz validações de tamanho de nota, data.
-	 * Verifica também, se no campo registro  
-	 * @param rec
+	 * Metodo para insercao da Reclamação, 
+	 * ele faz validações de tamanho de nota, data.
+	 * Verifica também, se no campo registro
+	 * @param rec - Reclamacao
 	 * @throws Excecao
+	 * @see br.com.fiap.dao.ReclamacaoDAO
 	 */
 	
 	public void cadastrarReclamacao(Reclamacao rec) throws Excecao{
@@ -42,14 +44,18 @@ public class ReclamacaoBO {
 		}
 		new ReclamacaoDAO().cadReclam(rec).toUpperCase();
 	}
-	
+	/**
+	 * Método para listar as reclamações pela data/ID
+	 * @param id - Identificador da Reclamação
+	 * @param data - Data da reclamação
+	 * @return List<Reclamacao> - Lista com as reclamações encontradas
+	 * @throws Excecao
+	 * @see br.com.fiap.dao.ReclamacaoDAO
+	 **/
 	public List<Reclamacao> getReclamacao(int id, String data) throws Excecao{
 		
 		new ReclamacaoDAO().editarReclam(id, data);
 		
 		return getReclamacao(id, data);
 	}
-	
-	 
-
 }
