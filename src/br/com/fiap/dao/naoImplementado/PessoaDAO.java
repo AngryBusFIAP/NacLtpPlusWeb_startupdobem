@@ -1,7 +1,7 @@
 package br.com.fiap.dao.naoImplementado;
 
 import br.com.fiap.beans.Pessoa;
-import br.com.fiap.connect.ConexaoFiap2;
+import br.com.fiap.connect.ConexaoFiap;
 import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
@@ -16,7 +16,7 @@ public class PessoaDAO {
     private Connection c;
 
     public PessoaDAO() throws Excecao {
-        c = new ConexaoFiap2().getConnection();
+        c = new ConexaoFiap().getConnection();
         try {
             
         } catch (Exception e) {

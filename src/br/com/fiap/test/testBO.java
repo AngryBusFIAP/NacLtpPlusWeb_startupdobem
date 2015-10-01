@@ -16,7 +16,6 @@ import br.com.fiap.except.Excecao;
 public class testBO {
     public static void main(String[] args) throws Excecao {
 
-
         ClienteBO cliBO = new ClienteBO();
         ItinerarioBO itiBO = new ItinerarioBO();
         LoginBO loginBO = new LoginBO();
