@@ -6,17 +6,16 @@ package br.com.fiap.beans;
  */
 public class Telefone {
 
-    private int idTel;
     private byte ddd;
     private int numero;
     private int tipo;
     private int idPessoa;
+    private int idTel;
 
-    public Telefone(int idTel, byte ddd, int numero, int ramal, int tipo, int idPessoa) {
-        this.idTel = idTel;
+    public Telefone(byte ddd, int numero, int idPessoa) {
+
         this.ddd = ddd;
         this.numero = numero;
-        this.tipo = tipo;
         this.idPessoa = idPessoa;
     }
 

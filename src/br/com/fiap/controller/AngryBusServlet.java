@@ -58,14 +58,14 @@ public class AngryBusServlet extends HttpServlet {
         try {
             Reclamacao reclam = new Reclamacao();
 
-            reclam.setObservacao(request.getParameter(""));
+//            reclam.setObservacao(request.getParameter(""));
             reclam.setReclamacao(request.getParameter("tdesc"));
             reclam.setNotaPreReclam(Byte.parseByte(request.getParameter("tnoma")));
             reclam.setHrOcorr(Integer.parseInt(request.getParameter("thora")));
             reclam.setDtOcorr(request.getParameter("tdata"));
             Itinerario it = new Itinerario();
             it.setNome(request.getParameter("fcodlin"));
-            reclam.setItinerario(it);
+//            reclam.setItinerario(it);
             reclam.setSentidoViagem(request.getParameter("sentidoViagem"));
             ReclamacaoBO reclamBO = new ReclamacaoBO();
             reclamBO.cadastrarReclamacao(reclam);
@@ -104,7 +104,7 @@ public class AngryBusServlet extends HttpServlet {
             endereco.setLogradouro(request.getParameter("log"));
             endereco.setNum(Short.parseShort(request.getParameter("numLog")));
             endereco.setCidade(request.getParameter("cidade"));
-            endereco.setCep(Integer.parseInt(request.getParameter("cep")));
+            endereco.setCep(request.getParameter("cep"));
 //      Preenchimento do objeto Telefone
             tel.setDdd(Byte.parseByte(request.getParameter("ddd")));
             tel.setNumero(Integer.parseInt(request.getParameter("telefone")));

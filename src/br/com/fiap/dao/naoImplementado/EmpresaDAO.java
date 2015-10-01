@@ -1,13 +1,13 @@
 package br.com.fiap.dao.naoImplementado;
 
+import br.com.fiap.beans.Empresa;
+import br.com.fiap.connect.ConexaoFiap2;
+import br.com.fiap.except.Excecao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import br.com.fiap.beans.Empresa;
-import br.com.fiap.connect.ConexaoFiap;
-import br.com.fiap.except.Excecao;
 
 /**
  * Created by vinylimaz on
@@ -18,7 +18,7 @@ public class EmpresaDAO {
     private Connection c;
 
     public EmpresaDAO() throws Excecao {
-        c = new ConexaoFiap().getConnection();
+        c = new ConexaoFiap2().getConnection();
         try {
             c.close();
         } catch (Exception e) {

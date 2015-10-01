@@ -21,7 +21,7 @@ public class ReclamacaoBO {
      * Metodo para insercao da Reclama��o,
      * ele faz valida��es de tamanho de nota, data.
      * Verifica tamb�m, se no campo registro
-     *
+     * @return String
      * @param rec - Reclamacao
      * @throws Excecao
      * @see br.com.fiap.dao.ReclamacaoDAO

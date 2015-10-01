@@ -1,12 +1,12 @@
 package br.com.fiap.dao.naoImplementado;
 
+import br.com.fiap.beans.Pessoa;
+import br.com.fiap.connect.ConexaoFiap2;
+import br.com.fiap.except.Excecao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-import br.com.fiap.beans.Pessoa;
-import br.com.fiap.connect.ConexaoFiap;
-import br.com.fiap.except.Excecao;
 
 /**
  * Created by vinylimaz on
@@ -16,7 +16,7 @@ public class PessoaDAO {
     private Connection c;
 
     public PessoaDAO() throws Excecao {
-        c = new ConexaoFiap().getConnection();
+        c = new ConexaoFiap2().getConnection();
         try {
             
         } catch (Exception e) {

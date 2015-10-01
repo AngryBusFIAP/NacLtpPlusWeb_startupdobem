@@ -1,6 +1,6 @@
 package br.com.fiap.dao;
 
-import br.com.fiap.connect.ConexaoFiap;
+import br.com.fiap.connect.ConexaoFiap2;
 import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
@@ -19,14 +19,14 @@ import java.sql.SQLException;
  *         27/09/15 ... 14:28.
  * @version 0.5
  * @see br.com.fiap.beans.Login;
- * @see br.com.fiap.connect.ConexaoFiap;
+ * @see ConexaoFiap2 ;
  * @since 0.1
  */
 public class LoginDAO {
     private Connection c;
 
     public LoginDAO() throws Excecao {
-        c = new ConexaoFiap().getConnection();
+        c = new ConexaoFiap2().getConnection();
 
         try {
             c.close();

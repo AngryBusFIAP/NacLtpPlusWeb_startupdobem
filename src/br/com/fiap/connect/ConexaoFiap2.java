@@ -18,7 +18,7 @@ import java.sql.SQLException;
  * @see br.com.fiap.dao.*;
  */
 
-public class ConexaoFiap {
+public class ConexaoFiap2 {
 
     public Connection getConnection() throws Excecao {
 
