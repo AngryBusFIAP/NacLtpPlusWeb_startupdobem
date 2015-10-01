@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <link href="css/cssDefault.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.mask.js"></script>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -103,7 +106,7 @@
                         <br>
 
                         <p><input type="text" name="cpf" class="tam" placeholder="Digite apenas números" maxlength="11"
-                                  minlength="11" required value=""/></p>
+                                  minlength="11" required value="" id="cpf"/></p>
                     </label>
                     <br><br>
 

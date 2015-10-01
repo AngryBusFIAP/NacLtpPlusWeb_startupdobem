@@ -1,7 +1,7 @@
 package br.com.fiap.dao;
 
 import br.com.fiap.beans.Reclamacao;
-import br.com.fiap.connect.ConexaoFactory;
+import br.com.fiap.connect.ConexaoFiap;
 import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
@@ -29,7 +29,7 @@ public class ReclamacaoDAO {
     private Connection c;
 
     public ReclamacaoDAO() throws Excecao {
-        c = new ConexaoFactory().getConnection();
+        c = new ConexaoFiap().getConnection();
         try {
             c.close();
         } catch (Exception e) {

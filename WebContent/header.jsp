@@ -3,7 +3,7 @@
       <div>
         <img alt="#" class="logo" src="img/logo.png"/>
 
-          <div id="slogan"><em>O terminal soluÃ§Ã£o para seus problemas de transporte publico</em></div>
+          <div id="slogan"><em>O terminal solução para seus problemas de transporte publico</em></div>
         
       </div>
       <div id="boxlogin">
