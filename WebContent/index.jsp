@@ -1,19 +1,15 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <title>Home - AngryBus - O terminal solução para seu problema no transporte publico!</title>
     <link href="css/cssDefault.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <meta charset="UTF-8">
 </head>
 <body>
-
-
   <div class="divbody">
-  <%@ include file="header.jsp" %>
-    
+    <%@ include file="header.jsp" %>    
       <section>
         <article>
           <div id="conteudo">
