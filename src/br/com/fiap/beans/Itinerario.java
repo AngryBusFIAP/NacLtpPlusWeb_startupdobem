@@ -1,7 +1,7 @@
 package br.com.fiap.beans;
 /**
- *Classe beans do Objeto Itiner·rio
- *Itinerario est· relacionada com o objeto Regiao
+ *Classe beans do Objeto Itiner√°rio
+ *Itinerario est√° relacionada com o objeto Regiao
  *
  *@see br.com.fiap.beans.Regiao;
  *@see br.com.fiap.bo.ItinerarioBO;

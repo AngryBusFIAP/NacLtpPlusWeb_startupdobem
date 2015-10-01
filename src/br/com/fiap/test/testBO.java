@@ -1,6 +1,5 @@
 import br.com.fiap.beans.*;
 import br.com.fiap.bo.ClienteBO;
-import br.com.fiap.bo.ItinerarioBO;
 import br.com.fiap.bo.LoginBO;
 import br.com.fiap.bo.ReclamacaoBO;
 import br.com.fiap.except.Excecao;
@@ -17,7 +16,6 @@ public class testBO {
     public static void main(String[] args) throws Excecao {
 
         ClienteBO cliBO = new ClienteBO();
-        ItinerarioBO itiBO = new ItinerarioBO();
         LoginBO loginBO = new LoginBO();
         ReclamacaoBO reclamBO = new ReclamacaoBO();
 

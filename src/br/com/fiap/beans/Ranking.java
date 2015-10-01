@@ -1,7 +1,7 @@
 package br.com.fiap.beans;
 /**
  *Classe beans do objeto Ranking
- *Classe Ranking est· relacionada com o:
+ *Classe Ranking est√° relacionada com o:
  *Objeto Empresa,
  *Objeto Reclamacao,
  *Objeto Itinerario e o 

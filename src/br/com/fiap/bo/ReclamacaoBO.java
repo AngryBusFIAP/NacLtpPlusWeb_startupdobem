@@ -7,7 +7,7 @@ import br.com.fiap.except.Excecao;
 import java.util.List;
 
 /**
- *	Classe das regras de neg�cio da Reclama��o
+ *	Classe das regras de negócio da Reclamação
  * 	@author Jardel
  *	@version 0.5
  *	@see br.com.fiap.beans.Reclamacao;
@@ -18,9 +18,9 @@ import java.util.List;
 public class ReclamacaoBO {
 
     /**
-     * Metodo para insercao da Reclama��o,
-     * ele faz valida��es de tamanho de nota, data.
-     * Verifica tamb�m, se no campo registro
+     * Metodo para insercao da Reclamação,
+     * ele faz validações de tamanho de nota, data.
+     * Verifica também, se no campo registro
      * @return String
      * @param rec - Reclamacao
      * @throws Excecao
@@ -65,11 +65,11 @@ public class ReclamacaoBO {
     }
 
     /**
-     * Método para listar as reclama��es pela data/ID
+     * Método para listar as reclamações pela data/ID
      *
-     * @param id   - Identificador da Reclama��o
-     * @param data - Data da reclama��o
-     * @return List<Reclamacao> - Lista com as reclama��es encontradas
+     * @param id   - Identificador da Reclamação
+     * @param data - Data da reclamação
+     * @return List<Reclamacao> - Lista com as reclamações encontradas
      * @throws Excecao
      * @see br.com.fiap.dao.ReclamacaoDAO
      **/

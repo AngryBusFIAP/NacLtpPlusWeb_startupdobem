@@ -4,7 +4,6 @@ package br.com.fiap.beans;
  *Empresa herda de Pessoa
  *
  *@see br.com.fiap.beans.Pessoa;
- *@see br.com.fiap.bo.EmpresaBO;
  */
 public class Empresa extends Pessoa {
 

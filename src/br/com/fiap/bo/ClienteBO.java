@@ -105,7 +105,7 @@ public class ClienteBO {
 	/**
      * Metodo para apagar o objeto Cliente,
      * ele faz a verificacao com o metodo verfiPassw na classe LoginBO
-     * se a senha for valida, � entao deletado o objeto do banco de dados
+     * se a senha for valida, é entao deletado o objeto do banco de dados
      * @param userName - Nome de Usuario do Cliente
      * @param passwd   - Senha do Cliente
 	 * @param idPessoa - Identificador da Pessoa

@@ -10,8 +10,8 @@ import java.sql.SQLException;
 public class Excecao extends Exception {
 
 	/**
-	 * Método que pega todos os possíveis erros e os trata 
-	 * @param e Exception - Recebe a classe excecao para realizar os tratamentos
+     * MÃ©todo que pega todos os possÃ­veis erros e os trata
+     * @param e Exception - Recebe a classe excecao para realizar os tratamentos
 	 */
     public Excecao(Exception e) {
         if (e.getClass().toString().equals

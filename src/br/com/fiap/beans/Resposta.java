@@ -2,7 +2,7 @@ package br.com.fiap.beans;
 
 /**
  * Classe beans do objeto Resposta
- * Resposta est· relacionada a Pessoa
+ * Resposta est√° relacionada a Pessoa
  * @author vinylimaz
  *         on
  *         28/09/15 ... 00:40.

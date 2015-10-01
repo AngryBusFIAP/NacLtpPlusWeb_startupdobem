@@ -1,24 +1,26 @@
+/*
 package br.com.fiap.bo;
 
-/**
- * Classe das regras de negócio do Itinerário
- * @author vinylimaz
- *         on
- *         28/09/15 ... 12:57
- * @since 0.1
- */
+import br.com.fiap.beans.Itinerario;
+
 public class ItinerarioBO {
 
 
-    /**
-     * @deprecated
-     * Metodo que recebe uma String e retorna como resposta
-     *  o sinonimo entre numero do ônibus/nome do ônibus
-     *@param idItinerario - Identificador do Itinerário
-     *@param nome         - Nome do Itinerário
-     *@return Itinerario  - Retorna os dados do itinerário procurado
-     **/
+*/
+/**
+ * Metodo que recebe uma String e retorna como resposta
+ * o sinonimo entre numero do ï¿½nibus/nome do ï¿½nibus
+ *
+ * @param idItinerario - Identificador do Itinerï¿½rio
+ * @param nome         - Nome do Itinerï¿½rio
+ * @return Itinerario- Retorna os dados do itinerï¿½rio procurado
+ *//*
+
+
+
+    @Deprecated
     public String recupInfor(String s) {
         return null;
     }
 }
+*/

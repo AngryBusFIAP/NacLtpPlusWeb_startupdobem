@@ -31,9 +31,9 @@ public class ClienteDAO {
      * <i>Metodo para cadastro do Cliente no banco de dados</i>
      *
      * @param cliente - Objeto do tipo Cliente que
-     *                  ser� usado para inserir os dados na 
+     *                  será usado para inserir os dados na
      *                  tabela T_SCN_PESSOA & T_SCN_CLIENTE
-     * @return String com o resultado da opera��o;
+     * @return String com o resultado da operação;
      * @throws Excecao
      * @author VinyLimaZ
      * @see br.com.fiap.beans.Cliente;
@@ -97,7 +97,7 @@ public class ClienteDAO {
     /**
      * <i>Metodo para deletar o Cliente do banco de dados pelo idCliente</i>
      * @param idCliente - Identificador do Cliente
-     * @return valor com o n�mero de linhas afetadas
+     * @return valor com o número de linhas afetadas
      * 		   0/Erro = Falha
      * 		   1 = Deletado com sucesso
      * @throws Excecao
@@ -162,7 +162,7 @@ public class ClienteDAO {
 	}
 
     /**
-     * <i>Atualizar o cadastro do Cliente no banco de dados atrav�s do Objeto</i> 
+     * <i>Atualizar o cadastro do Cliente no banco de dados através do Objeto</i>
      * @param cliente  - Objeto Cliente
      * @return boolean - true/false dependendo se a alteração foi feita ou não
      * @throws Excecao

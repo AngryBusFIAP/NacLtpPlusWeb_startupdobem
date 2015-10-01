@@ -3,7 +3,7 @@ package br.com.fiap.beans;
  *Classe beans dos dados de Login do Objeto Cliente
  *
  *@see br.com.fiap.beans.Cliente;
- *@see br.com.fiap.dao.LoginBO;
+ *@see br.com.fiap.bo.LoginBO;
  */
 public class Login {
 

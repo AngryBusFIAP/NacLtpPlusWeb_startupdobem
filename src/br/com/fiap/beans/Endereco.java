@@ -1,7 +1,7 @@
 package br.com.fiap.beans;
 /**
  *Classe beans do Objeto Endereco
- *Endereco est� relacionado com o Objeto Pessoa
+ *Endereco está relacionado com o Objeto Pessoa
  *
  *@see br.com.fiap.beans.Cliente;
  *@see br.com.fiap.bo.ClienteBO;

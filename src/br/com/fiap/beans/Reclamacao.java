@@ -2,7 +2,7 @@ package br.com.fiap.beans;
 
 /**
  * Classe beans do objeto Reclamacao
- * Reclamacao est� relacionada com Cliente,
+ * Reclamacao está relacionada com Cliente,
  * Empresa, Itinerario e Regiao
  * 
  * @see br.com.fiap.beans.Regiao;

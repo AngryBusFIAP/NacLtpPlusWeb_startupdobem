@@ -4,7 +4,7 @@ import br.com.fiap.dao.LoginDAO;
 import br.com.fiap.except.Excecao;
 
 /**
- * Classe das regras de negÛcio do Login
+ * Classe das regras de neg√≥cio do Login
  * @author vinylimaz
  *         on
  *         27/09/15 ... 14:32.
@@ -17,10 +17,10 @@ import br.com.fiap.except.Excecao;
 public class LoginBO {
     /**
      * Metodo unico a tratar a senha, sendo assim, para se alterar chama-se esse metodo, que retornando true
-     * (senha digitada È igual a senha do banco de dados) realiza a operaÁ„o, ou false impedindo-a
+     * (senha digitada √© igual a senha do banco de dados) realiza a opera√ß√£o, ou false impedindo-a
      *
-     * @param userName - Nome do usu·rio
-     * @param passwd - Senha do usu·rio
+     * @param userName - Nome do usu√°rio
+     * @param passwd - Senha do usu√°rio
      * @return boolean 
      * @throws Excecao
      * @author VinyLimaZ
@@ -37,7 +37,7 @@ public class LoginBO {
      * Verifica-se a senha com o metodo verifPasswd(), que retornando true, chama o LoginDAO.alterPasswd()
      * para alterar a senha no bando de dados.
      *
-     * @param userName  - Nome do Usu·rio
+     * @param userName  - Nome do Usu√°rio
      * @param passwd    - Senha antiga
      * @param newPasswd - Senha nova
      * @return boolean
