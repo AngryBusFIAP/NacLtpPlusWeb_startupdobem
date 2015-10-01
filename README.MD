@@ -1,7 +1,9 @@
 <html>
 <hgroup>
-    <h1>FIAP - 2ºSemestre/2015</h1><h2>NAC de LTP + DevWeb - StartUp do Bem</h2><fieldset><legend>Professores</legend>Humberto Delgado + Alexandre Jesus</fieldset><h4>Grupo: Só Canela</h4><fieldset><legend>Integrantes</legend><ul><li>Augusto Ribeiro - RM: </li><ul></ul></li><li>Henrique Marçulo - RM:</li><li>Jardel Gomes - RM: </li><li>Vinicius Lima - RM: 75345</li></ul></hgroup>
+    <h1>FIAP - 2ºSemestre/2015</h1><h2>NAC de LTP + DevWeb - StartUp do Bem</h2><fieldset><legend>Professores</legend>Humberto Delgado + Alexandre Jesus</fieldset><h4>Grupo: Só Canela</h4><fieldset><legend>Integrantes</legend><ul><li>Augusto Ribeiro - RM: 75473</li><ul></ul></li><li>Henrique Marçulo - RM: 74329</li><li>Jardel Gomes - RM: 74763</li><li>Vinicius Lima - RM: 75345</li></ul></hgroup>
 <p><h2>Escopo do projeto</h2></p>
+
+<p>Status final: Projeto com falhas na implementação. Tivemos alguns problemas nos ultimos momentos de testes e não tivemos tempo pra entregar um projeto completo, porém, com as devidas correções o projeto é funcional</p>
 
 <p>Desenvolva uma “startup” do BEM, ou seja, sua ideia deve contemplar um projeto que atenda à uma necessidade social qualquer.
     Você deverá se preocupar com:</p>
