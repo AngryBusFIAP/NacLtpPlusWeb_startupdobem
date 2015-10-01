@@ -30,12 +30,14 @@ public class ReclamacaoBO {
     public String cadastrarReclamacao(Reclamacao rec) throws Excecao {
         String resp;
 
-        if (rec.getObservacao().toUpperCase().length() < 10) {
-            return resp = "Digite uma observacao mais longa";
-        }
+//        if (rec.getObservacao().toUpperCase().length() < 10) {
+//            return resp = "Digite uma observacao mais longa";
+//        }
 
         if (rec.getReclamacao().toUpperCase().length() < 30) {
             return resp = "A reclamacao deve ter no minimo 30 caracteres";
+        } else {
+            rec.setReclamacao(rec.getReclamacao().toUpperCase());
         }
 
         if (rec.getNotaPreReclam() > 9) {
@@ -51,7 +53,7 @@ public class ReclamacaoBO {
                 rec.getSentidoViagem().toUpperCase() != "C" && rec.getSentidoViagem().toUpperCase() != "M") {
             resp = "Caracter inválido";
         } else {
-            resp = "Cadastrado com sucesso";
+            rec.setSentidoViagem(rec.getSentidoViagem().toUpperCase());
         }
         if (new ReclamacaoDAO().cadReclam(rec)) {
             resp = "Reclamacao cadastrada";

@@ -71,7 +71,7 @@ public class ClienteDAO {
                     statement.setString(1, end.getLogradouro());
                     statement.setShort(2, end.getNum());
                     statement.setString(3, end.getComplemento());
-                    statement.setInt(4, end.getCep());
+                    statement.setString(4, end.getCep());
                     statement.setString(5, end.getBairro());
                     statement.setString(6, end.getCidade());
                     statement.setString(7, end.getEstado());
@@ -179,12 +179,10 @@ public class ClienteDAO {
             statement.setString(3, cliente.getEmail());
             statement.setInt(4, cliente.getIdCliente());
             if (statement.execute()) {
-                sql = "UPDATE T_SCN_CLIENTE SET NR_CPF = ?, NR_RG = ?, TX_SEXO = ? WHERE ID_CLIENTE = ?";
+                sql = "UPDATE T_SCN_CLIENTE SET TX_SEXO = ? WHERE ID_CLIENTE = ?";
                 statement = c.prepareStatement(sql);
-                statement.setLong(1, cliente.getCpf());
-                statement.setString(2, cliente.getRg());
-                statement.setString(3, cliente.getSexo());
-                statement.setInt(4, cliente.getIdCliente());
+                statement.setString(1, cliente.getSexo());
+                statement.setInt(2, cliente.getIdCliente());
                 resp = statement.execute();
             }
             c.close();

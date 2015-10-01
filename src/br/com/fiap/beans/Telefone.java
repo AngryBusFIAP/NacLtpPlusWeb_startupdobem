@@ -2,7 +2,7 @@ package br.com.fiap.beans;
 /**
  *Classe beans do objeto Telefone
  *
- *@see br.com.fiap.bo.PessoaBO;
+ *@see br.com.fiap.bo.ClienteBO;
  */
 public class Telefone {
 

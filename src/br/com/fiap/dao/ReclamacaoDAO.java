@@ -98,7 +98,7 @@ public class ReclamacaoDAO {
      */
     public boolean cadReclam(Reclamacao reclam) throws Excecao {
 
-        String sql = "INSERT INTO T_SCN_RECLAMACAO VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO T_SCN_RECLAMACAO VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             PreparedStatement statement = c.prepareStatement(sql);
@@ -109,11 +109,11 @@ public class ReclamacaoDAO {
             statement.setByte(5, reclam.getNotaPreReclam());
             statement.setString(6, reclam.getDtReclam());
             statement.setString(7, reclam.getReclamacao());
-            statement.setString(8, reclam.getObservacao());
-            statement.setInt(9, reclam.getRegiao().getIdReg());
-            statement.setInt(10, reclam.getCliente().getIdPessoa());
-            statement.setInt(11, reclam.getEmpresa().getIdPessoa());
-            statement.setString(12, reclam.getItinerario().getIdItinerario());
+//            statement.setString(8, reclam.getObservacao());
+//            statement.setInt(9, reclam.getRegiao().getIdReg());
+            statement.setInt(8, reclam.getCliente().getIdPessoa());
+//            statement.setInt(11, reclam.getEmpresa().getIdPessoa());
+//            statement.setString(12, reclam.getItinerario().getIdItinerario());
             boolean resp = statement.execute();
             statement.close();
             c.close();
@@ -150,7 +150,7 @@ public class ReclamacaoDAO {
                 reclam.setNotaPosReclam(resultSet.getByte("NR_NOTAPOSRECLAM"));
                 reclam.setDtReclam(resultSet.getString("DT_RECLAMACAO"));
                 reclam.setReclamacao(resultSet.getString("TX_RECLAMACAO"));
-                reclam.setObservacao(resultSet.getString("TX_OBSERVACAO"));
+//                reclam.setObservacao(resultSet.getString("TX_OBSERVACAO"));
                 listReclam.add(reclam);
             }
             c.close();
@@ -190,7 +190,7 @@ public class ReclamacaoDAO {
                 reclam.setNotaPosReclam(resultSet.getByte("NR_NOTAPOSRECLAM"));
                 reclam.setDtReclam(resultSet.getString("DT_RECLAMACAO"));
                 reclam.setReclamacao(resultSet.getString("TX_RECLAMACAO"));
-                reclam.setObservacao(resultSet.getString("TX_OBSERVACAO"));
+//                reclam.setObservacao(resultSet.getString("TX_OBSERVACAO"));
                 listReclam.add(reclam);
             }
             c.close();

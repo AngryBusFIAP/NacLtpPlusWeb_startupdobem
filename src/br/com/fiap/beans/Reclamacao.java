@@ -2,7 +2,7 @@ package br.com.fiap.beans;
 
 /**
  * Classe beans do objeto Reclamacao
- * Reclamacao está relacionada com Cliente,
+ * Reclamacao estï¿½ relacionada com Cliente,
  * Empresa, Itinerario e Regiao
  * 
  * @see br.com.fiap.beans.Regiao;
@@ -22,28 +22,27 @@ public class Reclamacao {
     private byte notaPosReclam;
     private String dtReclam;
     private String reclamacao;
-    private String observacao;
-    private Regiao regiao;
+    //    private String observacao;
+//    private Regiao regiao;
     private Cliente cliente;
-    private Empresa empresa;
-    private Itinerario itinerario;
+//    private Empresa empresa;
+//    private Itinerario itinerario;
 
-    public Reclamacao(int id, String dtOcorr, int hrOcorr, String sentidoViagem, byte notaPreReclam,
-                      byte notaPosReclam, String dtReclam, String reclamacao, String observacao, Regiao regiao,
-                      Cliente cliente, Empresa empresa, Itinerario itinerario) {
-        this.id = id;
+    public Reclamacao(String dtOcorr, int hrOcorr, String sentidoViagem, byte notaPreReclam, String dtReclam, String reclamacao, Cliente cliente
+//                      , String observacao, Regiao regiao, Empresa empresa, Itinerario itinerario
+    ) {
+
         this.dtOcorr = dtOcorr;
         this.hrOcorr = hrOcorr;
         this.sentidoViagem = sentidoViagem;
         this.notaPreReclam = notaPreReclam;
-        this.notaPosReclam = notaPosReclam;
         this.dtReclam = dtReclam;
         this.reclamacao = reclamacao;
-        this.observacao = observacao;
-        this.regiao = regiao;
+//        this.observacao = observacao;
+//        this.regiao = regiao;
         this.cliente = cliente;
-        this.empresa = empresa;
-        this.itinerario = itinerario;
+//        this.empresa = empresa;
+//        this.itinerario = itinerario;
     }
 
     public Reclamacao() {
@@ -113,21 +112,21 @@ public class Reclamacao {
         this.reclamacao = reclamacao;
     }
 
-    public String getObservacao() {
-        return observacao;
-    }
+//    public String getObservacao() {
+//        return observacao;
+//    }
 
-    public void setObservacao(String observacao) {
-        this.observacao = observacao;
-    }
+//    public void setObservacao(String observacao) {
+//        this.observacao = observacao;
+//    }
 
-    public Regiao getRegiao() {
-        return regiao;
-    }
+//    public Regiao getRegiao() {
+//        return regiao;
+//    }
 
-    public void setRegiao(Regiao regiao) {
-        this.regiao = regiao;
-    }
+//    public void setRegiao(Regiao regiao) {
+//        this.regiao = regiao;
+//    }
 
     public Cliente getCliente() {
         return cliente;
@@ -137,19 +136,20 @@ public class Reclamacao {
         this.cliente = cliente;
     }
 
-    public Empresa getEmpresa() {
-        return empresa;
-    }
+//    public Empresa getEmpresa() {
+//        return empresa;
+//    }
 
-    public void setEmpresa(Empresa empresa) {
-        this.empresa = empresa;
-    }
+//    public void setEmpresa(Empresa empresa) {
+//        this.empresa = empresa;
+//    }
 
-    public Itinerario getItinerario() {
-        return itinerario;
-    }
+//    public Itinerario getItinerario() {
+//        return itinerario;
+//    }
 
-    public void setItinerario(Itinerario itinerario) {
-        this.itinerario = itinerario;
-    }
+//    public void setItinerario(Itinerario itinerario) {
+//        this.itinerario = itinerario;
+//    }
+
 }

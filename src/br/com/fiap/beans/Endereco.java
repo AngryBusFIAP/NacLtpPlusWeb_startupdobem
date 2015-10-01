@@ -1,27 +1,27 @@
 package br.com.fiap.beans;
 /**
  *Classe beans do Objeto Endereco
- *Endereco está relacionado com o Objeto Pessoa
+ *Endereco estï¿½ relacionado com o Objeto Pessoa
  *
- *@see br.com.fiap.beans.Pessoa;
- *@see br.com.fiap.bo.PessoaBO;
+ *@see br.com.fiap.beans.Cliente;
+ *@see br.com.fiap.bo.ClienteBO;
  */
 public class Endereco {
 
     private String logradouro;
     private short num;
     private String complemento;
-    private int cep;
+    private String cep;
     private String bairro;
     private String cidade;
     private String estado;
     private int idEnd;
-    private Pessoa pessoa;
+//    private Pessoa pessoa;
 
     public Endereco() {
     }
 
-    public Endereco(String logradouro, short num, String complemento, int cep, String bairro, String cidade, String estado, int idEnd, Pessoa pessoa) {
+    public Endereco(String logradouro, short num, String complemento, String cep, String bairro, String cidade, String estado) {
         this.logradouro = logradouro;
         this.num = num;
         this.complemento = complemento;
@@ -29,8 +29,6 @@ public class Endereco {
         this.bairro = bairro;
         this.cidade = cidade;
         this.estado = estado;
-        this.idEnd = idEnd;
-        this.pessoa = pessoa;
     }
 
     public String getLogradouro() {
@@ -57,11 +55,11 @@ public class Endereco {
         this.complemento = complemento;
     }
 
-    public int getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(int cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 
@@ -97,11 +95,4 @@ public class Endereco {
         this.idEnd = idEnd;
     }
 
-    public Pessoa getPessoa() {
-        return pessoa;
-    }
-
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
-    }
 }
