@@ -3,7 +3,7 @@ package br.com.fiap.dao;
 import br.com.fiap.beans.Cliente;
 import br.com.fiap.beans.Endereco;
 import br.com.fiap.beans.Telefone;
-import br.com.fiap.connect.ConexaoFiap;
+import br.com.fiap.connect.ConexaoFactory;
 import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
@@ -24,7 +24,7 @@ public class ClienteDAO {
 	private Connection c;
 
     public ClienteDAO() throws Excecao {
-        c = new ConexaoFiap().getConnection();
+        c = new ConexaoFactory().getConnection();
     }
 
     /**

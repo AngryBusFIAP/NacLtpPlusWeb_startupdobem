@@ -3,6 +3,8 @@ import br.com.fiap.bo.ClienteBO;
 import br.com.fiap.bo.LoginBO;
 import br.com.fiap.bo.ReclamacaoBO;
 import br.com.fiap.except.Excecao;
+import br.com.fiap.test.*;
+
 
 /**
  * <i><i>

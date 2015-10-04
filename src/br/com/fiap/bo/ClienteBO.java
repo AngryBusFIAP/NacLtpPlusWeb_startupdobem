@@ -45,12 +45,6 @@ public class ClienteBO {
             cliente.setSexo(cliente.getSexo().toUpperCase());
         }
 
-        if (cliente.getSenha().length() < 6) {
-            return resp = "A senha deve conter no minimo 6 caracteres";
-        } else {
-            cliente.setSenha(cliente.getSenha().toUpperCase());
-        }
-
         String cpf = String.valueOf(cliente.getCpf());
         if(cpf.length() < 10){
             return resp = "CPF Invalido";
@@ -94,12 +88,9 @@ public class ClienteBO {
             end.setCidade(end.getCidade().toUpperCase());
         }
         //Assinatura correta!
-        if (new ClienteDAO().cadCliente(cliente, end, tel)) {
-            resp = "Cadastro realizado com sucesso";
-        } else {
-            resp = "Cadastro não realizado! Verificar as informações";
-        }
-        return resp;
+        new ClienteDAO().cadCliente(cliente, end, tel);
+
+        return "a";
     }
 
 	/**

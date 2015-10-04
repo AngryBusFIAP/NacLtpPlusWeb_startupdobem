@@ -1,7 +1,7 @@
 package br.com.fiap.dao.naoImplementado;
 
 import br.com.fiap.beans.Empresa;
-import br.com.fiap.connect.ConexaoFiap;
+import br.com.fiap.connect.ConexaoFactory;
 import br.com.fiap.except.Excecao;
 
 import java.sql.Connection;
@@ -18,7 +18,7 @@ public class EmpresaDAO {
     private Connection c;
 
     public EmpresaDAO() throws Excecao {
-        c = new ConexaoFiap().getConnection();
+        c = new ConexaoFactory().getConnection();
         try {
             c.close();
         } catch (Exception e) {
