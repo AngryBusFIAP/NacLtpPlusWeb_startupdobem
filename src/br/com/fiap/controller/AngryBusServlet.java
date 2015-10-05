@@ -32,8 +32,6 @@ public class AngryBusServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //TODO algum modo de identificar de onde veio a requisição e direcionar para um metodo especifico
-
         if (request.getParameter("veioDe").equals("reclamacao")) {
             try {
                 inserirReclamacao(request, response);
